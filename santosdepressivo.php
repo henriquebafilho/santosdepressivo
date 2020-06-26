@@ -280,7 +280,7 @@
                 return "#fde900";
             }
             else if($time == "Deportivo Quito-EQU"){
-                return "#0d3264";
+                return "#073756";
             }
             else if($time == "Deportivo Tachira-VEN"){
                 return "#f2d902";

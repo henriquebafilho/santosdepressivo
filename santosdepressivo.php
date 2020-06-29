@@ -69,8 +69,7 @@
         </style>
     </head>
     <body>
-        <h1><img src=index_files/Santos.png width=70 height=70 alt=Imagem> JOGOS QUE FUI <img src=index_files/Santos.png width=70 height=70 alt=Imagem></h1>
-        <h4>Guilherme Gianinni</h4>
+        <h1><img src=index_files/Santos.png width=70 height=70 alt=Imagem> GUILHERME GIANINNI <img src=index_files/Santos.png width=70 height=70 alt=Imagem></h1>
         <?php
         $conn = mysqli_connect("localhost", "root", "", "jogos");
         // Checando conexão

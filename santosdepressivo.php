@@ -95,14 +95,14 @@
             if($row["mandante"] == 0 || $row["mandante"] == 1){
                 $golsSantos += $row["golsSantos"];
                 $golsAdversario += $row["golsAdversario"];   
-            }
-
-            if($row["golsSantos"] > $row["golsAdversario"]){
-                $vitorias += 1;
-            }else if($row["golsSantos"] < $row["golsAdversario"]){
-                $derrotas += 1;
-            }else{
-                $empates += 1;
+                
+                if($row["golsSantos"] > $row["golsAdversario"]){
+                    $vitorias += 1;
+                }else if($row["golsSantos"] < $row["golsAdversario"]){
+                    $derrotas += 1;
+                }else{
+                    $empates += 1;
+                }
             }
             //quando chega no último, mostra o retrospecto
             if($numero == 0){

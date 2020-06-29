@@ -92,8 +92,11 @@
             echo escreveLinha($qtdJogos, $numero, $row);
             $numero -= 1;
 
-            $golsSantos += $row["golsSantos"];
-            $golsAdversario += $row["golsAdversario"];
+            // Se não for futebol americano, conta os gols
+            if($row["mandante"] == 0 || $row["mandante"] == 1){
+                $golsSantos += $row["golsSantos"];
+                $golsAdversario += $row["golsAdversario"];   
+            }
 
             if($row["golsSantos"] > $row["golsAdversario"]){
                 $vitorias += 1;
@@ -163,8 +166,12 @@
             }
             if($row["mandante"] == 1){
                 return "<tr><th colspan=1 rowspan=3 style=width:50px;background-color:$cor>" . $numero . "</th>" . "<th colspan=3 rowspan=1 style='background:linear-gradient(90deg, $cor 49%, $corFundo 52%); width:400px;'id=$corFicha'>". $date -> format( 'd-m-Y' ). " | ". "Estádio ". utf8_encode($row["estadio"]). " | ". utf8_encode($row["campeonato"]). "</th>"."<tr><th colspan=1 rowspan=1><img src=index_files/Santos.png width=70 height=70 alt=Imagem/><br>Santos</th>"."<th colspan=1 rowspan=1 style='background:linear-gradient(90deg, $cor 45%, $corFundo 60%);font-size:300%;'id=$corFicha'>" . utf8_encode($row["golsSantos"]) ." x ". utf8_encode($row["golsAdversario"]) . "</th>" . "<th colspan=1 rowspan=1 style='color:$corLetra; background-color:$corFundo;'><img src=index_files/$escudo.png width=70 height=70 alt=Imagem /><br>". utf8_encode($row["adversario"])  . "</th>". "<tr><th colspan=1 style=background-color:$cor;>". utf8_encode($row["autorSantos"]) ."</th>"."<th colspan=1 style='background:linear-gradient(90deg, $cor 45%, $corFundo 60%);'id=$corFicha'>". "Técnico: ". utf8_encode($row["tecnico"]) . "</th>"."<th colspan=1 style=background-color:$corFundo;color:$corLetra;>". utf8_encode($row["autorAdversario"])."</th><tr>";
-            } else {
+            } else if ($row["mandante"] == 0){
                 return "<tr><th colspan=1 rowspan=3 style=width:50px;background-color:$corFundo;color:$corLetra>" . $numero . "</th>" . "<th colspan=3 rowspan=1 style='background:linear-gradient(90deg, $corFundo 49%, $cor 52%); width:400px;'id=$corFicha'>". $date -> format( 'd-m-Y' ). " | ". "Estádio ". utf8_encode($row["estadio"]). " | ". utf8_encode($row["campeonato"]). "</th>"."<tr><th colspan=1 style=background-color:$corFundo;color:$corLetra><img src=index_files/$escudo.png width=70 height=70 alt=Imagem /><br>". utf8_encode($row["adversario"]). "</th>" . "<th colspan=1 rowspan=1 style='background:linear-gradient(90deg, $corFundo 45%, $cor 60%);font-size:300%;'id=$corFicha'>" . utf8_encode($row["golsAdversario"]) ." x ". utf8_encode($row["golsSantos"]) . "</th>"."<th colspan=1><img src=index_files/Santos.png width=70 height=70 alt=Imagem/><br>Santos</th>" . "</th>"."<tr><th colspan=1 style=background-color:$corFundo;color:$corLetra;>". utf8_encode($row["autorAdversario"]) ."</th>"."<th colspan=1 style='background:linear-gradient(90deg, $corFundo 45%, $cor 60%);'id=$corFicha'>". "Técnico: ". utf8_encode($row["tecnico"]) . "</th>"."<th colspan=1>". utf8_encode($row["autorSantos"])."</th><tr>";
+            }
+            // Mandante Futebol Americano
+            else if ($row["mandante"] == 2){
+                return "<tr><th colspan=1 rowspan=2 style=width:50px;background-color:$cor>" . $numero . "</th>" . "<th colspan=3 rowspan=1 style='background:linear-gradient(90deg, $cor 49%, $corFundo 52%); width:400px;'id=$corFicha'>". $date -> format( 'd-m-Y' ). " | ". "Estádio ". utf8_encode($row["estadio"]). " | ". utf8_encode($row["campeonato"]). "</th>"."<tr><th colspan=1 rowspan=1><img src=index_files/SantosTsunami.png width=130 height=70 alt=Imagem/><br>Santos Tsunami</th>"."<th colspan=1 rowspan=1 style='background:linear-gradient(90deg, $cor 45%, $corFundo 60%);font-size:300%;'id=$corFicha'>" . utf8_encode($row["golsSantos"]) ." x ". utf8_encode($row["golsAdversario"]) . "</th>" . "<th colspan=1 rowspan=1 style='color:$corLetra; background-color:$corFundo;'><img src=index_files/$escudo.png width=70 height=70 alt=Imagem /><br>". utf8_encode($row["adversario"])  . "</th></tr>";
             }
         }
         function corFundoTime($time, $ano, $escudo){
@@ -256,6 +263,9 @@
                 return "white";
             }
             else if($time == "Corinthians"){
+                return "black";
+            }
+            else if($time == "Corinthians Steamrollers"){
                 return "black";
             }
             else if($time == "Coritiba"){
@@ -552,6 +562,9 @@
                 return "black";
             }
             else if($time == "Corinthians"){
+                return "white";
+            }
+            else if($time == "Corinthians Steamrollers"){
                 return "white";
             }
             else if($time == "Coritiba"){

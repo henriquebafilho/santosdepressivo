@@ -1419,6 +1419,9 @@ function getColorLetra(time){
 		case "Santos":
 		return "black";
 		break;
+		case "São Bernardo":
+		return "black";
+		break;
 		case "São Caetano":
 		return "white";
 		break;

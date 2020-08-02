@@ -120,7 +120,7 @@ var jogo117 = [true, "Ferroviária", 1, 0, "Campeonato Paulista", "2019-01-19", 
 var jogo118 = [true, "São Paulo", 2, 0, "Campeonato Paulista", "2019-01-27", "Pacaembu", "Jorge Sampaoli", "-Luiz Felipe<br>-Derlis González", ""];
 var jogo119 = [false, "Ituano", 1, 5, "Campeonato Brasil", "2019-02-03", "Municipal Doutor Novelli Júnior", "Jorge Sampaoli", "-Jean Mota", "-Marcos Serato<br>-Morato(2x)<br>-Léo Santos<br>-Jonas"];
 var jogo120 = [false, "Vasco", 1, 0, "Campeonato Brasileiro", "2019-10-05", "São Januário", "Jorge Sampaoli", "-Tailson", ""];
-var jogo121 = [false, "Defensa y Justicia-ARG", 2, 1, "Copa Libertadores", "2020-03-03", "Norberto "Tito" Tomaghello", "Jesualdo Ferreira", "-Jobson<br>-Kaio Jorge", "-Juan Rodríguez"];
+var jogo121 = [false, "Defensa y Justicia-ARG", 2, 1, "Copa Libertadores", "2020-03-03", "Norberto 'Tito' Tomaghello", "Jesualdo Ferreira", "-Jobson<br>-Kaio Jorge", "-Juan Rodríguez"];
 var jogo122 = [false, "Grêmio", 2, 1, "Campeonato Brasileiro", "2019-04-28", "Arena do Grêmio", "Jorge Sampaoli", "-Eduardo Sasha<br>-Felipe Jonathan", "-Éverton"];
 var jogo123 = [false, "Flamengo", 0, 1, "Campeonato Brasileiro", "2019-09-14", "Maracanã", "Jorge Sampaoli", "", "-Gabriel"];
 var jogo124 = [false, "Ceará", 1, 0, "Campeonato Brasileiro", "2019-06-02", "Castelão", "Jorge Sampaoli", "-Eduardo Sasha", ""];
@@ -487,20 +487,6 @@ function adversario(){
 		for(var i = 0; i < jogos.length; i++){
 			if(adversario == "Atlético-PR" || adversario == "Athletico-PR"){
 				if(jogos[i][1] == "Atlético-PR" || jogos[i][1] == "Athletico-PR"){
-					contador += 1;
-					escreveLinha(jogos[i], contador);
-					// Contabiliza vitória, empate ou derrota
-					if(jogos[i][2] > jogos[i][3]){
-						vitorias += 1;
-					} else if (jogos[i][2] == jogos[i][3]){
-						empates += 1;
-					} else{
-						derrotas += 1;
-					}
-				}
-			}
-			else if(adversario == "Bragantino" || adversario == "Red Bull Bragantino"){
-				if(jogos[i][1] == "Bragantino" || jogos[i][1] == "Red Bull Bragantino"){
 					contador += 1;
 					escreveLinha(jogos[i], contador);
 					// Contabiliza vitória, empate ou derrota
@@ -880,14 +866,8 @@ function getEscudoName(time, jogo){
 
 	if(time == "Goiás" && ano >= 2019){
 		return "Goiás2019";
-	} else if (time == "Internacional" && ano < 2009){
-		return "Internacional2009";
-	} else if (time == "Náutico" && ano >= 2008){
-		return "Náutico2008";
 	} else if (time == "Flamengo" && ano >= 2018){
 		return "Flamengo2018";
-	} else if (time == "Resende" && ano >= 2020){
-		return "Resende2020";
 	}
 
 	var cortaNome = time.split(" ");

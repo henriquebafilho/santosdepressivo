@@ -1016,17 +1016,17 @@ function getColorFundo(time, jogo){
 	var ano = parseInt(dataCortada[0]);
 
 	switch (time) {
+		case "Água Santa":
+        return "#153160";
+        break;
 		case "América-MG":
 		return "#048439";
 		break;
-		case "Americano":
-		return "white";
+		case "América-RN":
+		return "red";
 		break;
 		case "Athletico-PR":
 		return "#c8060f";
-		break;
-		case "Atlético Nacional-COL":
-		return "#048439";
 		break;
 		case "Atlético-GO":
 		return "#ff0e00";
@@ -1037,8 +1037,8 @@ function getColorFundo(time, jogo){
 		case "Atlético-PR":
 		return "#ff0e00";
 		break;
-		case "Audax Italiano-CHI":
-		return "green";
+		case "Audax-SP":
+		return "red";
 		break;
 		case "Avaí":
 		return "#00679a";
@@ -1046,50 +1046,32 @@ function getColorFundo(time, jogo){
 		case "Bahia":
 		return "#0188d6";
 		break;
-		case "Bangu":
-		return "#ff0e00";
+		case "Benfica-POR":
+		return "red";
 		break;
-		case "Barcelona de Guayaquil-EQU":
-		return "#fde900";
-		break;
-		case "Boa Esporte":
-		return "#ff0e00";
-		break;
-		case "Boavista":
-		return "#00913c";
-		break;
-		case "Boca Juniors":
+		case "Boca Juniors-ARG":
 		return "#00458a";
-		break;
-		case "Bonsucesso":
-		return "#1c4196";
 		break;
 		case "Botafogo":
 		return "black";
 		break;
-		case "Bragantino":
-		return "white";
-		break;
-		case "Cabofriense":
-		return "#0b9c54";
+		case "Botafogo-SP":
+		return "red";
 		break;
 		case "Ceará":
 		return "black";
 		break;
+		case "Cerro Porteño-PAR":
+		return "#c40215";
+		break;
 		case "Chapecoense":
 		return "#00913c";
-		break;
-		case "Colo-Colo-CHI":
-		return "white";
 		break;
 		case "Corinthians":
 		return "black";
 		break;
 		case "Coritiba":
 		return "#00544d";
-		break;
-		case "CRB":
-		return "#ff0e00";
 		break;
 		case "Criciúma":
 		return "#fdd116";
@@ -1100,14 +1082,14 @@ function getColorFundo(time, jogo){
 		case "CSA":
 		return "#075798";
 		break;
-		case "Cuiabá":
-		return "#fde900";
-		break;
 		case "Defensa y Justicia-ARG":
 		return "#fde900";
 		break;
-		case "Deportivo Quito-EQU":
-		return "#073756";
+		case "Deportivo Tachira-VEN":
+        return "#f2d902";
+        break;
+        case "Estudiantes-ARG":
+		return "red";
 		break;
 		case "Figueirense":
 		return "black";
@@ -1171,8 +1153,11 @@ function getColorFundo(time, jogo){
 		case "Nova Iguaçu":
 		return "#ea8415";
 		break;
-		case "Olimpia-PAR":
-		return "white";
+		case "Oeste":
+		return "red";
+		break;
+		case "Once Caldas-COL":
+		return "black";
 		break;
 		case "Palmeiras":
 		return "#048439";
@@ -1184,7 +1169,7 @@ function getColorFundo(time, jogo){
 		return "#0091cf";
 		break;
 		case "Ponte Preta":
-		return "white";
+		return "black";
 		break;
 		case "Portuguesa":
 		return "red";
@@ -1202,7 +1187,7 @@ function getColorFundo(time, jogo){
 		return "white";
 		break;
 		case "Santa Cruz":
-		return "white";
+		return "red";
 		break;
 		case "Santos":
 		return "white";
@@ -1223,7 +1208,7 @@ function getColorFundo(time, jogo){
 		return "#d30a11";
 		break;
 		case "Vasco":
-		return "white";
+		return "black";
 		break;
 		case "Vitória":
 		return "#ff0e00";
@@ -1236,17 +1221,17 @@ function getColorFundo(time, jogo){
 
 function getColorLetra(time){
 	switch(time){
+		case "Água Santa":
+		return "white";
+		break;
 		case "América-MG":
 		return "white";
 		break;
-		case "Americano":
-		return "black";
+		case "América-RN":
+		return "white";
 		break;
 		case "Athletico-PR":
 		return "black";
-		break;
-		case "Atlético Nacional-COL":
-		return "white";
 		break;
 		case "Atlético-GO":
 		return "black";
@@ -1257,7 +1242,7 @@ function getColorLetra(time){
 		case "Atlético-PR":
 		return "black";
 		break;
-		case "Audax Italiano-CHI":
+		case "Audax-SP":
 		return "white";
 		break;
 		case "Avaí":
@@ -1266,38 +1251,20 @@ function getColorLetra(time){
 		case "Bahia":
 		return "white";
 		break;
-		case "Bangu":
-		return "white";
-		break;
-		case "Barcelona de Guayaquil-EQU":
-		return "#055daa";
-		break;
-		case "Boa Esporte":
-		return "white";
-		break;
-		case "Boavista":
-		return "white";
-		break;
-		case "Boca Juniors":
+		case "Boca Juniors-ARG":
 		return "#fcb000";
 		break;
-		case "Bonsucesso":
-		return "white";
-		break;
-		case "Bragantino":
-		return "black";
-		break;
-		case "Cabofriense":
+		case "Botafogo-SP":
 		return "white";
 		break;
 		case "Ceará":
 		return "white";
 		break;
+		case "Cerro Porteño-PAR":
+		return "#073756";
+		break;
 		case "Chapecoense":
 		return "white";
-		break;
-		case "Colo-Colo-CHI":
-		return "black";
 		break;
 		case "Corinthians":
 		return "white";
@@ -1305,25 +1272,19 @@ function getColorLetra(time){
 		case "Coritiba":
 		return "white";
 		break;
-		case "CRB":
-		return "#white";
-		break;
-		case "Criciúma":
-		return "black";
-		break;
 		case "Cruzeiro":
 		return "white";
 		break;
 		case "CSA":
 		return "white";
 		break;
-		case "Cuiabá":
-		return "#018036";
-		break;
 		case "Defensa y Justicia-ARG":
 		return "#018036";
 		break;
-		case "Deportivo Quito-EQU":
+		case "Deportivo Tachira-VEN":
+        return "black";
+        break;
+        case "Estudiantes-ARG":
 		return "white";
 		break;
 		case "Figueirense":
@@ -1356,22 +1317,10 @@ function getColorLetra(time){
 		case "Internacional":
 		return "white";
 		break;
-		case "Juventude":
-		return "white";
-		break;
 		case "Juventus":
 		return "white";
 		break;
-		case "Macaé":
-		return "white";
-		break;
-		case "Madureira":
-		return "#13007c";
-		break;
 		case "Mogi Mirim":
-		return "white";
-		break;
-		case "Nacional-PAR":
 		return "white";
 		break;
 		case "Nacional-URU":
@@ -1380,23 +1329,20 @@ function getColorLetra(time){
 		case "Náutico":
 		return "white";
 		break;
-		case "Nova Iguaçu":
+		case "Oeste":
 		return "black";
 		break;
-		case "Olimpia-PAR":
-		return "black";
+		case "Once Caldas-COL":
+		return "white";
 		break;
 		case "Palmeiras":
 		return "white";
 		break;
 		case "Paraná":
 		return "white";
-		break;       
-		case "Paysandu":
-		return "white";
-		break;
+		break;      
 		case "Ponte Preta":
-		return "black";
+		return "white";
 		break;
 		case "Portuguesa":
 		return "white";
@@ -1414,7 +1360,7 @@ function getColorLetra(time){
 		return "red";
 		break;
 		case "Santa Cruz":
-		return "red";
+		return "white";
 		break;
 		case "Santos":
 		return "black";

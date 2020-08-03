@@ -1,7 +1,7 @@
 var jogos = [];
 
-var jogo1 = [true, "Corinthians", 2, 0, "Campeonato Brasileiro", "2002-12-08", "Morumbi", "Leão", "-Alberto<br>-Renato", ""];
-var jogo2 = [true, "Boca Juniors-ARG", 1, 3, "Copa Libertadores", "2003-07-02", "Morumbi", "Leão", "-Alex", "-Tévez<br>-Delgado<br>-Schiavi"];
+var jogo1 = [true, "Corinthians", 2, 0, "Campeonato Brasileiro", "2002-12-08", "Morumbi", "Emerson Leão", "-Alberto<br>-Renato", ""];
+var jogo2 = [true, "Boca Juniors-ARG", 1, 3, "Copa Libertadores", "2003-07-02", "Morumbi", "Emerson Leão", "-Alex", "-Tévez<br>-Delgado<br>-Schiavi"];
 var jogo3 = [true, "Botafogo", 4, 1, "Campeonato Brasileiro", "2019-11-03", "Vila Belmiro", "Jorge Sampaoli", "-Eduardo Sasha<br>-Marinho<br>-Soteldo(2x)", "-Igor Cássio"];
 var jogo4 = [true, "Atlético-PR", 4, 1, "Campeonato Brasileiro", "2011-10-29", "Pacaembu", "Muricy Ramalho", "-Neymar(4x)", "-Guerrón"];
 var jogo5 = [true, "Figueirense", 3, 2, "Copa do Brasil", "2015-10-01", "Pacaembu", "Dorival Júnior", "-Neto Berola<br>-Gabigol<br>-Marquinhos Gabriel", "-Carlos Alberto<br>-Bruno Alves"];

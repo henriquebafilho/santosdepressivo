@@ -15,37 +15,42 @@ var jogo12 = [true, "Santo André", 2, 3, "Campeonato Paulista", "2010-05-02", "
 var jogo13 = [true, "Deportivo Tachira-VEN", 3, 1, "Copa Libertadores", "2011-04-20", "Pacaembu", "Muricy Ramalho", "-Neymar<br>-Jonathan<br>-Danilo", "-Gerzon Chacón"];
 var jogo14 = [true, "Once Caldas-COL", 1, 1, "Copa Libertadores", "2011-05-18", "Pacaembu", "Muricy Ramalho", "-Neymar", "-Rentería"];
 var jogo15 = [true, "Cerro Porteño-PAR", 1, 0, "Copa Libertadores", "2011-05-25", "Pacaembu", "Muricy Ramalho", "-Edu Dracena", ""];
-var jogo16 = [true, "Atlético-PR", 4, 1, "Campeonato Brasileiro", "2011-10-29", "Pacaembu", "Muricy Ramalho", "-Neymar(4x)", "-Guerrón"];
+var jogo16 = [true, "Atlético-PR", 4, 1, "Campeonato Brasileiro", "2011-10-29", "Pacaembu", "Muricy Ramalho", "-Neymar (4x)", "-Guerrón"];
+var jogo36 = [false, "Guarani", 3, 0, "Campeonato Paulista", "2012-05-06", "Morumbi", "Muricy Ramalho", "-Paulo Henrique Ganso<br>-Neymar (2x)", ""];
+var jogo175 = [true, "Atlético-GO", 2, 2, "Campeonato Brasileiro", "2012-08-11", "Pacaembu", "Muricy Ramalho", "-Patito Rodríguez<br>-Miralles", "-Patric<br>-Wesley"];
+var jogo36 = [true, "Portuguesa", 1, 3, "Campeonato Brasileiro", "2012-09-22", "Pacaembu", "Muricy Ramalho", "-André", "-Bruno Mineiro (2x)<br>-Léo Silva"];
+var jogo27 = [true, "Grêmio Barueri", 4, 0, "Amistoso", "2013-01-16", "Pacaembu", "Muricy Ramalho", "-Neymar<br>-Galhardo<br>-Miralles<br>-Bill", ""];
+var jogo36 = [true, "Paulista", 1, 3, "Campeonato Paulista", "2013-02-10", "Pacaembu", "Muricy Ramalho", "-Neymar", "-Marcelo Macedo<br>-Rodolfo Testoni<br>-Cassiano Bodini"];
 var jogo17 = [true, "Ponte Preta", 2, 1, "Campeonato Brasileiro", "2013-10-12", "Pacaembu", "Claudinei Oliveira", "-Éverton Costa<br>-Montillo", "-Rafael Ratão"];
 var jogo18 = [true, "Bahia", 3, 0, "Campeonato Brasileiro", "2013-11-14", "Pacaembu", "Claudinei Oliveira", "-Cícero (2x)<br>-Montillo", ""];
-var jogo19 = [true, "Botafogo-SP", 5, 1, "Campeonato Paulista", "2014-02-01", "Vila Belmiro", "Oswaldo de Oliveira", "-Gabriel (Gabigol) (2x)<br>-Emerson<br>-Guevânio<br>-Cícero", "-Hudson"];
+var jogo19 = [true, "Botafogo-SP", 5, 1, "Campeonato Paulista", "2014-02-01", "Vila Belmiro", "Oswaldo de Oliveira", "-Gabigol (2x)<br>-Emerson<br>-Guevânio<br>-Cícero", "-Hudson"];
 var jogo20 = [true, "Palmeiras", 2, 0, "Campeonato Brasileiro", "2014-07-17", "Vila Belmiro", "Oswaldo de Oliveira", "-Bruno Uvini<br>-Alisson", ""];
 var jogo21 = [true, "Goiás", 2, 0, "Campeonato Brasileiro", "2014-09-28", "Pacaembu", "Enderson Moreira", "-David Braz<br>-Geuvânio", ""];
-var jogo22 = [true, "Botafogo", 5, 0, "Copa do Brasil", "2014-10-16", "Pacaembu", "Enderson Moreira", "-Gabriel (Gabigol)<br>-David Braz (2x)<br>-Lucas Lima<br>-Geuvânio", ""];
+var jogo22 = [true, "Botafogo", 5, 0, "Copa do Brasil", "2014-10-16", "Pacaembu", "Enderson Moreira", "-Gabigol<br>-David Braz (2x)<br>-Lucas Lima<br>-Geuvânio", ""];
 var jogo23 = [true, "Ituano", 3, 0, "Campeonato Paulista", "2015-02-01", "Vila Belmiro", "Enderson Moreira", "-Chiquinho<br>-Geuvânio (2x)", ""];
 var jogo24 = [false, "São Bernardo", 1, 0, "Campeonato Paulista", "2015-02-14", "Primeiro de Maio", "Enderson Moreira", "-David Braz", ""];
 var jogo25 = [false, "Portuguesa", 3, 1, "Campeonato Paulista", "2015-02-22", "Pacaembu", "Enderson Moreira", "-Robinho (2x)<br>-Cicinho", "-Jean Mota"];
 var jogo26 = [true, "Audax-SP", 1, 0, "Campeonato Paulista", "2015-03-21", "Vila Belmiro", "Marcelo Fernandes", "-Ricardo Oliveira", ""];
 var jogo27 = [true, "Cruzeiro", 1, 0, "Campeonato Brasileiro", "2015-05-17", "Vila Belmiro", "Marcelo Fernandes", "-Geuvânio", ""];
 var jogo28 = [true, "Sport", 2, 2, "Campeonato Brasileiro", "2015-05-31", "Vila Belmiro", "Marcelo Fernandes", "-Werley<br>-Robinho", "-Joelinton<br>-Samuel Xavier"];
-var jogo29 = [true, "Coritiba", 3, 0, "Campeonato Brasileiro", "2015-08-08", "Vila Belmiro", "Dorival Júnior", "-Geuvânio<br>-Ivan  (Gol Contra)<br>-Ricardo Oliveira", ""];
+var jogo29 = [true, "Coritiba", 3, 0, "Campeonato Brasileiro", "2015-08-08", "Vila Belmiro", "Dorival Júnior", "-Geuvânio<br>-Ivan (Gol Contra)<br>-Ricardo Oliveira", ""];
 var jogo30 = [false, "Corinthians", 0, 2, "Campeonato Brasileiro", "2015-09-20", "Arena Corinthians", "Dorival Júnior", "", "-Jadson (2x)"];
-var jogo31 = [true, "Figueirense", 3, 2, "Copa do Brasil", "2015-10-01", "Pacaembu", "Dorival Júnior", "-Neto Berola<br>-Gabriel (Gabigol)<br>-Marquinhos Gabriel", "-Carlos Alberto<br>-Bruno Alves"];
+var jogo31 = [true, "Figueirense", 3, 2, "Copa do Brasil", "2015-10-01", "Pacaembu", "Dorival Júnior", "-Neto Berola<br>-Gabigol<br>-Marquinhos Gabriel", "-Carlos Alberto<br>-Bruno Alves"];
 var jogo32 = [true, "Fluminense", 3, 1, "Campeonato Brasileiro", "2015-10-04", "Vila Belmiro", "Dorival Júnior", "-Lucas Lima<br>-Marquinhos Gabriel<br>-Neto Berola", "-Robert"];
-var jogo33 = [true, "São Bernardo", 1, 1, "Campeonato Paulista", "2016-01-30", "Vila Belmiro", "Dorival Júnior", "-Gabriel (Gabigol)", "-Luciano Castán"];
+var jogo33 = [true, "São Bernardo", 1, 1, "Campeonato Paulista", "2016-01-30", "Vila Belmiro", "Dorival Júnior", "-Gabigol", "-Luciano Castán"];
 var jogo34 = [true, "Mogi Mirim", 4, 1, "Campeonato Paulista", "2016-02-25", "Pacaembu", "Dorival Júnior", "-Bruno Costa (Gol Contra)<br>-Lucas Lima<br>-Joel (2x)", "Wendel"];
 var jogo35 = [true, "Corinthians", 2, 0, "Campeonato Paulista", "2016-03-06", "Vila Belmiro", "Dorival Júnior", "-Ricardo Oliveira (2x)", ""];
 var jogo36 = [true, "Água Santa", 1, 0, "Campeonato Paulista", "2016-03-12", "Pacaembu", "Dorival Júnior", "-Eli Sabiá", ""];
 var jogo37 = [true, "São Bento", 2, 0, "Campeonato Paulista", "2016-04-16", "Vila Belmiro", "Dorival Júnior", "-Vitor Bueno (2x)", ""];
-var jogo38 = [true, "Palmeiras", 2, 2, "Campeonato Paulista", "2016-04-24", "Vila Belmiro", "Dorival Júnior", "-Gabriel (Gabigol) (2x)\r\n<br>\r\n<br>\r\nPênaltis (3):<br>\r\n-David Braz<br>-Zeca<br>-Victor Ferraz", "-Rafael Marques (2x)\r\n<br>\r\n<br>\r\nPênaltis (2):<br>\r\n-Cleiton Xavier<br>-Jean"];
+var jogo38 = [true, "Palmeiras", 2, 2, "Campeonato Paulista", "2016-04-24", "Vila Belmiro", "Dorival Júnior", "-Gabigol (2x)\r\n<br>\r\n<br>\r\nPênaltis (3):<br>\r\n-David Braz<br>-Zeca<br>-Victor Ferraz", "-Rafael Marques (2x)\r\n<br>\r\n<br>\r\nPênaltis (2):<br>\r\n-Cleiton Xavier<br>-Jean"];
 var jogo39 = [true, "Audax-SP", 1, 0, "Campeonato Paulista", "2016-05-08", "Vila Belmiro", "Dorival Júnior", "-Ricardo Oliveira", ""];
 var jogo40 = [true, "Coritiba", 2, 1, "Campeonato Brasileiro", "2016-05-22", "Vila Belmiro", "Dorival Júnior", "-Vitor Bueno<br>-Renato", "-Kléber"];
 var jogo41 = [true, "Internacional", 0, 1, "Campeonato Brasileiro", "2016-05-29", "Vila Belmiro", "Dorival Júnior", "", "-Aylon"];
 var jogo42 = [true, "Botafogo", 3, 0, "Campeonato Brasileiro", "2016-06-05", "Pacaembu", "Dorival Júnior", "-Vitor Bueno<br>-Paulinho<br>-Bruno Silva (Gol Contra)", ""];
-var jogo43 = [true, "Sport", 2, 0, "Campeonato Brasileiro", "2016-06-15", "Vila Belmiro", "Oswaldo de Oliveira", "-Gabriel (Gabigol)<br>-Vitor Bueno", ""];
+var jogo43 = [true, "Sport", 2, 0, "Campeonato Brasileiro", "2016-06-15", "Vila Belmiro", "Oswaldo de Oliveira", "-Gabigol<br>-Vitor Bueno", ""];
 var jogo44 = [true, "São Paulo", 3, 0, "Campeonato Brasileiro", "2016-06-26", "Pacaembu", "Dorival Júnior", "-Vitor Bueno<br>-Rodrigão<br>-Lucas Lima", ""];
 var jogo45 = [true, "Chapecoense", 3, 0, "Campeonato Brasileiro", "2016-07-03", "Vila Belmiro", "Dorival Júnior", "-Rodrigão<br>-Copete<br>-Yuri", ""];
-var jogo46 = [true, "Ponte Preta", 3, 1, "Campeonato Brasileiro", "2016-07-16", "Vila Belmiro", "Dorival Júnior", "-Victor Ferraz<br>-Vitor Bueno<br>-Gabriel (Gabigol)", "-Roger"];
+var jogo46 = [true, "Ponte Preta", 3, 1, "Campeonato Brasileiro", "2016-07-16", "Vila Belmiro", "Dorival Júnior", "-Victor Ferraz<br>-Vitor Bueno<br>-Gabigol", "-Roger"];
 var jogo47 = [true, "Cruzeiro", 2, 0, "Campeonato Brasileiro", "2016-07-31", "Vila Belmiro", "Dorival Júnior", "-Vitor Bueno<br>-Lucas (Gol Contra)", ""];
 var jogo48 = [false, "Coritiba", 1, 2, "Campeonato Brasileiro", "2016-08-21", "Couto Pereira", "Dorival Júnior", "-Ricardo Oliveira", "-Kléber<br>-Iago Dias"];
 var jogo49 = [true, "Vasco", 3, 1, "Copa do Brasil", "2016-08-24", "Vila Belmiro", "Dorival Júnior", "-Renato<br>-Ricardo Oliveira<br>-Lucas Lima", "-Éder Luís"];
@@ -62,7 +67,7 @@ var jogo59 = [true, "Kenitra-MAR", 5, 1, "Amistoso", "2017-01-28", "Pacaembu", "
 var jogo60 = [true, "Linense", 6, 2, "Campeonato Paulista", "2017-02-03", "Vila Belmiro", "Dorival Júnior", "-Rodrigão (2x)<br>-Lucas Lima<br>-Arthur Gomes<br>-Vitor Bueno<br>-Thiago Ribeiro", "-Thiago Santos<br>-Gabrielzinho"];
 var jogo61 = [false, "Red Bull Brasil", 3, 2, "Campeonato Paulista", "2017-02-12", "Pacaembu", "Dorival Júnior", "-Vitor Bueno<br>-Rodrigão<br>-Kayke", "-Misael<br>-Nixon"];
 var jogo62 = [true, "Ferroviária", 0, 1, "Campeonato Paulista", "2017-02-18", "Vila Belmiro", "Dorival Júnior", "", "-Leandro Amaro"];
-var jogo63 = [false, "São Bernardo", 4, 1, "Campeonato Paulista", "2017-03-12", "Primeiro de Maio", "Dorival Júnior", "-Bruno Henrique  (3x)<br>-Rafael Longuine", "-Geandro"];
+var jogo63 = [false, "São Bernardo", 4, 1, "Campeonato Paulista", "2017-03-12", "Primeiro de Maio", "Dorival Júnior", "-Bruno Henrique (3x)<br>-Rafael Longuine", "-Geandro"];
 var jogo64 = [true, "The Strongest-BOL", 2, 0, "Copa Libertadores", "2017-03-16", "Vila Belmiro", "Dorival Júnior", "-Ricardo Oliveira<br>-Renato", ""];
 var jogo65 = [false, "Santo André", 1, 0, "Campeonato Paulista", "2017-03-25", "Bruno José Daniel", "Dorival Júnior", "-Copete", ""];
 var jogo66 = [true, "Ponte Preta", 1, 0, "Campeonato Paulista", "2017-04-10", "Pacaembu", "Dorival Júnior", "-David Braz\r\n<br><br>\r\nPênaltis (4):<br>\r\n-Kayke<br>\r\n-Jean Mota<br>\r\n-Copete<br>\r\n-Lucas Lima", "<br><br>\r\nPênaltis (5):<br>\r\n-Ravanelli<br>\r\n-Yago<br>\r\n-Clayson<br>\r\n-Jadson<br>\r\n-William Pottker"];
@@ -94,21 +99,21 @@ var jogo91 = [true, "Grêmio", 1, 0, "Campeonato Brasileiro", "2017-11-19", "Vil
 var jogo92 = [false, "Flamengo", 2, 1, "Campeonato Brasileiro", "2017-11-26", "Ilha do Urubu", "Elano", "-Bruno Henrique<br>-Arthur Gomes", "-Lucas Paquetá"];
 var jogo93 = [true, "Avaí", 1, 1, "Campeonato Brasileiro", "2017-12-03", "Vila Belmiro", "Elano", "-Copete", "-Pedro Castro"];
 var jogo94 = [true, "Internacional", 1, 1, "Brasileirão de Aspirantes", "2017-12-10", "Vila Belmiro", "Kleiton Lima", "-Diego Cardoso", "-Joanderson"];
-var jogo95 = [true, "São Caetano", 2, 0, "Campeonato Paulista", "2018-02-14", "Vila Belmiro", "Jair Ventura", "-Lucas Veríssimo<br>-Gabriel (Gabigol)", ""];
-var jogo96 = [true, "Santo André", 2, 0, "Campeonato Paulista", "2018-02-25", "Vila Belmiro", "Jair Ventura", "-Gabriel (Gabigol)<br>-Eduardo Sasha", ""];
+var jogo95 = [true, "São Caetano", 2, 0, "Campeonato Paulista", "2018-02-14", "Vila Belmiro", "Jair Ventura", "-Lucas Veríssimo<br>-Gabigol", ""];
+var jogo96 = [true, "Santo André", 2, 0, "Campeonato Paulista", "2018-02-25", "Vila Belmiro", "Jair Ventura", "-Gabigol<br>-Eduardo Sasha", ""];
 var jogo97 = [true, "Corinthians", 1, 1, "Campeonato Paulista", "2018-03-04", "Pacaembu", "Jair Ventura", "-Diogo Vitor", "-Renê Junior"];
 var jogo98 = [true, "São Bento", 1, 3, "Campeonato Paulista", "2018-03-11", "Vila Belmiro", "Jair Ventura", "-Arthur Gomes", "-Marcelo Cordeiro<br>-Lúcio Flávio<br>-Fábio Bahia"];
 var jogo99 = [true, "Nacional-URU", 3, 1, "Copa Libertadores", "2018-03-15", "Pacaembu", "Jair Ventura", "-Eduardo Sasha (2x)<br>-Rodrygo", "-Oliva"];
-var jogo100 = [true, "Botafogo-SP", 0, 0, "Campeonato Paulista", "2018-03-21", "Vila Belmiro", "Jair Ventura", "<br><br>\r\nPênaltis (3):<br>-Gabriel (Gabigol)<br>-Diogo Vitor<br>-Arthur Gomes", "<br>\r\nPênaltis (1):<br>-Jheymy"];
+var jogo100 = [true, "Botafogo-SP", 0, 0, "Campeonato Paulista", "2018-03-21", "Vila Belmiro", "Jair Ventura", "<br><br>\r\nPênaltis (3):<br>-Gabigol<br>-Diogo Vitor<br>-Arthur Gomes", "<br>\r\nPênaltis (1):<br>-Jheymy"];
 var jogo101 = [true, "Palmeiras", 0, 1, "Campeonato Paulista", "2018-03-24", "Pacaembu", "Jair Ventura", "", "-Willian"];
 var jogo102 = [true, "Ceará", 2, 0, "Campeonato Brasileiro", "2018-04-14", "Pacaembu", "Jair Ventura", "-Pio (Gol Contra)<br>-Rodrygo", ""];
-var jogo103 = [true, "Estudiantes-ARG", 2, 0, "Copa Libertadores", "2018-04-24", "Vila Belmiro", "Jair Ventura", "-Gabriel (Gabigol)<br>-Lucas Veríssimo", ""];
-var jogo104 = [true, "Luverdense", 5, 1, "Copa do Brasil", "2018-05-10", "Vila Belmiro", "Jair Ventura", "-Gustavo Henrique<br>-Gabriel (Gabigol) (3x)<br>-Yuri Alberto", "-Itaqui"];
-var jogo105 = [true, "Paraná", 3, 1, "Campeonato Brasileiro", "2018-05-13", "Vila Belmiro", "Jair Ventura", "-Gabriel (Gabigol) (2x)<br>-Rodrygo", "-Silvinho"];
+var jogo103 = [true, "Estudiantes-ARG", 2, 0, "Copa Libertadores", "2018-04-24", "Vila Belmiro", "Jair Ventura", "-Gabigol<br>-Lucas Veríssimo", ""];
+var jogo104 = [true, "Luverdense", 5, 1, "Copa do Brasil", "2018-05-10", "Vila Belmiro", "Jair Ventura", "-Gustavo Henrique<br>-Gabigol (3x)<br>-Yuri Alberto", "-Itaqui"];
+var jogo105 = [true, "Paraná", 3, 1, "Campeonato Brasileiro", "2018-05-13", "Vila Belmiro", "Jair Ventura", "-Gabigol (2x)<br>-Rodrygo", "-Silvinho"];
 var jogo106 = [true, "Real Garcilaso-PER", 0, 0, "Copa Libertadores", "2018-05-24", "Vila Belmiro", "Jair Ventura", "", ""];
 var jogo107 = [true, "Cruzeiro", 0, 1, "Campeonato Brasileiro", "2018-05-27", "Pacaembu", "Jair Ventura", "", "-Bruno Silva"];
-var jogo108 = [true, "Vitória", 5, 2, "Campeonato Brasileiro", "2018-06-03", "Vila Belmiro", "Jair Ventura", "-Renato<br>-Gabriel (Gabigol)<br>-Rodrygo (3x)", "-Neílton<br>-Ramon"];
-var jogo109 = [true, "Internacional", 1, 2, "Campeonato Brasileiro", "2018-06-10", "Vila Belmiro", "Jair Ventura", "-Gabriel (Gabigol)", "-Leandro Damião<br>-Victor Cuesta"];
+var jogo108 = [true, "Vitória", 5, 2, "Campeonato Brasileiro", "2018-06-03", "Vila Belmiro", "Jair Ventura", "-Renato<br>-Gabigol<br>Rodrygo(3x)", "-Neílton<br>-Ramon"];
+var jogo109 = [true, "Internacional", 1, 2, "Campeonato Brasileiro", "2018-06-10", "Vila Belmiro", "Jair Ventura", "-Gabigol", "-Leandro Damião<br>-Victor Cuesta"];
 var jogo110 = [true, "Palmeiras", 1, 1, "Campeonato Brasileiro", "2018-07-19", "Pacaembu", "Jair Ventura", "-Gustavo Henrique", "-Lucas Lima"];
 var jogo111 = [true, "Flamengo", 1, 1, "Campeonato Brasileiro", "2018-07-25", "Vila Belmiro", "Serginho Chulapa", "-Rodrygo", "-Éverton Ribeiro"];
 var jogo112 = [true, "América-MG", 0, 1, "Campeonato Brasileiro", "2018-07-29", "Vila Belmiro", "Serginho Chulapa", "", "-Ruy"];
@@ -116,19 +121,19 @@ var jogo113 = [true, "Cruzeiro", 0, 1, "Copa do Brasil", "2018-08-01", "Vila Bel
 var jogo114 = [false, "Botafogo", 0, 0, "Campeonato Brasileiro", "2018-08-04", "Nilton Santos", "Cuca", "", ""];
 var jogo115 = [true, "Sport", 3, 0, "Campeonato Brasileiro", "2018-08-18", "Vila Belmiro", "Cuca", "-Eduardo Sasha<br>-Rodrygo<br>-Victor Ferraz", ""];
 var jogo116 = [false, "Independiente-ARG", 0, 0, "Copa Libertadores", "2018-08-21", "Libertadores de América", "Cuca", "", ""];
-var jogo117 = [true, "Bahia", 2, 0, "Campeonato Brasileiro", "2018-08-25", "Vila Belmiro", "Cuca", "-Derlis González<br>-Gabriel (Gabigol)", ""];
+var jogo117 = [true, "Bahia", 2, 0, "Campeonato Brasileiro", "2018-08-25", "Vila Belmiro", "Cuca", "-Derlis González<br>-Gabigol", ""];
 var jogo118 = [true, "Independiente-ARG", 0, 0, "Copa Libertadores", "2018-08-28", "Pacaembu", "Cuca", "", ""];
-var jogo119 = [false, "Vasco", 3, 0, "Campeonato Brasileiro", "2018-09-01", "Maracanã", "Cuca", "-Gabriel (Gabigol) (3x)", ""];
+var jogo119 = [false, "Vasco", 3, 0, "Campeonato Brasileiro", "2018-09-01", "Maracanã", "Cuca", "-Gabigol (3x)", ""];
 var jogo120 = [true, "Grêmio", 0, 0, "Campeonato Brasileiro", "2018-09-06", "Pacaembu", "Cuca", "", ""];
 var jogo121 = [true, "São Paulo", 0, 0, "Campeonato Brasileiro", "2018-09-16", "Vila Belmiro", "Cuca", "", ""];
 var jogo122 = [true, "Atlético-PR", 1, 0, "Campeonato Brasileiro", "2018-09-30", "Vila Belmiro", "Cuca", "-Carlos Sánchez", ""];
-var jogo123 = [true, "Corinthians", 1, 0, "Campeonato Brasileiro", "2018-10-13", "Pacaembu", "Cuca", "-Gabriel (Gabigol)", ""];
-var jogo124 = [true, "Fluminense", 3, 0, "Campeonato Brasileiro", "2018-10-27", "Vila Belmiro", "Cuca", "-Gabriel (Gabigol)<br>-Carlos Sánchez<br>-Victor Ferraz", ""];
+var jogo123 = [true, "Corinthians", 1, 0, "Campeonato Brasileiro", "2018-10-13", "Pacaembu", "Cuca", "-Gabigol", ""];
+var jogo124 = [true, "Fluminense", 3, 0, "Campeonato Brasileiro", "2018-10-27", "Vila Belmiro", "Cuca", "-Gabigol<br>-Carlos Sánchez<br>-Victor Ferraz", ""];
 var jogo125 = [true, "Chapecoense", 0, 1, "Campeonato Brasileiro", "2018-11-12", "Pacaembu", "Cuca", "", "-Leandro Pereira"];
 var jogo126 = [false, "Flamengo", 0, 1, "Campeonato Brasileiro", "2018-11-15", "Maracanã", "Cuca", "", "-Henrique Dourado"];
-var jogo127 = [false, "América-MG", 1, 2, "Campeonato Brasileiro", "2018-11-18", "Arena Independência", "Cuca", "-Gabriel (Gabigol)", "-Rafael Moura<br>-Matheusinho"];
+var jogo127 = [false, "América-MG", 1, 2, "Campeonato Brasileiro", "2018-11-18", "Arena Independência", "Cuca", "-Gabigol", "-Rafael Moura<br>-Matheusinho"];
 var jogo128 = [true, "Botafogo", 1, 1, "Campeonato Brasileiro", "2018-11-21", "Vila Belmiro", "Cuca", "-Rodrygo", "-Brenner"];
-var jogo129 = [true, "Atlético-MG", 3, 2, "Campeonato Brasileiro", "2018-11-24", "Vila Belmiro", "Cuca", "-Felippe Cardoso<br>-Gabriel (Gabigol)<br>-Carlos Sánchez", "-Ricardo Oliveira (2x)"];
+var jogo129 = [true, "Atlético-MG", 3, 2, "Campeonato Brasileiro", "2018-11-24", "Vila Belmiro", "Cuca", "-Felippe Cardoso<br>-Gabigol<br>-Carlos Sánchez", "-Ricardo Oliveira (2x)"];
 var jogo130 = [false, "Sport", 1, 2, "Campeonato Brasileiro", "2018-12-02", "Ilha do Retiro", "Cuca", "-Rodrygo", "-Rogério<br>-Hernane"];
 var jogo131 = [true, "Ferroviária", 1, 0, "Campeonato Paulista", "2019-01-19", "Vila Belmiro", "Jorge Sampaoli", "-Jean Mota", ""];
 var jogo132 = [true, "São Paulo", 2, 0, "Campeonato Paulista", "2019-01-27", "Pacaembu", "Jorge Sampaoli", "-Luiz Felipe<br>-Derlis González", ""];
@@ -164,7 +169,7 @@ var jogo161 = [false, "Vasco", 1, 0, "Campeonato Brasileiro", "2019-10-05", "Sã
 var jogo162 = [true, "Palmeiras", 2, 0, "Campeonato Brasileiro", "2019-10-09", "Vila Belmiro", "Jorge Sampaoli", "-Gustavo Henrique<br>-Marinho", ""];
 var jogo163 = [false, "Internacional", 0, 0, "Campeonato Brasileiro", "2019-10-13", "Beira-Rio", "Jorge Sampaoli", "", ""];
 var jogo164 = [false, "Atlético-MG", 0, 2, "Campeonato Brasileiro", "2019-10-20", "Arena Independência", "Jorge Sampaoli", "", "-Leonardo Silva<br>-Luan"];
-var jogo165 = [true, "Botafogo", 4, 1, "Campeonato Brasileiro", "2019-11-03", "Vila Belmiro", "Jorge Sampaoli", "-Eduardo Sasha<br>-Marinho<br>-Soteldo  (2x)", "-Igor Cássio"];
+var jogo165 = [true, "Botafogo", 4, 1, "Campeonato Brasileiro", "2019-11-03", "Vila Belmiro", "Jorge Sampaoli", "-Eduardo Sasha<br>-Marinho<br>-Soteldo (2x)", "-Igor Cássio"];
 var jogo166 = [false, "Goiás", 3, 0, "Campeonato Brasileiro", "2019-11-09", "Serra Dourada", "Jorge Sampaoli", "-Soteldo (2x)<br>-Marinho", ""];
 var jogo167 = [true, "São Paulo", 1, 1, "Campeonato Brasileiro", "2019-11-16", "Vila Belmiro", "Jorge Sampaoli", "-Carlos Sánchez", "-Daniel Alves"];
 var jogo168 = [true, "Cruzeiro", 4, 1, "Campeonato Brasileiro", "2019-11-23", "Vila Belmiro", "Jorge Sampaoli", "-Eduardo Sasha<br>-Marinho<br>-Soteldo<br>-Diego Pituca", "-Orejuela"];
@@ -1148,6 +1153,9 @@ function getColorFundo(time, jogo){
 		case "Grêmio":
 		return "#0d80bf";
 		break;
+		case "Grêmio Barueri":
+		return "#f6e815";
+		break;
 		case "Guarani":
 		return "#048439";
 		break;
@@ -1222,6 +1230,9 @@ function getColorFundo(time, jogo){
 		break;
 		case "Paraná":
 		return "#2939b4";
+		break;
+		case "Paulista":
+		return "red";
 		break;
 		case "Paysandu":
 		return "#0091cf";
@@ -1441,6 +1452,9 @@ function getColorLetra(time){
 		case "Grêmio":
 		return "white";
 		break;
+		case "Grêmio Barueri":
+		return "#003c6e";
+		break;
 		case "Guarani":
 		return "white";
 		break;
@@ -1515,7 +1529,10 @@ function getColorLetra(time){
 		break;
 		case "Paraná":
 		return "white";
-		break;       
+		break;     
+		case "Paulista":
+		return "black";
+		break;   
 		case "Paysandu":
 		return "white";
 		break;

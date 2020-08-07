@@ -216,7 +216,7 @@ var jogo107 = [true, "Ceará", 2, 0, "Campeonato Brasileiro", "2018-04-14", "Pac
 jogos.push(jogo107);
 var jogo108 = [true, "Estudiantes-ARG", 2, 0, "Copa Libertadores", "2018-04-24", "Vila Belmiro", "Jair Ventura", "-Gabigol<br>-Lucas Veríssimo", ""];
 jogos.push(jogo108);
-var jogo183 = [false, "Nacional-URU", 0, 1, "Copa Libertadores", "2018-05-01", "Gran Parque Central", "Jair Ventura", "", "Barcia"];
+var jogo183 = [false, "Nacional-URU", 0, 1, "Copa Libertadores", "2018-05-01", "Gran Parque Central", "Jair Ventura", "", "-Barcia"];
 jogos.push(jogo183);
 var jogo109 = [true, "Luverdense", 5, 1, "Copa do Brasil", "2018-05-10", "Vila Belmiro", "Jair Ventura", "-Gustavo Henrique<br>-Gabigol (3x)<br>-Yuri Alberto", "-Itaqui"];
 jogos.push(jogo109);

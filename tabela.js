@@ -367,7 +367,6 @@ jogos.push(jogo181);
 var jogo182 = [true, "Mirassol", 3, 1, "Campeonato Paulista", "2020-03-07", "Vila Belmiro", "Jesualdo Ferreira", "-Yuri Alberto<br>-Diego Pituca<br>-Eduardo Sasha", "-Rafael Silva"];
 jogos.push(jogo182);
 
-
 /*
 0 - mandante
 1 - adversario

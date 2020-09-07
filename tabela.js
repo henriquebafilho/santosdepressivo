@@ -755,8 +755,8 @@ function escreveLinha(jogo, numero){
 	var cellAutorMandante = linha3.insertCell(0);
 	cellAutorMandante.style.fontFamily = "Arial";
 	cellAutorMandante.style.fontWeight = "bold";
-	cellAutorMandante.style.backgroundColor = getColorFundo(mandante, jogo);
-	cellAutorMandante.style.color = getColorLetra(mandante);
+	cellAutorMandante.style.backgroundColor = coresTimes(mandante, jogo)[0];
+	cellAutorMandante.style.color = coresTimes(mandante, jogo)[1];
 	cellAutorMandante.style.border = "1px solid black";
 	if(jogo[0] == true){
 		cellAutorMandante.innerHTML = jogo[8];
@@ -767,7 +767,7 @@ function escreveLinha(jogo, numero){
 	var cellTecnico = linha3.insertCell(1);
 	cellTecnico.style.fontFamily = "Arial";
 	cellTecnico.style.fontWeight = "bold";
-	cellTecnico.style.background = "linear-gradient(90deg, " + getColorFundo(mandante, jogo) + " 49%, " + getColorFundo(visitante, jogo) + " 52%)";
+	cellTecnico.style.background = "linear-gradient(90deg, " + coresTimes(mandante, jogo)[0] + " 49%, " + coresTimes(visitante, jogo)[0] + " 52%)";
 	cellTecnico.style.textShadow = "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
 	cellTecnico.style.border = "1px solid black";
 	cellTecnico.innerHTML = "Técnico: " + jogo[7];
@@ -775,8 +775,8 @@ function escreveLinha(jogo, numero){
 	var cellAutorVisitante = linha3.insertCell(2);
 	cellAutorVisitante.style.fontFamily = "Arial";
 	cellAutorVisitante.style.fontWeight = "bold";
-	cellAutorVisitante.style.backgroundColor = getColorFundo(visitante, jogo);
-	cellAutorVisitante.style.color = getColorLetra(visitante);
+	cellAutorVisitante.style.backgroundColor = coresTimes(visitante, jogo)[0];
+	cellAutorVisitante.style.color = coresTimes(visitante, jogo)[1];
 	cellAutorVisitante.style.border = "1px solid black";
 	if(jogo[0] == true){
 		cellAutorVisitante.innerHTML = jogo[9];
@@ -792,8 +792,8 @@ function escreveLinha(jogo, numero){
 	cellMandante.id = "mandante" + numero;
 	cellMandante.style.fontFamily = "Arial";
 	cellMandante.style.fontWeight = "bold";
-	cellMandante.style.backgroundColor = getColorFundo(mandante, jogo);
-	cellMandante.style.color = getColorLetra(mandante);
+	cellMandante.style.backgroundColor = coresTimes(mandante, jogo)[0];
+	cellMandante.style.color = coresTimes(mandante, jogo)[1];
 	cellMandante.style.border = "1px solid black";
 	cellMandante.innerHTML = "<img src=index_files/" + getEscudoName(mandante, jogo) + ".png width=70 height=70 alt=Imagem><br>" + mandante;
 
@@ -803,7 +803,7 @@ function escreveLinha(jogo, numero){
 	cellPlacar.style.fontWeight = "bold";
 	cellPlacar.style.fontSize = "250%";
 	cellPlacar.style.whiteSpace = "nowrap";
-	cellPlacar.style.background = "linear-gradient(90deg, " + getColorFundo(mandante, jogo) + " 49%, " + getColorFundo(visitante, jogo) + " 52%)";
+	cellPlacar.style.background = "linear-gradient(90deg, " + coresTimes(mandante, jogo)[0] + " 49%, " + coresTimes(visitante, jogo)[0] + " 52%)";
 	cellPlacar.style.textShadow = "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
 	cellPlacar.style.border = "1px solid black";
 	if(jogo[0] == true){
@@ -816,8 +816,8 @@ function escreveLinha(jogo, numero){
 	cellVisitante.id = "visitante" + numero;
 	cellVisitante.style.fontFamily = "Arial";
 	cellVisitante.style.fontWeight = "bold";
-	cellVisitante.style.backgroundColor = getColorFundo(visitante, jogo);
-	cellVisitante.style.color = getColorLetra(visitante);
+	cellVisitante.style.backgroundColor = coresTimes(visitante, jogo)[0];
+	cellVisitante.style.color = coresTimes(visitante, jogo)[1];
 	cellVisitante.style.border = "1px solid black";
 	cellVisitante.innerHTML = "<img src=index_files/" + getEscudoName(visitante, jogo) + ".png width=70 height=70 alt=Imagem><br>" + visitante;
 
@@ -829,8 +829,8 @@ function escreveLinha(jogo, numero){
 	cellNumero.rowSpan = 3;
 	cellNumero.style.fontFamily = "Arial";
 	cellNumero.style.fontWeight = "bold";
-	cellNumero.style.backgroundColor = getColorFundo(mandante, jogo);
-	cellNumero.style.color = getColorLetra(mandante);
+	cellNumero.style.backgroundColor = coresTimes(mandante, jogo)[0];
+	cellNumero.style.color = coresTimes(mandante, jogo)[1];
 	cellNumero.style.border = "1px solid black";
 	cellNumero.innerHTML = numero; // Número do jogo
 
@@ -838,7 +838,7 @@ function escreveLinha(jogo, numero){
 	cellCabecalho.colSpan = 3;
 	cellCabecalho.style.fontFamily = "Arial";
 	cellCabecalho.style.fontWeight = "bold";
-	cellCabecalho.style.background = "linear-gradient(90deg, " + getColorFundo(mandante, jogo) + " 49%, " + getColorFundo(visitante, jogo) + " 50%)";
+	cellCabecalho.style.background = "linear-gradient(90deg, " + coresTimes(mandante, jogo)[0] + " 49%, " + coresTimes(visitante, jogo)[0] + " 50%)";
 	cellCabecalho.style.textShadow = "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
 	cellCabecalho.style.border = "1px solid black";
 	cellCabecalho.innerHTML = converteData(jogo[5]) + " | " + "Estádio " + jogo[6] + " | " + jogo[4]; // Cabeçalho
@@ -1001,615 +1001,226 @@ function cabecalho(){
 	cellVisitante.style.border = "1px solid black";
 }
 
-
-function getColorFundo(time, jogo){
+function coresTimes(time, jogo){
 	var dataCortada = jogo[5].split("-");
 	var ano = parseInt(dataCortada[0]);
 
 	switch (time) {
 		case "Água Santa":
-		return "#153160";
-		break;
-		case "América-MEX":
-		return "#fef000";
+		return ["#153160", "white"];
 		break;
 		case "América-MG":
-		return "#048439";
-		break;
-		case "Americano":
-		return "white";
+		return ["#048439", "white"];
 		break;
 		case "América-RN":
-		return "red";
+		return ["red", "white"];
 		break;
 		case "Athletico-PR":
-		return "#c8060f";
-		break;
-		case "Atlético Nacional-COL":
-		return "#048439";
+		return ["#c8060f", "black"];
 		break;
 		case "Atlético-GO":
-		return "#ff0e00";
-		break;
+		return ["#ff0e00", "black"];
+		break
 		case "Atlético-MG":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Atlético-PR":
-		return "#ff0e00";
-		break;
-		case "Audax Italiano-CHI":
-		return "green";
+		return ["#ff0e00", "black"];
 		break;
 		case "Audax-SP":
-		return "red";
+		return ["red", "white"];
 		break;
 		case "Avaí":
-		return "#00679a";
+		return ["#00679a", "white"];
 		break;
 		case "Bahia":
-		return "#0188d6";
-		break;
-		case "Bangu":
-		return "#ff0e00";
-		break;
-		case "Barcelona de Guayaquil-EQU":
-		return "#fde900";
+		return ["#0188d6", "white"];
 		break;
 		case "Benfica-POR":
-		return "red";
-		break;
-		case "Boa Esporte":
-		return "#ff0e00";
-		break;
-		case "Boavista":
-		return "#00913c";
+		return ["red", "white"];
 		break;
 		case "Boca Juniors-ARG":
-		return "#00458a";
-		break;
-		case "Bonsucesso":
-		return "#1c4196";
+		return ["#00458a", "#fcb000"];
 		break;
 		case "Botafogo":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Botafogo-SP":
-		return "red";
-		break;
-		case "Bragantino":
-		return "white";
-		break;
-		case "Cabofriense":
-		return "#0b9c54";
+		return ["red", "white"];
 		break;
 		case "Ceará":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Cerro Porteño-PAR":
-		return "#c40215";
+		return ["#c40215", "#073756"];
 		break;
 		case "Chapecoense":
-		return "#00913c";
-		break;
-		case "Colo-Colo-CHI":
-		return "white";
+		return ["#00913c", "white"];
 		break;
 		case "Corinthians":
-		return "black";
-		break;
-		case "Corinthians Steamrollers":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Coritiba":
-		return "#00544d";
-		break;
-		case "CRB":
-		return "#ff0e00";
-		break;
-		case "Criciúma":
-		return "#fdd116";
+		return ["#00544d", "white"];
 		break;
 		case "Cruzeiro":
-		return "#075798";
+		return ["#075798", "white"];
 		break;
 		case "CSA":
-		return "#075798";
-		break;
-		case "Cuiabá":
-		return "#fde900";
+		return ["#075798", "white"];
 		break;
 		case "Defensa y Justicia-ARG":
-		return "#fde900";
-		break;
-		case "Deportivo Quito-EQU":
-		return "#073756";
+		return ["#fde900", "#018036"];
 		break;
 		case "Deportivo Tachira-VEN":
-		return "#f2d902";
+		return ["#f2d902", "black"];
 		break;
 		case "Estudiantes-ARG":
-		return "red";
+		return ["red", "white"];
 		break;
 		case "Ferroviária":
-		return "#511a1d";
+		return ["#511a1d", "white"];
 		break;
 		case "Figueirense":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Flamengo":
-		return "#ff0e00";
+		return ["#ff0e00", "black"];
 		break;
 		case "Floresta-CE":
-		return "#87c53f";
+		return ["#87c53f", "#036c3c"];
 		break;
 		case "Fluminense":
-		return "#9f022f";
+		return ["#9f022f", "white"];
 		break;
 		case "Fortaleza":
-		return "#11519b";
+		return ["#11519b", "white"];
 		break;
 		case "Goiás":
 		if(ano < 2019){
-			return "#048439";
+			return ["#048439", "white"];
 			break;
 		} else if (ano >= 2019){
-			return "#006959";
+			return ["#006959", "white"];
 			break;
 		}
 		case "Grêmio":
-		return "#0d80bf";
+		return ["#0d80bf", "white"];;
 		break;
 		case "Grêmio Barueri":
-		return "#f6e815";
+		return ["#f6e815", "#003c6e"];
 		break;
 		case "Guarani":
-		return "#048439";
+		return ["#048439", "white"];
 		break;
 		case "Independiente-ARG":
-		return "red";
-		break;
-		case "Independiente Del Valle-EQU":
-		return "#fb37b9";
+		return ["red", "white"];
 		break;
 		case "Independiente Santa Fé-COL":
-		return "red";
+		return ["red", "white"];
 		break;
 		case "Internacional":
-		return "#ff0e00";
+		return ["#ff0e00", "white"];
 		break;
 		case "Ituano":
-		return "red";
-		break;
-		case "Juventude":
-		return "#048439";
+		return ["red", "black"];
 		break;
 		case "Juventus":
-		return "#6a023c";
+		return ["#6a023c", "white"];
 		break;
 		case "Kenitra-MAR":
-		return "#038b5d";
+		return ["#038b5d", "white"];
 		break;
 		case "Linense":
-		return "red";
+		return ["red", "white"];
 		break;
 		case "Luverdense":
-		return "#8bc23d";
-		break;
-		case "Macaé":
-		return "#41afeb";
-		break;
-		case "Madureira":
-		return "#fde900";
+		return ["#8bc23d", "#426d33"];
 		break;
 		case "Mirassol":
-		return "#ffec00";
+		return ["#ffec00", "#00722c"];
 		break;
 		case "Mogi Mirim":
-		return "#ff0e00";
-		break;
-		case "Nacional-PAR":
-		return "#163fb3";
+		return ["#ff0e00", "white"];
 		break;
 		case "Nacional-URU":
-		return "#172b8c";
+		return ["#172b8c", "white"];
 		break;
 		case "Náutico":
-		return "#ff0e00";
-		break;
-		case "Nova Iguaçu":
-		return "#ea8415";
+		return ["#ff0e00", "white"];
 		break;
 		case "Novorizontino":
-		return "#fff500";
+		return ["#fff500", "black"];
 		break;
 		case "Once Caldas-COL":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Oeste":
-		return "red";
-		break;
-		case "Olimpia-PAR":
-		return "white";
+		return ["red", "black"];
 		break;
 		case "Palmeiras":
-		return "#048439";
+		return ["#048439", "white"];
 		break;
 		case "Paraná":
-		return "#2939b4";
+		return ["#2939b4", "white"];
 		break;
 		case "Paulista":
-		return "red";
-		break;
-		case "Paysandu":
-		return "#0091cf";
+		return ["red", "black"];
 		break;
 		case "Ponte Preta":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Portuguesa":
-		return "red";
-		break;
-		case "Portuguesa-RJ":
-		return "#048439";
+		return ["red", "#105d11"];
 		break;
 		case "Real Garcilaso-PER":
-		return "#0197ee";
+		return ["#0197ee", "#fdf21c"];
 		break;
 		case "Red Bull Bragantino":
-		return "#001c44";
+		return ["#001c44", "white"];
 		break;
 		case "Red Bull Brasil":
-		return "red";
-		break;
-		case "Resende":
-		return "white";
-		break;
-		case "River Plate":
-		return "white";
+		return ["red", "white"];
 		break;
 		case "River Plate-URU":
-		return "red";
+		return ["red", "white"];
 		break;
 		case "Santa Cruz":
-		return "red";
+		return ["red", "white"];
 		break;
 		case "Santos":
-		return "white";
+		return ["white", "black"];
 		break;
 		case "Santo André":
-		return "#2d3491";
+		return ["#2d3491", "white"];
 		break;
 		case "São Bernardo":
-		return "#ffdd00";
+		return ["#ffdd00", "black"];
 		break;
 		case "São Bento":
-		return "#0067ab";
+		return ["#0067ab", "white"];
 		break;
 		case "São Caetano":
-		return "#212568";
+		return ["#212568", "white"];
 		break;
 		case "São Paulo":
-		return "#ff0e00";
-		break;
-		case "Sol de America-PAR":
-		return "#075798";
+		return ["#ff0e00", "white"];
 		break;
 		case "Sport":
-		return "#d30a11";
+		return ["#d30a11", "black"];
 		break;
 		case "Sporting Cristal-PER":
-		return "#54c6ed";
+		return ["#54c6ed", "white"];
 		break;
 		case "The Strongest-BOL":
-		return "#ffcc00";
+		return ["#ffcc00", "black"];
 		break;
 		case "Vasco":
-		return "black";
+		return ["black", "white"];
 		break;
 		case "Vitória":
-		return "#ff0e00";
+		return ["#ff0e00", "black"];
 		break;
 	}
 }
 
-function getColorLetra(time){
-	switch(time){
-		case "Água Santa":
-		return "white";
-		break;
-		case "América-MG":
-		return "white";
-		break;
-		case "Americano":
-		return "black";
-		break;
-		case "América-RN":
-		return "white";
-		break;
-		case "Athletico-PR":
-		return "black";
-		break;
-		case "Atlético Nacional-COL":
-		return "white";
-		break;
-		case "Atlético-GO":
-		return "black";
-		break;
-		case "Atlético-MG":
-		return "white";
-		break;
-		case "Atlético-PR":
-		return "black";
-		break;
-		case "Audax Italiano-CHI":
-		return "white";
-		break;
-		case "Audax-SP":
-		return "white";
-		break;
-		case "Avaí":
-		return "white";
-		break;
-		case "Bahia":
-		return "white";
-		break;
-		case "Bangu":
-		return "white";
-		break;
-		case "Barcelona de Guayaquil-EQU":
-		return "#055daa";
-		break;
-		case "Boa Esporte":
-		return "white";
-		break;
-		case "Benfica-POR":
-		return "white";
-		break;
-		case "Boavista":
-		return "white";
-		break;
-		case "Boca Juniors-ARG":
-		return "#fcb000";
-		break;
-		case "Bonsucesso":
-		return "white";
-		break;
-		case "Botafogo":
-		return "white";
-		break;
-		case "Botafogo-SP":
-		return "white";
-		break;
-		case "Bragantino":
-		return "black";
-		break;
-		case "Cabofriense":
-		return "white";
-		break;
-		case "Ceará":
-		return "white";
-		break;
-		case "Cerro Porteño-PAR":
-		return "#073756";
-		break;
-		case "Chapecoense":
-		return "white";
-		break;
-		case "Colo-Colo-CHI":
-		return "black";
-		break;
-		case "Corinthians":
-		return "white";
-		break;
-		case "Corinthians Steamrollers":
-		return "white";
-		break;
-		case "Coritiba":
-		return "white";
-		break;
-		case "CRB":
-		return "#white";
-		break;
-		case "Criciúma":
-		return "black";
-		break;
-		case "Cruzeiro":
-		return "white";
-		break;
-		case "CSA":
-		return "white";
-		break;
-		case "Cuiabá":
-		return "#018036";
-		break;
-		case "Defensa y Justicia-ARG":
-		return "#018036";
-		break;
-		case "Deportivo Quito-EQU":
-		return "white";
-		break;
-		case "Deportivo Tachira-VEN":
-		return "black";
-		break;
-		case "Estudiantes-ARG":
-		return "white";
-		break;
-		case "Ferroviária":
-		return "white";
-		break;
-		case "Figueirense":
-		return "white";
-		break;
-		case "Flamengo":
-		return "black";
-		break;
-		case "Floresta-CE":
-		return "#036c3c";
-		break;
-		case "Fluminense":
-		return "white";
-		break;
-		case "Fortaleza":
-		return "white";
-		break;
-		case "Goiás":
-		return "white";
-		break;
-		case "Grêmio":
-		return "white";
-		break;
-		case "Grêmio Barueri":
-		return "#003c6e";
-		break;
-		case "Guarani":
-		return "white";
-		break;
-		case "Independiente-ARG":
-		return "white";
-		break;
-		case "Independiente Del Valle-EQU":
-		return "white";
-		break;
-		case "Independiente Santa Fé-COL":
-		return "white";
-		break;
-		case "Internacional":
-		return "white";
-		break;
-		case "Ituano":
-		return "black";
-		break;
-		case "Juventude":
-		return "white";
-		break;
-		case "Juventus":
-		return "white";
-		break;
-		case "Kenitra-MAR":
-		return "white";
-		break;
-		case "Linense":
-		return "white";
-		break;
-		case "Luverdense":
-		return "#426d33";
-		break;
-		case "Macaé":
-		return "white";
-		break;
-		case "Madureira":
-		return "#13007c";
-		break;
-		case "Mirassol":
-		return "#00722c";
-		break;
-		case "Mogi Mirim":
-		return "white";
-		break;
-		case "Nacional-PAR":
-		return "white";
-		break;
-		case "Nacional-URU":
-		return "white";
-		break;
-		case "Náutico":
-		return "white";
-		break;
-		case "Nova Iguaçu":
-		return "black";
-		break;
-		case "Novorizontino":
-		return "black";
-		break;
-		case "Once Caldas-COL":
-		return "white";
-		break;
-		case "Oeste":
-		return "black";
-		break;
-		case "Olimpia-PAR":
-		return "black";
-		break;
-		case "Palmeiras":
-		return "white";
-		break;
-		case "Paraná":
-		return "white";
-		break;     
-		case "Paulista":
-		return "black";
-		break;   
-		case "Paysandu":
-		return "white";
-		break;
-		case "Ponte Preta":
-		return "white";
-		break;
-		case "Portuguesa":
-		return "#105d11";
-		break;
-		case "Portuguesa-RJ":
-		return "white";
-		break;
-		case "Real Garcilaso-PER":
-		return "#fdf21c";
-		break;
-		case "Red Bull Bragantino":
-		return "white";
-		break;
-		case "Red Bull Brasil":
-		return "white";
-		break;
-		case "Resende":
-		return "black";
-		break;
-		case "River Plate":
-		return "red";
-		break;
-		case "River Plate-URU":
-		return "white";
-		break;
-		case "Santa Cruz":
-		return "white";
-		break;
-		case "Santos":
-		return "black";
-		break;
-		case "Santo André":
-		return "white";
-		break;
-		case "São Bernardo":
-		return "black";
-		break;
-		case "São Bento":
-		return "white";
-		break;
-		case "São Caetano":
-		return "white";
-		break;
-		case "São Paulo":
-		return "white";
-		break;
-		case "Sol de America-PAR":
-		return "white";
-		break;
-		case "Sport":
-		return "black";
-		break;
-		case "Sporting Cristal-PER":
-		return "white";
-		break;
-		case "The Strongest-BOL":
-		return "black";
-		break;
-		case "Vasco":
-		return "red";
-		break;
-		case "Vitória":
-		return "black";
-		break;
-		case "Volta Redonda":
-		return "black";
-		break;
-	}
-}

@@ -42,6 +42,8 @@ var jogo20 = [true, "Grêmio Barueri", 4, 0, "Amistoso", "2013-01-16", "Pacaembu
 jogos.push(jogo20);
 var jogo21 = [true, "Paulista", 1, 3, "Campeonato Paulista", "2013-02-10", "Pacaembu", "Muricy Ramalho", "-Neymar", "-Marcelo Macedo<br>-Rodolfo Testoni<br>-Cassiano Bodini"];
 jogos.push(jogo21);
+var jogo184 = [true, "Portuguesa", 4, 1, "Campeonato Brasileiro", "2013-07-13", "Vila Belmiro", "Claudinei Oliveira", "-Neílton (2x)<br>-William José<br>-Giva", "-Bruno Moraes"];
+jogos.push(jogo184);
 var jogo22 = [true, "Ponte Preta", 2, 1, "Campeonato Brasileiro", "2013-10-12", "Pacaembu", "Claudinei Oliveira", "-Éverton Costa<br>-Montillo", "-Rafael Ratão"];
 jogos.push(jogo22);
 var jogo23 = [true, "Bahia", 3, 0, "Campeonato Brasileiro", "2013-11-14", "Pacaembu", "Claudinei Oliveira", "-Cícero (2x)<br>-Montillo", ""];
@@ -1223,4 +1225,3 @@ function coresTimes(time, jogo){
 		break;
 	}
 }
-

@@ -368,6 +368,8 @@ var jogo181 = [false, "Defensa y Justicia-ARG", 2, 1, "Copa Libertadores", "2020
 jogos.push(jogo181);
 var jogo182 = [true, "Mirassol", 3, 1, "Campeonato Paulista", "2020-03-07", "Vila Belmiro", "Jesualdo Ferreira", "-Yuri Alberto<br>-Diego Pituca<br>-Eduardo Sasha", "-Rafael Silva"];
 jogos.push(jogo182);
+var jogo183 = [false, "Palmeiras", 0, 1, "Copa Libertadores", "2021-01-30", "Maracanã", "Cuca", "", "-Breno Lopes"];
+jogos.push(jogo183);
 
 /*
 0 - mandante

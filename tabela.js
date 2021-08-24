@@ -370,8 +370,8 @@ var jogo182 = [true, "Mirassol", 3, 1, "Campeonato Paulista", "2020-03-07", "Vil
 jogos.push(jogo182);
 var jogo183 = [false, "Palmeiras", 0, 1, "Copa Libertadores", "2021-01-30", "Maracanã", "Cuca", "", "-Breno Lopes"];
 jogos.push(jogo183);
-var jogo183 = [true, "Internacional", 2, 2, "Campeonato Brasileiro", "2021-08-22", "Vila Belmiro", "Fernando Diniz", "-Gabriel Pirani<br>-Madson", "-Gabriel Mercado<br>-Yuri Alberto"];
-jogos.push(jogo183);
+var jogo22082021 = [true, "Internacional", 2, 2, "Campeonato Brasileiro", "2021-08-22", "Vila Belmiro", "Fernando Diniz", "-Gabriel Pirani<br>-Madson", "-Gabriel Mercado<br>-Yuri Alberto"];
+jogos.push(jogo22082021);
 
 /*
 0 - mandante

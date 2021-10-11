@@ -49,7 +49,7 @@ function coresTimes(time, jogo){
 		return ["black", "white"];
 		break;
 		case "Cerro Porteño-PAR":
-		return ["#c40215", "#073756"];
+		return ["#c40215", "white"];
 		break;
 		case "Chapecoense":
 		return ["#00913c", "white"];
@@ -61,7 +61,7 @@ function coresTimes(time, jogo){
 		return ["#00544d", "white"];
 		break;
 		case "Cruzeiro":
-		return ["#075798", "white"];
+		return ["#003a94", "white"];
 		break;
 		case "CSA":
 		return ["#075798", "white"];
@@ -168,7 +168,7 @@ function coresTimes(time, jogo){
 		return ["black", "white"];
 		break;
 		case "Portuguesa":
-		return ["red", "#105d11"];
+		return ["red", "white"];
 		break;
 		case "Real Garcilaso-PER":
 		return ["#0197ee", "#fdf21c"];

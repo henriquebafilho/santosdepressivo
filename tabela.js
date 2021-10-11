@@ -373,7 +373,7 @@ jogos.push(jogo183);
 var jogo22082021 = [true, "Internacional", 2, 2, "Campeonato Brasileiro", "2021-08-22", "Vila Belmiro", "Fernando Diniz", "-Gabriel Pirani<br>-Madson", "-Gabriel Mercado<br>-Yuri Alberto"];
 jogos.push(jogo22082021);
 var jogo10102021 = [true, "Grêmio", 1, 0, "Campeonato Brasileiro", "2021-10-10", "Vila Belmiro", "Fábio Carille", "-Wagner Leonardo", ""];
-jogos.push(jogo22082021);
+jogos.push(jogo10102021);
 
 /*
 0 - mandante

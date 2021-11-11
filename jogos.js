@@ -392,3 +392,5 @@ var jogo23102021 = [true, "América-MG", 0, 2, "Campeonato Brasileiro", "2021-10
 jogos.push(jogo23102021);
 var jogo07112021 = [true, "Palmeiras", 0, 2, "Campeonato Brasileiro", "2021-11-07", "Vila Belmiro", "Fábio Carille", "", "-Rony<br>-Rafael Veiga"];
 jogos.push(jogo07112021);
+var jogo10112021 = [true, "Red Bull Bragantino", 2, 0, "Campeonato Brasileiro", "2021-11-10", "Vila Belmiro", "Fábio Carille", "-Marinho<br>-Carlos Sánchez", ""];
+jogos.push(jogo10112021);

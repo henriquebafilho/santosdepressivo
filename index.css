@@ -3,12 +3,10 @@ html{
 }
 body{
     font-family: Arial;
-    background-color: white;
     color: white;
     margin: 0;
 }
 table {
-    width: 100%;
     font-family: Arial;
     text-align: center;
     background-color: white;
@@ -29,8 +27,7 @@ h1, h4{
 #pai div{
     display: none;
 }
-p, form{
-    color: black;
+p{
     text-align: center;
     font-family: Arial;
 }
@@ -73,9 +70,79 @@ input#pesquisar:hover{
 
 	display: none;
 }
-@media(min-width: 1000px){
+li{
+	list-style: none;
+}
+/*Details*/
+summary {
+	padding: 1em;
+	padding-top: 0.1em;
+}
+summary:focus{
+	outline: none;
+	box-shadow: none;
+}
+details{
+	border-radius: 7px;
+	margin-bottom: 1em;
+}
+details[open]{
+	padding-bottom: 1em;
+}
+details > summary {
+	list-style-type: none;
+}
+details > summary::-webkit-details-marker {
+	display: none;
+}
+/*
+details > summary::before {
+	content: '▶️';
+}
+details[open] > summary::before {
+	content: '🔽';
+}
+*/
+details[open] summary ~ *{
+	animation: sweep .5s ease-in-out;
+}
+@keyframes sweep{
+	from{
+		opacity: 0; margin-top: 0;
+	}
+	to{
+		opacity: 1; margin-top: 15px;
+	}
+}
+
+/*Ajustando tamanho da tabela de acordo com a tela*/
+@media(min-width: 600px){
 	#tabelaJogos{
 		padding-left: 10%;
 		padding-right: 10%;
 	}
+}
+/*tentando acertar o tamanho do texto no details*/
+@media screen and (max-width : 1000px){
+  details{
+    font-size:6px; 
+  }
+  ul{
+	font-size:11px;
+	text-align: left;
+  }
+  p#pTecnico{
+	font-size:11px; 
+  }
+}
+@media screen and (min-width : 1000px) and (max-width: 2000px){
+  details{
+    font-size:11px; 
+  }
+  ul{
+	font-size:20px; 
+  }
+  p#pTecnico{
+	font-size:20px; 
+  } 
 }

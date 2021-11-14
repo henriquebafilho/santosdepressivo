@@ -46,7 +46,7 @@ function coresTimes(time, jogo = null) {
 		case "Cruzeiro":
 			return ["#003a94", "white"];
 		case "CSA":
-			return ["#075798", "white"];
+			return ["#003a94", "white"];
 		case "Defensa y Justicia-ARG":
 			return ["#fde900", "#018036"];
 		case "Deportivo Tachira-VEN":
@@ -58,7 +58,7 @@ function coresTimes(time, jogo = null) {
 		case "Figueirense":
 			return ["black", "white"];
 		case "Flamengo":
-			return ["#ff0e00", "black"];
+			return ["#ff0e00", "white"];
 		case "Floresta-CE":
 			return ["#87c53f", "#036c3c"];
 		case "Fluminense":
@@ -76,7 +76,7 @@ function coresTimes(time, jogo = null) {
 				return ["#048439", "white"];
 			}
 		case "Grêmio":
-			return ["#0d80bf", "white"];;
+			return ["#0d80bf", "white"];
 		case "Grêmio Barueri":
 			return ["#f6e815", "#003c6e"];
 		case "Guarani":

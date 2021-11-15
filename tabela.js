@@ -200,7 +200,10 @@ function adversario(){
 
 		for(var i = 0; i < contador; i++){
 			if(adversario == "Atlético-PR" || adversario == "Athletico-PR"){
-				if(jogos[i][1] == "Atlético-PR" || jogos[i][1] == "Athletico-PR"){
+				if(jogos[i][0] == "Atlético-PR" 
+				|| jogos[i][0] == "Athletico-PR"
+				|| jogos[i][1] == "Atlético-PR" 
+				|| jogos[i][1] == "Athletico-PR"){
 					quantidade += 1;
 					selecionados.push(jogos[i]);
 				}

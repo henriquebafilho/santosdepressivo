@@ -394,3 +394,5 @@ var jogo20211107 = ["Santos", "Palmeiras", 0, 2, "Campeonato Brasileiro", "2021-
 jogos.push(jogo20211107);
 var jogo20211110 = ["Santos", "Red Bull Bragantino", 2, 0, "Campeonato Brasileiro", "2021-11-10", "Vila Belmiro", "Fábio Carille", ["Marinho","Carlos Sánchez"], [""]];
 jogos.push(jogo20211110);
+var jogo20211117 = ["Santos", "Chapecoense", 2, 0, "Campeonato Brasileiro", "2021-11-17", "Vila Belmiro", "Fábio Carille", ["Marinho","Marcos Guilherme"], [""]];
+jogos.push(jogo20211117);

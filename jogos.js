@@ -66,6 +66,8 @@ var jogo20140201 = ["Santos", "Botafogo-SP", 5, 1, "Campeonato Paulista", "2014-
 jogos.push(jogo20140201);
 var jogo20140717 = ["Santos", "Palmeiras", 2, 0, "Campeonato Brasileiro", "2014-07-17", "Vila Belmiro", "Oswaldo de Oliveira", ["Bruno Uvini","Alisson"], [""]];
 jogos.push(jogo20140717);
+var jogo20140824 = ["São Paulo", "Santos", 2, 1, "Campeonato Brasileiro", "2014-08-24", "Morumbi", "Oswaldo de Oliveira", ["Gabigol"], ["Paulo Henrique Ganso","Alexandre Pato"]];
+jogos.push(jogo20140824);
 var jogo20140928 = ["Santos", "Goiás", 2, 0, "Campeonato Brasileiro", "2014-09-28", "Pacaembu", "Enderson Moreira", ["David Braz","Geuvânio"], [""]];
 jogos.push(jogo20140928);
 var jogo20141016 = ["Santos", "Botafogo", 5, 0, "Copa do Brasil", "2014-10-16", "Pacaembu", "Enderson Moreira", ["Gabigol","David Braz (2x)","Lucas Lima","Geuvânio"], [""]];

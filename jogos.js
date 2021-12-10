@@ -402,3 +402,5 @@ var jogo20211125 = ["Santos", "Fortaleza", 2, 0, "Campeonato Brasileiro", "2021-
 jogos.push(jogo20211125);
 var jogo20211128 = ["Internacional", "Santos", 1, 1, "Campeonato Brasileiro", "2021-11-28", "Beira-Rio", "Fábio Carille", ["Marcos Leonardo"], ["Luiz Felipe (GC)"]];
 jogos.push(jogo20211128);
+var jogo20211209 = ["Santos", "Cuiabá", 1, 1, "Campeonato Brasileiro", "2021-12-09", "Vila Belmiro", "Fábio Carille", ["Lucas Braga"], ["Marlon"]];
+jogos.push(jogo20211209);

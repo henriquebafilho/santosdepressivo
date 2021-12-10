@@ -47,6 +47,8 @@ function coresTimes(time, jogo = null) {
 			return ["#003a94", "white"];
 		case "CSA":
 			return ["#003a94", "white"];
+		case "Cuiabá":
+			return ["#fde900", "#018036"];
 		case "Defensa y Justicia-ARG":
 			return ["#fde900", "#018036"];
 		case "Deportivo Tachira-VEN":

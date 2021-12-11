@@ -471,22 +471,6 @@ function vitorias(){
 	}
 	for(var i = quantidade - 1; i >= 0; i--){
 		escreveLinha(time, selecionados[i], i + 1);
-		// Contabiliza vitória, empate ou derrota
-		if(selecionados[i][2] == selecionados[i][3]){
-			empates += 1;
-		} else if (selecionados[i][0] == time){
-			if(selecionados[i][2] > selecionados[i][3]){
-				vitorias += 1;
-			} else {
-				derrotas += 1;
-			}
-		} else if (selecionados[i][0] != time){
-			if(selecionados[i][2] > selecionados[i][3]){
-				derrotas += 1;
-			} else {
-				vitorias += 1;
-			}
-		}
 	}
 	getVitorias(quantidade);
 }
@@ -507,22 +491,6 @@ function empates(){
 
 	for(var i = quantidade - 1; i >= 0; i--){
 		escreveLinha(time, selecionados[i], i + 1);
-		// Contabiliza vitória, empate ou derrota
-		if(selecionados[i][2] == selecionados[i][3]){
-			empates += 1;
-		} else if (selecionados[i][0] == time){
-			if(selecionados[i][2] > selecionados[i][3]){
-				vitorias += 1;
-			} else {
-				derrotas += 1;
-			}
-		} else if (selecionados[i][0] != time){
-			if(selecionados[i][2] > selecionados[i][3]){
-				derrotas += 1;
-			} else {
-				vitorias += 1;
-			}
-		}
 	}
 	getEmpates(quantidade);
 }
@@ -544,22 +512,6 @@ function derrotas(){
 
 	for(var i = quantidade - 1; i >= 0; i--){
 		escreveLinha(time, selecionados[i], i + 1);
-		// Contabiliza vitória, empate ou derrota
-		if(selecionados[i][2] == selecionados[i][3]){
-			empates += 1;
-		} else if (selecionados[i][0] == time){
-			if(selecionados[i][2] > selecionados[i][3]){
-				vitorias += 1;
-			} else {
-				derrotas += 1;
-			}
-		} else if (selecionados[i][0] != time){
-			if(selecionados[i][2] > selecionados[i][3]){
-				derrotas += 1;
-			} else {
-				vitorias += 1;
-			}
-		}
 	}
 	getDerrotas(quantidade);
 }

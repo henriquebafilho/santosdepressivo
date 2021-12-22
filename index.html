@@ -28,8 +28,7 @@
 			Filtrar jogos por: 
 			<select id='cabecalho' class="select" onchange="getFuncaoSelect(this.value)">
 				<option value='' disabled selected>Selecione uma opção</option>
-				<option value='decrescente'>Todos (Ordem Decrescente)</option>
-				<option value='crescente'>Todos (Ordem Crescente)</option>
+				<option value='todos'>Todos</option>
 				<option value='adversario'>Adversário</option>
 				<option value='vitorias'>Vitórias</option>
 				<option value='empates'>Empates</option>
@@ -121,8 +120,8 @@
 					<p>Escolha o nome do campeonato: </p>
 					<select id='selectCampeonato' onchange="campeonato()">
 						<option value='' disabled selected>Selecione um campeonato</option>
-						<option value='Campeonato Paulista'>Campeonato Paulista</option>
-						<option value='Campeonato Brasileiro'>Campeonato Brasileiro</option>
+						<option value='Paulista'>Campeonato Paulista</option>
+						<option value='Brasileiro'>Campeonato Brasileiro</option>
 						<option value='Copa do Brasil'>Copa do Brasil</option>
 						<option value='Copa Libertadores'>Copa Libertadores</option>
 						<option value='Copa Sul-Americana'>Copa Sul-Americana</option>
@@ -239,6 +238,10 @@
 	<br>
 	<div id="estatisticas">
 		
+	</div>
+	<br>
+	<div id="ordem">
+		<input type='button' id="ordemBotao" style="text-align: center;" onclick="escolheOrdem(document.getElementById('cabecalho').value)">
 	</div>
 	<br>
 	<div id="tabelaJogos">

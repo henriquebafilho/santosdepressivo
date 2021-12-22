@@ -1,43 +1,14 @@
-function cabecalho(){
-	var tabela = document.getElementById("jogos");
-	var qtdLinhas = tabela.rows.length;
-	var thead = document.createElement("thead");
-	//tabela.appendChild(thead);
-	var linha = thead.insertRow(qtdLinhas);
-	tabela.width = "100%";
-	linha.width = "100%";
-	//tabela.style.fontWeight = "bold";
-
-	
-	// Célula número
-	var cellNumero = document.createElement("th");
-	cellNumero.innerHTML = "Número";
-	linha.appendChild(cellNumero);
-
-	// Célula mandante
-	var cellMandante = document.createElement("th");
-	cellMandante.width = "40%";
-	cellMandante.innerHTML = "Mandante";
-	linha.appendChild(cellMandante);
-
-	// Célula placar
-	var cellPlacar = document.createElement("th");
-	cellPlacar.width = "20%";
-	cellPlacar.innerHTML = "Placar";
-	linha.appendChild(cellPlacar);
-
-	// Célula visitante
-	var cellVisitante = document.createElement("th");
-	cellVisitante.width = "40%";
-	cellVisitante.innerHTML = "Visitante";
-	linha.appendChild(cellVisitante);
-
-	var tbody = document.createElement("tbody");
-	tbody.id = "corpoDaTabela";
-	//tabela.appendChild(tbody);
+function desenhaBolinha(tipoBola){
+	let bolinhaGol = document.createElement("img");
+	bolinhaGol.src = tipoBola == "(GC)" ? "index_files/bolaVermelha.png" : "index_files/bola.png";
+	bolinhaGol.width = 15;
+	bolinhaGol.height = 15;
+	bolinhaGol.style.display = 'inline';
+	bolinhaGol.style.paddingRight = '5px';
+	return bolinhaGol;
 }
 
-function escreveLinha(meuTime, jogo, numero){
+function escreveLinha(meuTime, jogo, numero, ano){
 	// setando o mandante e o visitante
 	var mandante = jogo[0];
 	var visitante = jogo[1];
@@ -46,37 +17,53 @@ function escreveLinha(meuTime, jogo, numero){
 	var tabela = document.getElementById("jogos");
 	tabela.width = "100%";
 	
-	// INTERFACE DO DETAILS
+	if(ano != jogo[5].split('-')[0]){
+		var pAno = document.createElement("p");
+		pAno.style.fontWeight = "bold";
+		pAno.style.fontSize = '2em';
+		pAno.style.display = "nowrap";
+		pAno.className = "pAno";
+		var textoAno = document.createTextNode(jogo[5].split('-')[0]);
+		pAno.appendChild(textoAno);
+		tabela.appendChild(pAno);
+	}
 
+	
+	// INTERFACE DO DETAILS
 	var details = document.createElement("details");
 	details.style.background = "linear-gradient(90deg, " + coresTimes(mandante, jogo)[0] + " 49%, " + coresTimes(visitante, jogo)[0] + " 52%)";
 	details.style.cursor = "pointer";
 	details.style.color = "white";
 	details.style.border = "2px solid " + coresTimes(meuTime, jogo)[1];
+	if(coresTimes(mandante, jogo)[0] == "white" && coresTimes(visitante, jogo)[0] == "white"){
+		details.style.color = "black";
+		details.style.fontWeight = "bold";
+	}
 
 	var summary = document.createElement("summary");
 	summary.style.textAlign = "center";
 	summary.style.fontWeight = "bold";
 	summary.style.fontSize = '200%';
-	summary.style.textShadow = "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
+	summary.style.textShadow = coresTimes(mandante, jogo)[0] == "white" && coresTimes(visitante, jogo)[0] == "white" ? "" : "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
 
 	var pCabecalho = document.createElement("p");
 	pCabecalho.style.fontWeight = "normal";
 	pCabecalho.style.fontSize = '1em';
 	pCabecalho.style.display = "nowrap";
-	var textCabecalho = document.createTextNode(converteData(jogo[5]) + " | " + "Estádio " + jogo[6] + " | " + jogo[4]);
+	var data = new Date(jogo[5]);
+	var textCabecalho = document.createTextNode(converteDia(data.getDay()) + ", " + converteData(jogo[5]) + " | " + "Estádio " + jogo[6] + " | " + jogo[4]);
 	pCabecalho.appendChild(textCabecalho);
 
 	var divPlacar = document.createElement("div");
 	divPlacar.className = "placar";
 	divPlacar.style.display = "nowrap";
 	divPlacar.style.whiteSpace = "nowrap";
-	divPlacar.style.fontSize = '1em';
 	var escudoMandante = document.createElement("img");
 	escudoMandante.src = "index_files/" + getEscudoName(mandante, jogo) + ".png";
 	escudoMandante.style.width = '3em';
 	escudoMandante.style.height = '3em';
 	var summaryText = document.createTextNode(" " + jogo[0].toUpperCase() + " " + jogo[2] + " X " + jogo[3] + " " + jogo[1].toUpperCase() + " ");
+	divPlacar.style.fontSize = summaryText.length < 38 ? '1em' : '0.85em';
 	var escudoVisitante = document.createElement("img");
 	escudoVisitante.src = "index_files/" + getEscudoName(visitante, jogo) + ".png";
 	escudoVisitante.style.width = '3em';
@@ -88,6 +75,16 @@ function escreveLinha(meuTime, jogo, numero){
 	
 	summary.appendChild(pCabecalho);
 	summary.appendChild(divPlacar);
+	if(jogo[11]){
+		var divTitulo = document.createElement("div");
+		var pTitulo = document.createElement("p");
+		pTitulo.style.color = "yellow";
+		var textTitulo = document.createTextNode(meuTime.toUpperCase() + " CAMPEÃO " + jogo[4].toUpperCase() + " " + jogo[5].split("-")[0]);
+
+		pTitulo.appendChild(textTitulo);
+		divTitulo.appendChild(pTitulo);
+		summary.appendChild(divTitulo);
+	}
 
 	// INFORMAÇÕES ADICIONAIS
 
@@ -96,7 +93,7 @@ function escreveLinha(meuTime, jogo, numero){
 	var textTecnico = document.createTextNode("Técnico: " + jogo[7]);
 	//pTecnico.style.fontSize = '1em';
 	pTecnico.style.textAlign = "center";
-	pTecnico.style.textShadow = "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
+	pTecnico.style.textShadow = coresTimes(mandante, jogo)[0] == "white" && coresTimes(visitante, jogo)[0] == "white" ? "" : "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
 	//pTecnico.style.webkitTextStrokeWidth = '1px';
 	//pTecnico.style.webkitTextStrokeColor = 'black';
 	pTecnico.appendChild(textTecnico);
@@ -116,20 +113,27 @@ function escreveLinha(meuTime, jogo, numero){
 	divMandante.style.fontWeight = 'bold';
 
 	var listaGolsMandante = document.createElement("ul");
-	var golsMandante = jogo[0] == meuTime ? jogo[8] : jogo[9];
+	var golsMandante = jogo[0] == meuTime || jogo[1] == meuTime ? jogo[0] == meuTime? jogo[8] : jogo[9] : jogo[8];
 	for(var i = 0; i < golsMandante.length; i++){
+		var autorGolMandante = golsMandante[i];
 		if(golsMandante[i] != "" && golsMandante[i] != " " && golsMandante[i].indexOf("Pênaltis:")){
-			var bolinhaGol = document.createElement("img");
-			bolinhaGol.src = "index_files/bola.png";
-			bolinhaGol.width = 15;
-			bolinhaGol.height = 15;
-			bolinhaGol.style.display = 'inline';
-			bolinhaGol.style.paddingRight = '5px';
-			listaGolsMandante.appendChild(bolinhaGol);
+			if(autorGolMandante[autorGolMandante.length - 1] == ")"
+			&& autorGolMandante[autorGolMandante.length - 2] == "x"){
+				var qtdGols = parseInt(autorGolMandante[autorGolMandante.length - 3]);
+				for(var j = 0; j < qtdGols; j++){
+					let tipoBola = autorGolMandante.includes("(GC)") ? "(GC)" : "";
+					listaGolsMandante.appendChild(desenhaBolinha(tipoBola));		
+				}
+				autorGolMandante = autorGolMandante.replace("("+qtdGols+"x)", "");
+				autorGolMandante = autorGolMandante.trim();
+			} else {
+				let tipoBola = autorGolMandante.includes("(GC)") ? "(GC)" : "";
+				listaGolsMandante.appendChild(desenhaBolinha(tipoBola));	
+			}
 		}
 		var autorGol = document.createElement("li");
 		autorGol.style.display = 'inline';
-		autorGol.appendChild(document.createTextNode(golsMandante[i]));
+		autorGol.appendChild(document.createTextNode(autorGolMandante));
 		autorGol.appendChild(document.createElement("br"));
 		listaGolsMandante.appendChild(autorGol); 
 	}
@@ -144,24 +148,50 @@ function escreveLinha(meuTime, jogo, numero){
 
 	var listaGolsVisitante = document.createElement("ul");
 	listaGolsVisitante.style.textAlign = golsMandante == "" ? 'center' : '';
-	var golsVisitante = jogo[1] == meuTime ? jogo[8] : jogo[9];
+	//var golsVisitante = jogo[1] == meuTime ? jogo[8] : jogo[9];
+	var golsVisitante = jogo[0] == meuTime || jogo[1] == meuTime ? jogo[1] == meuTime? jogo[8] : jogo[9] : jogo[9];
 	for(var i = 0; i < golsVisitante.length; i++){
+		var autorGolVisitante = golsVisitante[i];
 		if(golsVisitante[i] != "" && golsVisitante[i] != " " && golsVisitante[i].indexOf("Pênaltis:")){
-			var bolinhaGol = document.createElement("img");
-			bolinhaGol.src = "index_files/bola.png";
-			bolinhaGol.width = 15;
-			bolinhaGol.height = 15;
-			bolinhaGol.style.display = 'inline';
-			bolinhaGol.style.paddingRight = '5px';
-			listaGolsVisitante.appendChild(bolinhaGol);
+			if(autorGolVisitante[autorGolVisitante.length - 1] == ")"
+			&& autorGolVisitante[autorGolVisitante.length - 2] == "x"){
+				var qtdGols = parseInt(autorGolVisitante[autorGolVisitante.length - 3]);
+				for(var j = 0; j < qtdGols; j++){
+					let tipoBola = autorGolVisitante.includes("(GC)") ? "(GC)" : "";
+					listaGolsVisitante.appendChild(desenhaBolinha(tipoBola));		
+				}
+				autorGolVisitante = autorGolVisitante.replace("("+qtdGols+"x)", "");
+				autorGolVisitante = autorGolVisitante.trim();
+			} else {
+				let tipoBola = autorGolVisitante.includes("(GC)") ? "(GC)" : "";
+				listaGolsVisitante.appendChild(desenhaBolinha(tipoBola));	
+			}
 		}
 		var autorGol = document.createElement("li");
 		autorGol.style.display = 'inline';
-		autorGol.appendChild(document.createTextNode(golsVisitante[i]));
+		autorGol.appendChild(document.createTextNode(autorGolVisitante));
 		autorGol.appendChild(document.createElement("br"));
 		listaGolsVisitante.appendChild(autorGol); 
 	}
 
+	var divVideo = document.createElement("div"); 
+	divVideo.className = "divVideo";
+	if(jogo[10] != "") {
+		var embedVideo = document.createElement("object"); 
+		embedVideo.data = jogo[10];
+		embedVideo.width = '70%';
+		embedVideo.height = '300px';
+		divVideo.appendChild(embedVideo);
+	} else {
+		var p = document.createElement("p");
+		var pText = document.createTextNode("Vídeo não disponível"); 
+		p.style.textShadow = coresTimes(mandante, jogo)[0] == "white" && coresTimes(visitante, jogo)[0] == "white" ? "" : "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
+		p.style.fontFamily = "Arial";
+		p.style.fontSize = "12px";
+		p.appendChild(pText);
+		divVideo.appendChild(p);
+	}
+	
 	divMandante.append(listaGolsMandante);
 	divVisitante.append(listaGolsVisitante);
 	divGols.appendChild(divMandante);
@@ -169,5 +199,6 @@ function escreveLinha(meuTime, jogo, numero){
 	details.appendChild(summary);
 	details.appendChild(pTecnico);
 	details.appendChild(divGols);
+	details.appendChild(divVideo);
 	tabela.appendChild(details);
 }

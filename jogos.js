@@ -16,7 +16,7 @@ var jogos = [];
 
 var jogo20021208 = ["Santos", "Corinthians", 2, 0, "Brasileiro", "2002-12-08", "Morumbi", "Emerson Leão", ["Alberto","Renato"], [""], "", false];
 jogos.push(jogo20021208);
-var jogo20021215 = ["Corinthians", "Santos", 2, 3, "Brasileiro", "2002-12-15", "Morumbi", "Emerson Leão", ["Elano","Léo","Robinho"], ["Anderson","Deivid"], "", false];
+var jogo20021215 = ["Corinthians", "Santos", 2, 3, "Brasileiro", "2002-12-15", "Morumbi", "Emerson Leão", ["Elano","Léo","Robinho"], ["Anderson","Deivid"], "", true];
 jogos.push(jogo20021215);
 var jogo20030702 = ["Santos", "Boca Juniors-ARG", 1, 3, "Copa Libertadores", "2003-07-02", "Morumbi", "Emerson Leão", ["Alex"], ["Tévez","Delgado","Schiavi"], "", false];
 jogos.push(jogo20030702);
@@ -26,7 +26,7 @@ var jogo20041024 = ["São Paulo", "Santos", 1, 0, "Brasileiro", "2004-10-24", "M
 jogos.push(jogo20041024);
 var jogo20060325 = ["Juventus", "Santos", 1, 2, "Paulista", "2006-03-25", "Pacaembu", "Vanderlei Luxemburgo", ["Cléber Santana","Reinaldo"], ["Manu"], "", false];
 jogos.push(jogo20060325);
-var jogo20070506 = ["Santos", "São Caetano", 2, 0, "Paulista", "2007-05-06", "Morumbi", "Vanderlei Luxemburgo", ["Adaílton","Morais"], [""], "", false];
+var jogo20070506 = ["Santos", "São Caetano", 2, 0, "Paulista", "2007-05-06", "Morumbi", "Vanderlei Luxemburgo", ["Adaílton","Morais"], [""], "", true];
 jogos.push(jogo20070506);
 var jogo20090307 = ["Oeste", "Santos", 1, 2, "Paulista", "2009-03-07", "Pacaembu", "Vagner Mancini", ["Roni","Madson"], ["Dezinho"], "", false];
 jogos.push(jogo20090307);
@@ -36,7 +36,7 @@ var jogo20100228 = ["Santos", "Corinthians", 2, 1, "Paulista", "2010-02-28", "Vi
 jogos.push(jogo20100228);
 var jogo20100425 = ["Santo André", "Santos", 2, 3, "Paulista", "2010-04-25", "Pacaembu", "Dorival Júnior", ["André","Wesley (2x)"], ["Bruno César","Rodriguinho"], "", false];
 jogos.push(jogo20100425);
-var jogo20100502 = ["Santos", "Santo André", 2, 3, "Paulista", "2010-05-02", "Pacaembu", "Dorival Júnior", ["Neymar (2x)"], ["Nunes","Alê","Branquinho"], "", false];
+var jogo20100502 = ["Santos", "Santo André", 2, 3, "Paulista", "2010-05-02", "Pacaembu", "Dorival Júnior", ["Neymar (2x)"], ["Nunes","Alê","Branquinho"], "", true];
 jogos.push(jogo20100502);
 var jogo20110420 = ["Santos", "Deportivo Tachira-VEN", 3, 1, "Copa Libertadores", "2011-04-20", "Pacaembu", "Muricy Ramalho", ["Neymar","Jonathan","Danilo"], ["Gerzon Chacón"], "", false];
 jogos.push(jogo20110420);
@@ -104,7 +104,7 @@ var jogo20160416 = ["Santos", "São Bento", 2, 0, "Paulista", "2016-04-16", "Vil
 jogos.push(jogo20160416);
 var jogo20160424 = ["Santos", "Palmeiras", 2, 2, "Paulista", "2016-04-24", "Vila Belmiro", "Dorival Júnior", ["Gabigol (2x)","","Pênaltis: (3)","David Braz","Zeca","Victor Ferraz"], ["Rafael Marques (2x)","","Pênaltis: (2)","Cleiton Xavier","Jean"], "", false];
 jogos.push(jogo20160424);
-var jogo20160508 = ["Santos", "Audax-SP", 1, 0, "Paulista", "2016-05-08", "Vila Belmiro", "Dorival Júnior", ["Ricardo Oliveira"], [""], "", false];
+var jogo20160508 = ["Santos", "Audax-SP", 1, 0, "Paulista", "2016-05-08", "Vila Belmiro", "Dorival Júnior", ["Ricardo Oliveira"], [""], "", true];
 jogos.push(jogo20160508);
 var jogo20160522 = ["Santos", "Coritiba", 2, 1, "Brasileiro", "2016-05-22", "Vila Belmiro", "Dorival Júnior", ["Vitor Bueno","Renato"], ["Kléber"], "", false];
 jogos.push(jogo20160522);

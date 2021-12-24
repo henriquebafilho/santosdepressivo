@@ -37,6 +37,9 @@ div{
 img{
     vertical-align: middle;
 }
+#titulo:hover{
+	cursor: pointer;
+}
 select{
     text-align: center;
     text-align-last: center;
@@ -56,22 +59,15 @@ input#pesquisar:hover{
     border-radius: 50px;
     cursor: pointer;
 }
-#btnTop{
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-
-	background-color: white;
-	text-align: center;
-	font-size: 200%;
-	color: black;
-	border-radius: 10px;
-	border-color: black;
-
+#voltarInicio{
 	display: none;
 }
 li{
 	list-style: none;
+}
+#voltarInicio{
+	cursor: pointer;
+	text-decoration: underline;
 }
 /*Details*/
 summary {

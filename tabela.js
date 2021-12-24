@@ -76,6 +76,8 @@ function escolheOrdem(valor) {
 		outrosJogos();
 	} else if (valor.includes("todos")) {
 		todos();
+	} else if (valor.includes("campeao")) {
+		campeao();
 	} else if (valor.includes("adversario")) {
 		adversario();
 	} else if (valor.includes("campeonato")) {
@@ -86,7 +88,9 @@ function escolheOrdem(valor) {
 		estadio();
 	} else if (valor.includes("tecnico")) {
 		tecnico();
-	} else {
+	} else if (valor.includes("data")) {
+		escolheData();
+	}else {
 		todos();
 	}
 }
@@ -95,227 +99,68 @@ function todos() {
 	limpaTabela();
 
 	var contador = jogos.length;
-	var vitorias = 0;
-	var empates = 0;
-	var derrotas = 0;
-	var ano;
 	selecionados = [];
 
 	for (var i = 0; i < contador; i++) {
 		selecionados.push(jogos[i]);
 	}
 
-	if (ordemDecrescente) {
-		for (var i = contador - 1; i >= 0; i--) {
-			try {
-				ano = selecionados[i + 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-			// Contabiliza vitória, empate ou derrota
-			if (selecionados[i][2] == selecionados[i][3]) {
-				empates += 1;
-			} else if (selecionados[i][0] == time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					vitorias += 1;
-				} else {
-					derrotas += 1;
-				}
-			} else if (selecionados[i][0] != time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					derrotas += 1;
-				} else {
-					vitorias += 1;
-				}
-			}
-		}
-	} else {
-		for (var i = 0; i < contador; i++) {
-			try {
-				ano = selecionados[i - 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-			// Contabiliza vitória, empate ou derrota
-			if (selecionados[i][2] == selecionados[i][3]) {
-				empates += 1;
-			} else if (selecionados[i][0] == time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					vitorias += 1;
-				} else {
-					derrotas += 1;
-				}
-			} else if (selecionados[i][0] != time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					derrotas += 1;
-				} else {
-					vitorias += 1;
-				}
-			}
-		}
-	}
-	estatisticas(contador, vitorias, empates, derrotas);
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'todos');
 }
 
 function mandante() {
 	limpaTabela();
 
 	var contador = jogos.length;
-	var quantidade = 0;
-	var vitorias = 0;
-	var empates = 0;
-	var derrotas = 0;
-	var ano;
 	selecionados = [];
 
 	for (var i = 0; i < contador; i++) {
 		if (jogos[i][0] == time) {
-			quantidade += 1;
 			selecionados.push(jogos[i]);
 		}
 	}
 
-	if (ordemDecrescente) {
-		for (var i = quantidade - 1; i >= 0; i--) {
-			try {
-				ano = selecionados[i + 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-			// Contabiliza vitória, empate ou derrota
-			if (selecionados[i][2] == selecionados[i][3]) {
-				empates += 1;
-			} else if (selecionados[i][0] == time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					vitorias += 1;
-				} else {
-					derrotas += 1;
-				}
-			} else if (selecionados[i][0] != time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					derrotas += 1;
-				} else {
-					vitorias += 1;
-				}
-			}
-		}
-	} else {
-		for (var i = 0; i < quantidade; i++) {
-			try {
-				ano = selecionados[i - 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-			// Contabiliza vitória, empate ou derrota
-			if (selecionados[i][2] == selecionados[i][3]) {
-				empates += 1;
-			} else if (selecionados[i][0] == time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					vitorias += 1;
-				} else {
-					derrotas += 1;
-				}
-			} else if (selecionados[i][0] != time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					derrotas += 1;
-				} else {
-					vitorias += 1;
-				}
-			}
-		}
-	}
-	estatisticas(quantidade, vitorias, empates, derrotas);
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'mandante');
 }
 
 function visitante() {
 	limpaTabela();
 
 	var contador = jogos.length;
-	var quantidade = 0;
-	var vitorias = 0;
-	var empates = 0;
-	var derrotas = 0;
 	selecionados = [];
-	var ano;
 
 	for (var i = 0; i < contador; i++) {
 		if (jogos[i][0] != time) {
-			quantidade += 1;
 			selecionados.push(jogos[i]);
 		}
 	}
 
-	if (ordemDecrescente) {
-		for (var i = quantidade - 1; i >= 0; i--) {
-			try {
-				ano = selecionados[i + 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-			// Contabiliza vitória, empate ou derrota
-			if (selecionados[i][2] == selecionados[i][3]) {
-				empates += 1;
-			} else if (selecionados[i][0] == time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					vitorias += 1;
-				} else {
-					derrotas += 1;
-				}
-			} else if (selecionados[i][0] != time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					derrotas += 1;
-				} else {
-					vitorias += 1;
-				}
-			}
-		}
-	} else {
-		for (var i = 0; i < quantidade; i++) {
-			try {
-				ano = selecionados[i - 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-			// Contabiliza vitória, empate ou derrota
-			if (selecionados[i][2] == selecionados[i][3]) {
-				empates += 1;
-			} else if (selecionados[i][0] == time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					vitorias += 1;
-				} else {
-					derrotas += 1;
-				}
-			} else if (selecionados[i][0] != time) {
-				if (selecionados[i][2] > selecionados[i][3]) {
-					derrotas += 1;
-				} else {
-					vitorias += 1;
-				}
-			}
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'visitante');
+}
+
+function campeao() {
+	limpaTabela();
+
+	var contador = jogos.length;
+	selecionados = [];
+
+	for (var i = 0; i < contador; i++) {
+		if (jogos[i][11]) {
+			selecionados.push(jogos[i]);
 		}
 	}
-	estatisticas(quantidade, vitorias, empates, derrotas);
+
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'campeao');
 }
 
 function adversario() {
-	var adversario = document.getElementById("selectAdversario").value;
+	var adversario = document.getElementById("selectadversario").value;
 
 	if (adversario != "") {
 		limpaTabela();
 
 		var contador = jogos.length;
-		var quantidade = 0;
-		var vitorias = 0;
-		var empates = 0;
-		var derrotas = 0;
 		selecionados = [];
-		var ano = 0;
 
 		for (var i = 0; i < contador; i++) {
 			if (adversario == "Atlético-PR" || adversario == "Athletico-PR") {
@@ -323,295 +168,72 @@ function adversario() {
 					|| jogos[i][0] == "Athletico-PR"
 					|| jogos[i][1] == "Atlético-PR"
 					|| jogos[i][1] == "Athletico-PR") {
-					quantidade += 1;
 					selecionados.push(jogos[i]);
 				}
 			} else if (adversario == jogos[i][0] || adversario == jogos[i][1]) {
-				quantidade += 1;
 				selecionados.push(jogos[i]);
 			}
 		}
 
-		if (ordemDecrescente) {
-			for (var i = quantidade - 1; i >= 0; i--) {
-				try {
-					ano = selecionados[i + 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		} else {
-			for (var i = 0; i < quantidade; i++) {
-				try {
-					ano = selecionados[i - 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		}
-		estatisticas(quantidade, vitorias, empates, derrotas);
+		escreveLinhaOrdem(selecionados, ordemDecrescente, 'adversario');
 	}
 }
 
 function campeonato() {
-	var campeonato = document.getElementById("selectCampeonato").value;
+	var campeonato = document.getElementById("selectcampeonato").value;
 
 	if (campeonato != "") {
 		limpaTabela();
 
 		var contador = jogos.length;
-		var quantidade = 0;
-		var vitorias = 0;
-		var empates = 0;
-		var derrotas = 0;
 		selecionados = [];
-		var ano;
 
 		for (var i = 0; i < contador; i++) {
 			if (campeonato == jogos[i][4]) {
-				quantidade += 1;
 				selecionados.push(jogos[i]);
 			}
 		}
 
-		if (ordemDecrescente) {
-			for (var i = quantidade - 1; i >= 0; i--) {
-				try {
-					ano = selecionados[i + 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		} else {
-			for (var i = 0; i < quantidade; i++) {
-				try {
-					ano = selecionados[i - 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		}
-		estatisticas(quantidade, vitorias, empates, derrotas);
+		escreveLinhaOrdem(selecionados, ordemDecrescente, 'campeonato');
 	}
 }
 
 
 function estadio() {
-	var estadio = document.getElementById("selectEstadio").value;
+	var estadio = document.getElementById("selectestadio").value;
 
 	if (estadio != "") {
 		limpaTabela();
 
 		var contador = jogos.length;
-		var quantidade = 0;
-		var vitorias = 0;
-		var empates = 0;
-		var derrotas = 0;
 		selecionados = [];
-		var ano;
 
 		for (var i = 0; i < contador; i++) {
 			if (estadio == jogos[i][6]) {
-				quantidade += 1;
 				selecionados.push(jogos[i]);
 			}
 		}
 
-		if (ordemDecrescente) {
-			for (var i = quantidade - 1; i >= 0; i--) {
-				try {
-					ano = selecionados[i + 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		} else {
-			for (var i = 0; i < quantidade; i++) {
-				try {
-					ano = selecionados[i - 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		}
-		estatisticas(quantidade, vitorias, empates, derrotas);
+		escreveLinhaOrdem(selecionados, ordemDecrescente, 'estadio');
 	}
 }
 
 function tecnico() {
-	var tecnico = document.getElementById("selectTecnico").value;
+	var tecnico = document.getElementById("selecttecnico").value;
 
 	if (tecnico != "") {
 		limpaTabela();
 
 		var contador = jogos.length;
-		var quantidade = 0;
-		var vitorias = 0;
-		var empates = 0;
-		var derrotas = 0;
 		selecionados = [];
 
 		for (var i = 0; i < contador; i++) {
 			if (tecnico == jogos[i][7]) {
-				quantidade += 1;
 				selecionados.push(jogos[i]);
 			}
 		}
 
-		if (ordemDecrescente) {
-			for (var i = quantidade - 1; i >= 0; i--) {
-				try {
-					ano = selecionados[i + 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		} else {
-			for (var i = 0; i < quantidade; i++) {
-				try {
-					ano = selecionados[i - 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		}
-		estatisticas(quantidade, vitorias, empates, derrotas);
+		escreveLinhaOrdem(selecionados, ordemDecrescente, 'tecnico');
 	}
 }
 
@@ -619,64 +241,28 @@ function escolheData() {
 	limpaTabela();
 
 	var data = document.getElementById("dataJogo").value;
-	var contador = 0;
-	var vitorias = 0;
-	var empates = 0;
-	var derrotas = 0;
 	var achou = false;
-	var ano;
+	selecionados = [];
 
 	for (var i = 0; i < jogos.length; i++) {
 		if (data == jogos[i][5]) {
 			achou = true;
-			contador += 1;
-			try {
-				ano = jogos[i + 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, jogos[i], contador, ano);
-			// Contabiliza vitória, empate ou derrota
-			if (jogos[i][2] == jogos[i][3]) {
-				empates += 1;
-			} else if (jogos[i][0] == time) {
-				if (jogos[i][2] > jogos[i][3]) {
-					vitorias += 1;
-				} else {
-					derrotas += 1;
-				}
-			} else if (jogos[i][0] != time) {
-				if (jogos[i][2] > jogos[i][3]) {
-					derrotas += 1;
-				} else {
-					vitorias += 1;
-				}
-			}
+			selecionados.push(jogos[i]);
 		}
 	}
-	//se não achou nenhum jogo
+
 	if (achou == false) {
 		fail();
 	} else {
-		if (vitorias > 0) {
-			getVitorias(contador);
-		} else if (empates > 0) {
-			getEmpates(contador);
-		} else {
-			getDerrotas(contador);
-		}
+		escreveLinhaOrdem(selecionados, ordemDecrescente, 'data');
 	}
 }
 
 function ano() {
-	var ano = document.getElementById("anoJogo").value;
+	var ano = document.getElementById("selectano").value;
 
 	limpaTabela();
 	if (ano != "") {
-		var quantidade = 0;
-		var vitorias = 0;
-		var empates = 0;
-		var derrotas = 0;
 		selecionados = [];
 		var ano;
 
@@ -684,63 +270,11 @@ function ano() {
 			var dataCortada = jogos[i][5].split("-");
 
 			if (dataCortada[0] == ano.toString()) {
-				quantidade += 1;
 				selecionados.push(jogos[i]);
 			}
 		}
 
-		if (ordemDecrescente) {
-			for (var i = quantidade - 1; i >= 0; i--) {
-				try {
-					ano = selecionados[i + 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		} else {
-			for (var i = 0; i < quantidade; i++) {
-				try {
-					ano = selecionados[i - 1][5].split("-")[0];
-				} catch (error) {
-					ano = 0;
-				}
-				escreveLinha(time, selecionados[i], i + 1, ano);
-				// Contabiliza vitória, empate ou derrota
-				if (selecionados[i][2] == selecionados[i][3]) {
-					empates += 1;
-				} else if (selecionados[i][0] == time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						vitorias += 1;
-					} else {
-						derrotas += 1;
-					}
-				} else if (selecionados[i][0] != time) {
-					if (selecionados[i][2] > selecionados[i][3]) {
-						derrotas += 1;
-					} else {
-						vitorias += 1;
-					}
-				}
-			}
-		}
-		estatisticas(quantidade, vitorias, empates, derrotas);
+		escreveLinhaOrdem(selecionados, ordemDecrescente, 'ano');
 	}
 }
 
@@ -749,7 +283,6 @@ function vitorias() {
 
 	var quantidade = 0;
 	var selecionados = [];
-	var ano;
 
 	for (var i = 0; i < jogos.length; i++) {
 		if (((jogos[i][0] == time) && (jogos[i][2] > jogos[i][3])) ||
@@ -759,26 +292,7 @@ function vitorias() {
 		}
 	}
 
-	if (ordemDecrescente) {
-		for (var i = quantidade - 1; i >= 0; i--) {
-			try {
-				ano = selecionados[i + 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-		}
-	} else {
-		for (var i = 0; i < quantidade; i++) {
-			try {
-				ano = selecionados[i - 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-		}
-	}
-	getVitorias(quantidade);
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'vitorias');
 }
 
 function empates() {
@@ -786,7 +300,6 @@ function empates() {
 
 	var quantidade = 0;
 	var selecionados = [];
-	var ano;
 
 	for (var i = 0; i < jogos.length; i++) {
 		if (jogos[i][2] == jogos[i][3]) {
@@ -795,26 +308,7 @@ function empates() {
 		}
 	}
 
-	if (ordemDecrescente) {
-		for (var i = quantidade - 1; i >= 0; i--) {
-			try {
-				ano = selecionados[i + 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-		}
-	} else {
-		for (var i = 0; i < quantidade; i++) {
-			try {
-				ano = selecionados[i - 1][5].split("-")[0];
-			} catch (error) {
-				ano = 0;
-			}
-			escreveLinha(time, selecionados[i], i + 1, ano);
-		}
-	}
-	getEmpates(quantidade);
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'empates');
 }
 
 function derrotas() {
@@ -822,7 +316,6 @@ function derrotas() {
 
 	var quantidade = 0;
 	var selecionados = [];
-	var ano;
 
 	for (var i = 0; i < jogos.length; i++) {
 		if (((jogos[i][0] == time) && (jogos[i][2] < jogos[i][3])) ||
@@ -832,7 +325,30 @@ function derrotas() {
 		}
 	}
 
-	if (ordemDecrescente) {
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'derrotas');
+}
+
+function outrosJogos() {
+	limpaTabela();
+
+	var contador = outros.length;
+	selecionados = [];
+
+	for (var i = 0; i < contador; i++) {
+		selecionados.push(outros[i]);
+	}
+
+	escreveLinhaOrdem(selecionados, ordemDecrescente, 'outros');
+}
+
+function escreveLinhaOrdem(selecionados, ordem, opcao) {
+	var quantidade = selecionados.length;
+	var vitorias = 0;
+	var empates = 0;
+	var derrotas = 0;
+	var ano;
+
+	if (ordem) {
 		for (var i = quantidade - 1; i >= 0; i--) {
 			try {
 				ano = selecionados[i + 1][5].split("-")[0];
@@ -840,6 +356,24 @@ function derrotas() {
 				ano = 0;
 			}
 			escreveLinha(time, selecionados[i], i + 1, ano);
+			if (!opcao.includes('outros')) {
+				// Contabiliza vitória, empate ou derrota
+				if (selecionados[i][2] == selecionados[i][3]) {
+					empates += 1;
+				} else if (selecionados[i][0] == time) {
+					if (selecionados[i][2] > selecionados[i][3]) {
+						vitorias += 1;
+					} else {
+						derrotas += 1;
+					}
+				} else if (selecionados[i][0] != time) {
+					if (selecionados[i][2] > selecionados[i][3]) {
+						derrotas += 1;
+					} else {
+						vitorias += 1;
+					}
+				}
+			}
 		}
 	} else {
 		for (var i = 0; i < quantidade; i++) {
@@ -849,9 +383,35 @@ function derrotas() {
 				ano = 0;
 			}
 			escreveLinha(time, selecionados[i], i + 1, ano);
+			if (selecionados[i][0] == time || selecionados[i][1] == time) {
+				// Contabiliza vitória, empate ou derrota
+				if (selecionados[i][2] == selecionados[i][3]) {
+					empates += 1;
+				} else if (selecionados[i][0] == time) {
+					if (selecionados[i][2] > selecionados[i][3]) {
+						vitorias += 1;
+					} else {
+						derrotas += 1;
+					}
+				} else if (selecionados[i][0] != time) {
+					if (selecionados[i][2] > selecionados[i][3]) {
+						derrotas += 1;
+					} else {
+						vitorias += 1;
+					}
+				}
+			}
 		}
 	}
-	getDerrotas(quantidade);
+	if (opcao.includes('vitorias')) {
+		getVitorias(quantidade);
+	} else if ((opcao.includes('empates'))) {
+		getEmpates(quantidade);
+	} else if ((opcao.includes('derrotas'))) {
+		getDerrotas(quantidade);
+	} else {
+		!opcao.includes('outros') && estatisticas(quantidade, vitorias, empates, derrotas);
+	}
 }
 
 function converteData(data) {
@@ -903,6 +463,8 @@ function getFuncaoSelect(valor) {
 		empates();
 	} else if (valor.includes("derrotas")) {
 		derrotas();
+	} else if (valor.includes("campeao")) {
+		campeao();
 	} else if (valor.includes("outros")) {
 		outrosJogos();
 	} else if (valor.includes("todos")) {
@@ -981,4 +543,23 @@ function fail() {
 
 	titulo.appendChild(texto);
 	corpo.append(titulo);
+}
+
+//Botão de voltar ao início
+window.onscroll = function(){
+	scroll();
+}
+
+function scroll(){
+	var botao = document.getElementById("voltarInicio");
+
+	if(document.documentElement.scrollTop > 50){
+		botao.style.display = "block";
+	} else{
+		botao.style.display = "none";
+	}
+}
+
+function backToTop(){
+	document.documentElement.scrollTop = 0;
 }

@@ -9,7 +9,8 @@
 7 - técnico
 8 - autorBotafogo
 9 - autorAdversario
-10 - vídeo do youtube (futuro)
+10 - vídeo do youtube
+11 - campeão
 */
 
 var jogos = [];
@@ -406,5 +407,26 @@ var jogo20211209 = ["Santos", "Cuiabá", 1, 1, "Brasileiro", "2021-12-09", "Vila
 jogos.push(jogo20211209);
 
 jogos.sort(function(a, b){
+    return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;
+});
+
+var outros = [];
+
+var jogo20180902 = ["Fluminense", "Flamengo", 1, 3, "Série A", "2018-09-02", "Maracanã (Rio de Janeiro)", "Fluminense - Enderson Moreira/ Flamengo - Oswaldo de Oliveira", ["Jean"], ["Emerson Sheik", "Paulinho", "Kayke"], "https://www.youtube.com/embed/QHZzGOpxz7w", false];
+outros.push(jogo20180902);
+var jogo20180902 = ["Flamengo", "Ceará", 0, 1, "Série A", "2018-09-02", "Maracanã (Rio de Janeiro)", "Flamengo - Maurício Barbieri/ Ceará - Lisca", [""], ["Leandro Carvalho"], "https://www.youtube.com/embed/j7UkV9lkfY4", false];
+outros.push(jogo20180902);
+var jogo20190427 = ["São Paulo", "Botafogo",  2, 0, "Série A", "2019-04-27", "Morumbi", "São Paulo - Cuca/ Botafogo - Eduardo Barroca", ["Éverton","Hudson"], [""], "https://www.youtube.com/embed/2xx8oQmkgwA", false];
+outros.push(jogo20190427);
+var jogo20190817 = ["Corinthians", "Botafogo",  2, 0, "Série A", "2019-08-17", "Arena Corinthians", "Corinthians - Fábio Carille/ Botafogo - Eduardo Barroca", ["Mauro Boselli","Everaldo"], [""], "https://www.youtube.com/embed/ZHKGm2vzBtE", false];
+outros.push(jogo20190817);
+var jogo20191006 = ["Botafogo", "Fluminense", 0, 1, "Série A", "2019-10-06", "Nilton Santos (Rio de Janeiro)", "Botafogo - Eduardo Barroca/ Fluminense - Marcão", [""], ["Yony González"], "https://www.youtube.com/embed/HIbXePVAK_U", false];
+outros.push(jogo20191006);
+// São paulo x colón
+// corinthians x montevideu wanderers
+// defensor x ?
+// progresso 0 x 1 peñarol 29/04/2018/ PRIMERA DIVISION / gol - fidel martínez / Estádio José Nasazzi Tecnico peña - Leonardo Ramos / progresso - Marcelo Méndez
+
+outros.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;
 });

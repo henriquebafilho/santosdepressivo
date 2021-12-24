@@ -430,6 +430,8 @@ var jogo20190817 = ["Corinthians", "Botafogo",  2, 0, "Série A", "2019-08-17", 
 outros.push(jogo20190817);
 var jogo20191006 = ["Botafogo", "Fluminense", 0, 1, "Série A", "2019-10-06", "Nilton Santos (Rio de Janeiro)", "Botafogo - Eduardo Barroca/ Fluminense - Marcão", [""], ["Yony González"], "https://www.youtube.com/embed/HIbXePVAK_U", false];
 outros.push(jogo20191006);
+var jogo20200125 = ["Internacional", "Grêmio", 1, 1, "Copinha", "2020-01-25", "Pacaembu", "Internacional - Fábio Matias/ Grêmio - Guilherme Dalzotto", ["Guilherme Pato","","Pênaltis: (3)","Cesinha","Tiago Barbosa","Carlos Eduardo"], ["Tiago Barbosa (GC)","","Pênaltis: (1)","Gazão"], "https://www.youtube.com/embed/fm37OxEk2-Y", true, 0];
+outros.push(jogo20200125);
 
 outros.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

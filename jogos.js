@@ -412,20 +412,24 @@ jogos.sort(function(a, b){
 
 var outros = [];
 
-var jogo20180902 = ["Fluminense", "Flamengo", 1, 3, "Série A", "2018-09-02", "Maracanã (Rio de Janeiro)", "Fluminense - Enderson Moreira/ Flamengo - Oswaldo de Oliveira", ["Jean"], ["Emerson Sheik", "Paulinho", "Kayke"], "https://www.youtube.com/embed/QHZzGOpxz7w", false];
-outros.push(jogo20180902);
+var jogo20150906 = ["Fluminense", "Flamengo", 1, 3, "Série A", "2015-09-06", "Maracanã (Rio de Janeiro)", "Fluminense - Enderson Moreira/ Flamengo - Oswaldo de Oliveira", ["Jean"], ["Emerson Sheik", "Paulinho", "Kayke"], "https://www.youtube.com/embed/QHZzGOpxz7w", false];
+outros.push(jogo20150906);
+var jogo20180429 = ["Progreso-URU", "Peñarol-URU", 0, 1, "Primera División", "2018-04-29", "José Nasazzi (Montevidéu)", "Progreso - Marcelo Méndez/ Peñarol - Leonardo Ramos", [""], ["Fidel Martínez"], "", false];
+outros.push(jogo20180429);
+var jogo20180430 = ["Defensor-URU", "Boston River-URU", 2, 1, "Primera División", "2018-04-30", "Luis Franzini (Montevidéu)", "Defensor - Eduardo Acevedo/ Boston River - Alejandro Apud", ["Germán Rivero", "Ernesto Goñi"], ["Gonzalo Mastriani"], "https://www.youtube.com/embed/jqFNFXDUCoc", false];
+outros.push(jogo20180430);
+var jogo20180802 = ["São Paulo", "Colón-ARG",  0, 1, "Copa Sul-Americana", "2018-08-02", "Morumbi", "São Paulo - Diego Aguirre/ Colón - Eduardo Domínguez", [""], ["Fritzler"], "https://www.youtube.com/embed/HD5ITKGcq00", false];
+outros.push(jogo20180802);
 var jogo20180902 = ["Flamengo", "Ceará", 0, 1, "Série A", "2018-09-02", "Maracanã (Rio de Janeiro)", "Flamengo - Maurício Barbieri/ Ceará - Lisca", [""], ["Leandro Carvalho"], "https://www.youtube.com/embed/j7UkV9lkfY4", false];
 outros.push(jogo20180902);
 var jogo20190427 = ["São Paulo", "Botafogo",  2, 0, "Série A", "2019-04-27", "Morumbi", "São Paulo - Cuca/ Botafogo - Eduardo Barroca", ["Éverton","Hudson"], [""], "https://www.youtube.com/embed/2xx8oQmkgwA", false];
 outros.push(jogo20190427);
+var jogo20190725 = ["Corinthians", "Montevideo Wanderers-URU",  2, 0, "Copa Sul-Americana", "2019-07-25", "Arena Corinthians", "Corinthians - Fábio Carille/ Montevideo Wanderers - Román Cuello", ["Clayson","Pedrinho"], [""], "https://www.youtube.com/embed/P8Ldfmtumyo", false];
+outros.push(jogo20190725);
 var jogo20190817 = ["Corinthians", "Botafogo",  2, 0, "Série A", "2019-08-17", "Arena Corinthians", "Corinthians - Fábio Carille/ Botafogo - Eduardo Barroca", ["Mauro Boselli","Everaldo"], [""], "https://www.youtube.com/embed/ZHKGm2vzBtE", false];
 outros.push(jogo20190817);
 var jogo20191006 = ["Botafogo", "Fluminense", 0, 1, "Série A", "2019-10-06", "Nilton Santos (Rio de Janeiro)", "Botafogo - Eduardo Barroca/ Fluminense - Marcão", [""], ["Yony González"], "https://www.youtube.com/embed/HIbXePVAK_U", false];
 outros.push(jogo20191006);
-// São paulo x colón
-// corinthians x montevideu wanderers
-// defensor x ?
-// progresso 0 x 1 peñarol 29/04/2018/ PRIMERA DIVISION / gol - fidel martínez / Estádio José Nasazzi Tecnico peña - Leonardo Ramos / progresso - Marcelo Méndez
 
 outros.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

@@ -133,6 +133,8 @@ function coresTimes(time, jogo = null) {
 			return ["#001c44", "white"];
 		case "Red Bull Brasil":
 			return ["#d30a11", "white"];
+		case "Rio Preto":
+			return ["#00923f", "white"];
 		case "River Plate-URU":
 			return ["#d30a11", "white"];
 		case "Santa Cruz":

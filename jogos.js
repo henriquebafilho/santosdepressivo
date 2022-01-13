@@ -127,6 +127,8 @@ var jogo20160821 = ["Coritiba", "Santos", 2, 1, "Brasileiro", "2016-08-21", "Cou
 jogos.push(jogo20160821);
 var jogo20160824 = ["Santos", "Vasco", 3, 1, "Copa do Brasil", "2016-08-24", "Vila Belmiro", "Dorival Júnior", ["Renato","Ricardo Oliveira","Lucas Lima"], ["Éder Luís"], "", false];
 jogos.push(jogo20160824);
+var jogo20160828 = ["Rio Preto", "Santos", 1, 0, "Paulista (Feminino)", "2016-08-28", "Anísio Haddad", "Caio Couto", [""], ["Suzana"], "https://www.youtube.com/embed/FlFb0GoAVE8", false];
+jogos.push(jogo20160828);
 var jogo20160911 = ["Santos", "Corinthians", 2, 1, "Brasileiro", "2016-09-11", "Vila Belmiro", "Dorival Júnior", ["Vitor Bueno","Renato"], ["Marlone"], "", false];
 jogos.push(jogo20160911);
 var jogo20160918 = ["Santos", "Santa Cruz", 3, 2, "Brasileiro", "2016-09-18", "Pacaembu", "Dorival Júnior", ["Copete","Jean Mota","Vitor Bueno"], ["Keno (2x)"], "", false];

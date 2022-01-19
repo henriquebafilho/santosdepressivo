@@ -157,6 +157,9 @@ function campeao() {
 
 function adversario() {
 	var adversario = document.getElementById("selectadversario").value;
+	var adversarioNome = juntaNome(adversario);
+	document.getElementById("confrontoMeuTime").src = "index_files/" +time+".png";
+	document.getElementById("confrontoAdversario").src = "index_files/" +adversarioNome+".png";
 
 	if (adversario != "") {
 		limpaTabela();
@@ -457,8 +460,11 @@ function getEscudoName(time, jogo) {
 	} else if (time == "Flamengo" && ano >= 2018) {
 		return "Flamengo2018";
 	}
+	return juntaNome(time);
+}
 
-	var cortaNome = time.split(" ");
+function juntaNome(nome){
+	var cortaNome = nome.split(" ");
 	var juntaNome = "";
 
 	for (var i = 0; i < cortaNome.length; i++) {

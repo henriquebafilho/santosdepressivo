@@ -73,8 +73,38 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	divPlacar.appendChild(summaryText);
 	divPlacar.appendChild(escudoVisitante);
 	
+	var divPlacarBCKP = document.createElement("div");
+	divPlacarBCKP.style.clear = "both";
+	var divMandanteBCKP = document.createElement("div");
+	var divResultadoBCKP = document.createElement("div");
+	var divVisitanteBCKP = document.createElement("div");
+
+	//divMandanteBCKP.style.backgroundColor = "red";
+	divMandanteBCKP.style.width = "40%";
+	divMandanteBCKP.style.float = "left";
+	divMandanteBCKP.style.textAlign = "right";
+	divMandanteBCKP.appendChild(escudoMandante);
+	divMandanteBCKP.appendChild(document.createTextNode(" " + jogo[0].toUpperCase()));
+	divResultadoBCKP.style.backgroundColor = "green";
+	divResultadoBCKP.style.width = "20%";
+	divResultadoBCKP.style.height = "1.5em";
+	divResultadoBCKP.style.display = "inline-block";
+	divResultadoBCKP.style.fontSize = "2em";
+	divResultadoBCKP.appendChild(document.createTextNode(jogo[2] + " X " + jogo[3]));
+	//divVisitanteBCKP.style.backgroundColor = "blue";
+	divVisitanteBCKP.style.width = "40%";
+	divVisitanteBCKP.style.float = "right";
+	divVisitanteBCKP.style.textAlign = "left";
+	divVisitanteBCKP.appendChild(document.createTextNode(jogo[1].toUpperCase() + " "));
+	divVisitanteBCKP.appendChild(escudoVisitante);
+
+	divPlacarBCKP.appendChild(divMandanteBCKP);
+	divPlacarBCKP.appendChild(divResultadoBCKP);
+	divPlacarBCKP.appendChild(divVisitanteBCKP);
+
 	summary.appendChild(pCabecalho);
 	summary.appendChild(divPlacar);
+	summary.appendChild(divPlacarBCKP);
 	if(jogo[11]){
 		var divTitulo = document.createElement("div");
 		var pTitulo = document.createElement("p");

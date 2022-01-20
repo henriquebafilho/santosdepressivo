@@ -159,7 +159,10 @@ function adversario() {
 	var adversario = document.getElementById("selectadversario").value;
 	var adversarioNome = juntaNome(adversario);
 	document.getElementById("confrontoMeuTime").src = "index_files/" +time+".png";
+	document.getElementById("confrontoMeuTime").style.borderRadius = "5px";
 	document.getElementById("confrontoAdversario").src = "index_files/" +adversarioNome+".png";
+	document.getElementById("confrontoAdversario").style.backgroundColor = coresTimes(adversario)[0];
+	document.getElementById("confrontoAdversario").style.borderRadius = "5px";
 
 	if (adversario != "") {
 		limpaTabela();
@@ -170,16 +173,22 @@ function adversario() {
 		for (var i = 0; i < contador; i++) {
 			if (adversario == "Atlético-PR" || adversario == "Athletico-PR") {
 				if (jogos[i][0] == "Atlético-PR"
-					|| jogos[i][0] == "Athletico-PR"
 					|| jogos[i][1] == "Atlético-PR"
+					|| jogos[i][0] == "Athletico-PR"
 					|| jogos[i][1] == "Athletico-PR") {
+					selecionados.push(jogos[i]);
+				}
+			} else if (adversario == "Bragantino" || adversario == "Red Bull Bragantino") {
+				if (jogos[i][0] == "Bragantino" 
+				|| jogos[i][1] == "Bragantino"
+				|| jogos[i][0] == "Red Bull Bragantino"
+				|| jogos[i][1] == "Red Bull Bragantino") {
 					selecionados.push(jogos[i]);
 				}
 			} else if (adversario == jogos[i][0] || adversario == jogos[i][1]) {
 				selecionados.push(jogos[i]);
 			}
 		}
-
 		escreveLinhaOrdem(selecionados, ordemDecrescente, 'adversario');
 	}
 }
@@ -194,11 +203,16 @@ function campeonato() {
 		selecionados = [];
 
 		for (var i = 0; i < contador; i++) {
-			if (campeonato == jogos[i][4]) {
+			if (campeonato == "Carioca") {
+				if (jogos[i][4].includes("Taça Rio")
+					|| jogos[i][4].includes("Taça Guanabara")
+					|| jogos[i][4].includes("Carioca")) {
+					selecionados.push(jogos[i]);
+				}
+			} else if (campeonato == jogos[i][4]) {
 				selecionados.push(jogos[i]);
 			}
 		}
-
 		escreveLinhaOrdem(selecionados, ordemDecrescente, 'campeonato');
 	}
 }
@@ -218,7 +232,6 @@ function estadio() {
 				selecionados.push(jogos[i]);
 			}
 		}
-
 		escreveLinhaOrdem(selecionados, ordemDecrescente, 'estadio');
 	}
 }
@@ -237,7 +250,6 @@ function tecnico() {
 				selecionados.push(jogos[i]);
 			}
 		}
-
 		escreveLinhaOrdem(selecionados, ordemDecrescente, 'tecnico');
 	}
 }
@@ -286,13 +298,11 @@ function ano() {
 function vitorias() {
 	limpaTabela();
 
-	var quantidade = 0;
 	var selecionados = [];
 
 	for (var i = 0; i < jogos.length; i++) {
 		if (((jogos[i][0] == time) && (jogos[i][2] > jogos[i][3])) ||
 			((jogos[i][1] == time) && (jogos[i][2] < jogos[i][3]))) {
-			quantidade += 1;
 			selecionados.push(jogos[i]);
 		}
 	}
@@ -303,12 +313,10 @@ function vitorias() {
 function empates() {
 	limpaTabela();
 
-	var quantidade = 0;
 	var selecionados = [];
 
 	for (var i = 0; i < jogos.length; i++) {
 		if (jogos[i][2] == jogos[i][3]) {
-			quantidade += 1;
 			selecionados.push(jogos[i]);
 		}
 	}
@@ -319,13 +327,11 @@ function empates() {
 function derrotas() {
 	limpaTabela();
 
-	var quantidade = 0;
 	var selecionados = [];
 
 	for (var i = 0; i < jogos.length; i++) {
 		if (((jogos[i][0] == time) && (jogos[i][2] < jogos[i][3])) ||
 			((jogos[i][1] == time) && (jogos[i][2] > jogos[i][3]))) {
-			quantidade += 1;
 			selecionados.push(jogos[i]);
 		}
 	}
@@ -455,10 +461,20 @@ function getEscudoName(time, jogo) {
 	var dataCortada = jogo[5].split("-");
 	var ano = parseInt(dataCortada[0]);
 
-	if (time == "Goiás" && ano >= 2019) {
+	if (time == "Goiás" && ano < 2019) {
 		return "Goiás2019";
-	} else if (time == "Flamengo" && ano >= 2018) {
+	} else if (time == "Internacional" && ano < 2009) {
+		return "Internacional2009";
+	} else if (time == "Náutico" && ano < 2008) {
+		return "Náutico2008";
+	} else if (time == "Flamengo" && ano < 2018) {
 		return "Flamengo2018";
+	} else if (time == "Resende" && ano < 2020) {
+		return "Resende2020";
+	} else if (time == "Vasco" && ano < 2021) {
+		return "Vasco2021";
+	} else if (time == "Atlético-GO" && ano < 2020) {
+		return "Atlético-GO2020";
 	}
 	return juntaNome(time);
 }

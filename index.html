@@ -21,6 +21,7 @@
 				document.getElementById("select"+selectValor).value = 'select'; 
 				document.getElementById("confrontoMeuTime").src = "";
 				document.getElementById("confrontoAdversario").src = "";
+				document.getElementById("versus") = "";
 			} catch (error) {}
 		});
 	});
@@ -123,9 +124,9 @@
 						<option value='Vitória'>Vitória</option>
 					</select>
 					<br><br>
-					<img id="confrontoMeuTime" width="80" style="display: inline;">
-					<!--<p id="versus" style="display: inline;"> X </p>-->
-					<img id="confrontoAdversario" width="80" style="display: inline;">
+					<img id="confrontoMeuTime" width="70" style="display: inline;">
+					<p id="versus" style="display: inline; padding-left: 10px; padding-right: 10px;"></p>
+					<img id="confrontoAdversario" width="70" style="display: inline;">
 				</div>
 
 				<div id='campeonato'>
@@ -155,6 +156,7 @@
 					<p>Escolha o ano: </p>
 					<select id='selectano' onchange="ano()">
 						<option value='select' disabled selected>Selecione o ano</option>
+						<option value='2022'>2022</option>
 						<option value='2021'>2021</option>
 						<option value='2020'>2020</option>
 						<option value='2019'>2019</option>
@@ -255,7 +257,6 @@
 	<div id="ordem">
 		<input type='button' id="ordemBotao" style="text-align: center;" onclick="escolheOrdem(document.getElementById('cabecalho').value)">
 	</div>
-	<br>
 	<div id="tabelaJogos">
 		<table id="jogos"></table>
 	</div>

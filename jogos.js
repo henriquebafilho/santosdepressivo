@@ -414,6 +414,8 @@ jogos.sort(function(a, b){
 
 var outros = [];
 
+var jogo20060128 = ["São Caetano", "Paulista", 2, 0, "Campeonato Paulista", "2006-01-28", "Anacleto Campanela", "Paulista - Vágner Mancini", [""], [""], "", false];
+outros.push(jogo20060128);
 var jogo20150906 = ["Fluminense", "Flamengo", 1, 3, "Série A", "2015-09-06", "Maracanã (Rio de Janeiro)", "Fluminense - Enderson Moreira/ Flamengo - Oswaldo de Oliveira", ["Jean"], ["Emerson Sheik", "Paulinho", "Kayke"], "https://www.youtube.com/embed/QHZzGOpxz7w", false];
 outros.push(jogo20150906);
 var jogo20180429 = ["Progreso-URU", "Peñarol-URU", 0, 1, "Primera División", "2018-04-29", "José Nasazzi (Montevidéu)", "Progreso - Marcelo Méndez/ Peñarol - Leonardo Ramos", [""], ["Fidel Martínez"], "", false];
@@ -424,6 +426,8 @@ var jogo20180802 = ["São Paulo", "Colón-ARG",  0, 1, "Copa Sul-Americana", "20
 outros.push(jogo20180802);
 var jogo20180902 = ["Flamengo", "Ceará", 0, 1, "Série A", "2018-09-02", "Maracanã (Rio de Janeiro)", "Flamengo - Maurício Barbieri/ Ceará - Lisca", [""], ["Leandro Carvalho"], "https://www.youtube.com/embed/j7UkV9lkfY4", false];
 outros.push(jogo20180902);
+var jogo20181003 = ["São Caetano", "Votuporanguense", 0, 1, "Copa Paulista", "2018-10-03", "Anacleto Campanela", "São Caetano - Pintado/ Votuporanguense - Rafael Guanaes", [""], ["Bruno Baio"], "https://www.youtube.com/embed/jWd-70GtGYQ", false];
+outros.push(jogo20181003);
 var jogo20190427 = ["São Paulo", "Botafogo",  2, 0, "Série A", "2019-04-27", "Morumbi", "São Paulo - Cuca/ Botafogo - Eduardo Barroca", ["Éverton","Hudson"], [""], "https://www.youtube.com/embed/2xx8oQmkgwA", false];
 outros.push(jogo20190427);
 var jogo20190725 = ["Corinthians", "Montevideo Wanderers-URU",  2, 0, "Copa Sul-Americana", "2019-07-25", "Arena Corinthians", "Corinthians - Fábio Carille/ Montevideo Wanderers - Román Cuello", ["Clayson","Pedrinho"], [""], "https://www.youtube.com/embed/P8Ldfmtumyo", false];

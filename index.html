@@ -19,8 +19,11 @@
 			$('#pai').children('#'+selectValor).show();
 			try { 
 				document.getElementById("select"+selectValor).value = 'select'; 
-				document.getElementById("confrontoMeuTime").src = "";
+				document.getElementById("confrontoMeuTime").style.border = "";
 				document.getElementById("confrontoAdversario").src = "";
+				document.getElementById("confrontoAdversario").style.backgroundColor = "";
+				document.getElementById("confrontoAdversario").style.border = "";
+				document.getElementById("confrontoAdversario").style.borderColor = "";
 			} catch (error) {}
 		});
 	});
@@ -59,7 +62,7 @@
 						<option value='América-RN'>América-RN</option>
 						<option value='Atlético-GO'>Atlético-GO</option>
 						<option value='Atlético-MG'>Atlético-MG</option>
-						<option value='Atlético-PR'>Atlético-PR (Athletico-PR)</option>
+						<option value='Athletico-PR'>Atlético-PR (Athletico-PR)</option>
 						<option value='Audax-SP'>Audax-SP</option>
 						<option value='Avaí'>Avaí</option>
 						<option value='Bahia'>Bahia</option>
@@ -123,8 +126,9 @@
 						<option value='Vitória'>Vitória</option>
 					</select>
 					<br><br>
-					<img id="confrontoMeuTime" width="100" style="display: inline;">
-					<img id="confrontoAdversario" width="100" style="display: inline;">
+					<img id="confrontoMeuTime" width="70" style="display: inline;">
+					<p id="versus" style="display: inline; padding-left: 10px; padding-right: 10px;"> X </p>
+					<img id="confrontoAdversario" width="70" style="display: inline;">
 				</div>
 
 				<div id='campeonato'>
@@ -154,6 +158,7 @@
 					<p>Escolha o ano: </p>
 					<select id='selectano' onchange="ano()">
 						<option value='select' disabled selected>Selecione o ano</option>
+						<option value='2022'>2022</option>
 						<option value='2021'>2021</option>
 						<option value='2020'>2020</option>
 						<option value='2019'>2019</option>
@@ -254,7 +259,6 @@
 	<div id="ordem">
 		<input type='button' id="ordemBotao" style="text-align: center;" onclick="escolheOrdem(document.getElementById('cabecalho').value)">
 	</div>
-	<br>
 	<div id="tabelaJogos">
 		<table id="jogos"></table>
 	</div>

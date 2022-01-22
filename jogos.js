@@ -407,6 +407,8 @@ var jogo20211128 = ["Internacional", "Santos", 1, 1, "Brasileiro", "2021-11-28",
 jogos.push(jogo20211128);
 var jogo20211209 = ["Santos", "Cuiabá", 1, 1, "Brasileiro", "2021-12-09", "Vila Belmiro", "Fábio Carille", ["Lucas Braga"], ["Marlon"], "https://www.youtube.com/embed/UYP8VzcILsc", false];
 jogos.push(jogo20211209);
+var jogo20220121 = ["Santos", "América-MG", 3, 0, "Copinha", "2022-01-21", "Anacleto Campanela", "Elder Campos", ["Lucas Barbosa (2x)","Weslley Patati"], [""], "https://www.youtube.com/embed/0HbdzT_yisE", false];
+jogos.push(jogo20220121);
 
 jogos.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

@@ -19,7 +19,7 @@ var jogo20021208 = ["Santos", "Corinthians", 2, 0, "Brasileiro", "2002-12-08", "
 jogos.push(jogo20021208);
 var jogo20021215 = ["Corinthians", "Santos", 2, 3, "Brasileiro", "2002-12-15", "Morumbi", "Emerson Leão", ["Elano","Léo","Robinho"], ["Anderson","Deivid"], "", true];
 jogos.push(jogo20021215);
-var jogo20030702 = ["Santos", "Boca Juniors-ARG", 1, 3, "Copa Libertadores", "2003-07-02", "Morumbi", "Emerson Leão", ["Alex"], ["Tévez","Delgado","Schiavi"], "", false];
+var jogo20030702 = ["Santos", "Boca Juniors", 1, 3, "Copa Libertadores", "2003-07-02", "Morumbi", "Emerson Leão", ["Alex"], ["Tévez","Delgado","Schiavi"], "", false];
 jogos.push(jogo20030702);
 var jogo20040912 = ["Palmeiras", "Santos", 1, 2, "Brasileiro", "2004-09-12", "Pacaembu", "Vanderlei Luxemburgo", ["Deivid","Elano"], ["Osmar"], "", false];
 jogos.push(jogo20040912);
@@ -39,11 +39,11 @@ var jogo20100425 = ["Santo André", "Santos", 2, 3, "Paulista", "2010-04-25", "P
 jogos.push(jogo20100425);
 var jogo20100502 = ["Santos", "Santo André", 2, 3, "Paulista", "2010-05-02", "Pacaembu", "Dorival Júnior", ["Neymar (2x)"], ["Nunes","Alê","Branquinho"], "", true];
 jogos.push(jogo20100502);
-var jogo20110420 = ["Santos", "Deportivo Tachira-VEN", 3, 1, "Copa Libertadores", "2011-04-20", "Pacaembu", "Muricy Ramalho", ["Neymar","Jonathan","Danilo"], ["Gerzon Chacón"], "", false];
+var jogo20110420 = ["Santos", "Deportivo Tachira", 3, 1, "Copa Libertadores", "2011-04-20", "Pacaembu", "Muricy Ramalho", ["Neymar","Jonathan","Danilo"], ["Gerzon Chacón"], "", false];
 jogos.push(jogo20110420);
-var jogo20110518 = ["Santos", "Once Caldas-COL", 1, 1, "Copa Libertadores", "2011-05-18", "Pacaembu", "Muricy Ramalho", ["Neymar"], ["Rentería"], "", false];
+var jogo20110518 = ["Santos", "Once Caldas", 1, 1, "Copa Libertadores", "2011-05-18", "Pacaembu", "Muricy Ramalho", ["Neymar"], ["Rentería"], "", false];
 jogos.push(jogo20110518);
-var jogo20110525 = ["Santos", "Cerro Porteño-PAR", 1, 0, "Copa Libertadores", "2011-05-25", "Pacaembu", "Muricy Ramalho", ["Edu Dracena"], [""], "", false];
+var jogo20110525 = ["Santos", "Cerro Porteño", 1, 0, "Copa Libertadores", "2011-05-25", "Pacaembu", "Muricy Ramalho", ["Edu Dracena"], [""], "", false];
 jogos.push(jogo20110525);
 var jogo20111029 = ["Santos", "Atlético-PR", 4, 1, "Brasileiro", "2011-10-29", "Pacaembu", "Muricy Ramalho", ["Neymar (4x)"], ["Guerrón"], "", false];
 jogos.push(jogo20111029);
@@ -133,7 +133,7 @@ var jogo20160911 = ["Santos", "Corinthians", 2, 1, "Brasileiro", "2016-09-11", "
 jogos.push(jogo20160911);
 var jogo20160918 = ["Santos", "Santa Cruz", 3, 2, "Brasileiro", "2016-09-18", "Pacaembu", "Dorival Júnior", ["Copete","Jean Mota","Vitor Bueno"], ["Keno (2x)"], "", false];
 jogos.push(jogo20160918);
-var jogo20161008 = ["Santos", "Benfica-POR", 1, 1, "Amistoso", "2016-10-08", "Vila Belmiro", "Dorival Júnior", ["Fábian Noguera"], ["Salvio"], "", false];
+var jogo20161008 = ["Santos", "Benfica", 1, 1, "Amistoso", "2016-10-08", "Vila Belmiro", "Dorival Júnior", ["Fábian Noguera"], ["Salvio"], "", false];
 jogos.push(jogo20161008);
 var jogo20161013 = ["São Paulo", "Santos", 0, 1, "Brasileiro", "2016-10-13", "Pacaembu", "Dorival Júnior", ["Copete"], [""], "", false];
 jogos.push(jogo20161013);
@@ -147,7 +147,7 @@ var jogo20170104 = ["Santos", "Floresta-CE", 1, 0, "Copinha", "2017-01-04", "Are
 jogos.push(jogo20170104);
 var jogo20170108 = ["Audax-SP", "Santos", 1, 1, "Copinha", "2017-01-08", "Arena Barueri", "Marcos Soares", ["André Anderson"], ["Wesley"], "", false];
 jogos.push(jogo20170108);
-var jogo20170128 = ["Santos", "Kenitra-MAR", 5, 1, "Amistoso", "2017-01-28", "Pacaembu", "Dorival Júnior", ["Rodrigão","Vitor Bueno (2x)","Vladimir Hernández","Thiago Ribeiro"], ["Hamza"], "", false];
+var jogo20170128 = ["Santos", "Kenitra", 5, 1, "Amistoso", "2017-01-28", "Pacaembu", "Dorival Júnior", ["Rodrigão","Vitor Bueno (2x)","Vladimir Hernández","Thiago Ribeiro"], ["Hamza"], "", false];
 jogos.push(jogo20170128);
 var jogo20170203 = ["Santos", "Linense", 6, 2, "Paulista", "2017-02-03", "Vila Belmiro", "Dorival Júnior", ["Rodrigão (2x)","Lucas Lima","Arthur Gomes","Vitor Bueno","Thiago Ribeiro"], ["Thiago Santos","Gabrielzinho"], "", false];
 jogos.push(jogo20170203);
@@ -157,19 +157,19 @@ var jogo20170218 = ["Santos", "Ferroviária", 0, 1, "Paulista", "2017-02-18", "V
 jogos.push(jogo20170218);
 var jogo20170312 = ["São Bernardo", "Santos", 1, 4, "Paulista", "2017-03-12", "Primeiro de Maio", "Dorival Júnior", ["Bruno Henrique (3x)","Rafael Longuine"], ["Geandro"], "", false];
 jogos.push(jogo20170312);
-var jogo20170316 = ["Santos", "The Strongest-BOL", 2, 0, "Copa Libertadores", "2017-03-16", "Vila Belmiro", "Dorival Júnior", ["Ricardo Oliveira","Renato"], [""], "", false];
+var jogo20170316 = ["Santos", "The Strongest", 2, 0, "Copa Libertadores", "2017-03-16", "Vila Belmiro", "Dorival Júnior", ["Ricardo Oliveira","Renato"], [""], "", false];
 jogos.push(jogo20170316);
 var jogo20170325 = ["Santo André", "Santos", 0, 1, "Paulista", "2017-03-25", "Bruno José Daniel", "Dorival Júnior", ["Copete"], [""], "", false];
 jogos.push(jogo20170325);
 var jogo20170410 = ["Santos", "Ponte Preta", 1, 0, "Paulista", "2017-04-10", "Pacaembu", "Dorival Júnior", ["David Braz","","Pênaltis: (4)","Kayke","Jean Mota","Copete","Lucas Lima"], ["","","Pênaltis: (5)","Ravanelli","Yago","Clayson","Jadson","William Pottker"], "", false];
 jogos.push(jogo20170410);
-var jogo20170504 = ["Santos", "Independiente Santa Fé-COL", 3, 2, "Copa Libertadores", "2017-05-04", "Pacaembu", "Dorival Júnior", ["Ricardo Oliveira","Vitor Bueno","Lucas Veríssimo"], ["Arango","Perlaza"], "", false];
+var jogo20170504 = ["Santos", "Independiente Santa Fé", 3, 2, "Copa Libertadores", "2017-05-04", "Pacaembu", "Dorival Júnior", ["Ricardo Oliveira","Vitor Bueno","Lucas Veríssimo"], ["Arango","Perlaza"], "", false];
 jogos.push(jogo20170504);
 var jogo20170514 = ["Fluminense", "Santos", 3, 2, "Brasileiro", "2017-05-14", "Maracanã", "Dorival Júnior", ["Victor Ferraz","Vladimir Hernández"], ["Henrique Dourado (2x)","Sornoza"], "", false];
 jogos.push(jogo20170514);
 var jogo20170520 = ["Santos", "Coritiba", 1, 0, "Brasileiro", "2017-05-20", "Vila Belmiro", "Dorival Júnior", ["David Braz"], [""], "", false];
 jogos.push(jogo20170520);
-var jogo20170523 = ["Santos", "Sporting Cristal-PER", 4, 0, "Copa Libertadores", "2017-05-23", "Vila Belmiro", "Dorival Júnior", ["David Braz (2x)","Ricardo Oliveira","Vitor Bueno"], [""], "", false];
+var jogo20170523 = ["Santos", "Sporting Cristal", 4, 0, "Copa Libertadores", "2017-05-23", "Vila Belmiro", "Dorival Júnior", ["David Braz (2x)","Ricardo Oliveira","Vitor Bueno"], [""], "", false];
 jogos.push(jogo20170523);
 var jogo20170528 = ["Santos", "Cruzeiro", 0, 1, "Brasileiro", "2017-05-28", "Vila Belmiro", "Dorival Júnior", [""], ["Thiago Neves"], "", false];
 jogos.push(jogo20170528);
@@ -235,7 +235,7 @@ var jogo20180324 = ["Santos", "Palmeiras", 0, 1, "Paulista", "2018-03-24", "Paca
 jogos.push(jogo20180324);
 var jogo20180414 = ["Santos", "Ceará", 2, 0, "Brasileiro", "2018-04-14", "Pacaembu", "Jair Ventura", ["Pio (GC)","Rodrygo"], [""], "", false];
 jogos.push(jogo20180414);
-var jogo20180424 = ["Santos", "Estudiantes-ARG", 2, 0, "Copa Libertadores", "2018-04-24", "Vila Belmiro", "Jair Ventura", ["Gabigol","Lucas Veríssimo"], [""], "", false];
+var jogo20180424 = ["Santos", "Estudiantes", 2, 0, "Copa Libertadores", "2018-04-24", "Vila Belmiro", "Jair Ventura", ["Gabigol","Lucas Veríssimo"], [""], "", false];
 jogos.push(jogo20180424);
 var jogo20180501 = ["Nacional-URU", "Santos", 1, 0, "Copa Libertadores", "2018-05-01", "Gran Parque Central", "Jair Ventura", [""], ["Barcia"], "", false];
 jogos.push(jogo20180501);
@@ -243,7 +243,7 @@ var jogo20180510 = ["Santos", "Luverdense", 5, 1, "Copa do Brasil", "2018-05-10"
 jogos.push(jogo20180510);
 var jogo20180513 = ["Santos", "Paraná", 3, 1, "Brasileiro", "2018-05-13", "Vila Belmiro", "Jair Ventura", ["Gabigol (2x)","Rodrygo"], ["Silvinho"], "", false];
 jogos.push(jogo20180513);
-var jogo20180524 = ["Santos", "Real Garcilaso-PER", 0, 0, "Copa Libertadores", "2018-05-24", "Vila Belmiro", "Jair Ventura", [""], [""], "", false];
+var jogo20180524 = ["Santos", "Real Garcilaso", 0, 0, "Copa Libertadores", "2018-05-24", "Vila Belmiro", "Jair Ventura", [""], [""], "", false];
 jogos.push(jogo20180524);
 var jogo20180527 = ["Santos", "Cruzeiro", 0, 1, "Brasileiro", "2018-05-27", "Pacaembu", "Jair Ventura", [""], ["Bruno Silva"], "", false];
 jogos.push(jogo20180527);
@@ -263,11 +263,11 @@ var jogo20180804 = ["Botafogo", "Santos", 0, 0, "Brasileiro", "2018-08-04", "Nil
 jogos.push(jogo20180804);
 var jogo20180818 = ["Santos", "Sport", 3, 0, "Brasileiro", "2018-08-18", "Vila Belmiro", "Cuca", ["Eduardo Sasha","Rodrygo","Victor Ferraz"], [""], "", false];
 jogos.push(jogo20180818);
-var jogo20180821 = ["Independiente-ARG", "Santos", 0, 0, "Copa Libertadores", "2018-08-21", "Libertadores de América", "Cuca", [""], [""], "", false];
+var jogo20180821 = ["Independiente", "Santos", 0, 0, "Copa Libertadores", "2018-08-21", "Libertadores de América", "Cuca", [""], [""], "", false];
 jogos.push(jogo20180821);
 var jogo20180825 = ["Santos", "Bahia", 2, 0, "Brasileiro", "2018-08-25", "Vila Belmiro", "Cuca", ["Derlis González","Gabigol"], [""], "", false];
 jogos.push(jogo20180825);
-var jogo20180828 = ["Santos", "Independiente-ARG", 0, 0, "Copa Libertadores", "2018-08-28", "Pacaembu", "Cuca", [""], [""], "", false];
+var jogo20180828 = ["Santos", "Independiente", 0, 0, "Copa Libertadores", "2018-08-28", "Pacaembu", "Cuca", [""], [""], "", false];
 jogos.push(jogo20180828);
 var jogo20180901 = ["Vasco", "Santos", 0, 3, "Brasileiro", "2018-09-01", "Maracanã", "Cuca", ["Gabigol (3x)"], [""], "", false];
 jogos.push(jogo20180901);
@@ -383,7 +383,7 @@ var jogo20200222 = ["Ituano", "Santos", 2, 0, "Paulista", "2020-02-22", "Municip
 jogos.push(jogo20200222);
 var jogo20200229 = ["Santos", "Palmeiras", 0, 0, "Paulista", "2020-02-29", "Pacaembu", "Jesualdo Ferreira", [""], [""], "https://www.youtube.com/embed/HiI-xyEhVZw", false];
 jogos.push(jogo20200229);
-var jogo20200303 = ["Defensa y Justicia-ARG", "Santos", 1, 2, "Copa Libertadores", "2020-03-03", "Norberto 'Tito' Tomaghello", "Jesualdo Ferreira", ["Jobson","Kaio Jorge"], ["Juan Rodríguez"], "https://www.youtube.com/embed/bPfDYs-wQjQ", false];
+var jogo20200303 = ["Defensa y Justicia", "Santos", 1, 2, "Copa Libertadores", "2020-03-03", "Norberto 'Tito' Tomaghello", "Jesualdo Ferreira", ["Jobson","Kaio Jorge"], ["Juan Rodríguez"], "https://www.youtube.com/embed/bPfDYs-wQjQ", false];
 jogos.push(jogo20200303);
 var jogo20200307 = ["Santos", "Mirassol", 3, 1, "Paulista", "2020-03-07", "Vila Belmiro", "Jesualdo Ferreira", ["Yuri Alberto","Diego Pituca","Eduardo Sasha"], ["Rafael Silva"], "https://www.youtube.com/embed/G7kdCSko_Hg", false];
 jogos.push(jogo20200307);
@@ -407,7 +407,7 @@ var jogo20211128 = ["Internacional", "Santos", 1, 1, "Brasileiro", "2021-11-28",
 jogos.push(jogo20211128);
 var jogo20211209 = ["Santos", "Cuiabá", 1, 1, "Brasileiro", "2021-12-09", "Vila Belmiro", "Fábio Carille", ["Lucas Braga"], ["Marlon"], "https://www.youtube.com/embed/UYP8VzcILsc", false];
 jogos.push(jogo20211209);
-var jogo20220121 = ["Santos", "América-MG", 3, 0, "Copinha", "2022-01-21", "Anacleto Campanela", "Elder Campos", ["Lucas Barbosa (2x)","Weslley Patati"], [""], "https://www.youtube.com/embed/0HbdzT_yisE", false];
+var jogo20220121 = ["Santos", "América-MG", 3, 0, "Copinha", "2022-01-21", "Anacleto Campanella", "Elder Campos", ["Lucas Barbosa (2x)","Weslley Patati"], [""], "https://www.youtube.com/embed/0HbdzT_yisE", false];
 jogos.push(jogo20220121);
 
 jogos.sort(function(a, b){
@@ -416,23 +416,23 @@ jogos.sort(function(a, b){
 
 var outros = [];
 
-var jogo20060128 = ["São Caetano", "Paulista", 2, 0, "Campeonato Paulista", "2006-01-28", "Anacleto Campanela", "Paulista - Vágner Mancini", [""], [""], "", false];
+var jogo20060128 = ["São Caetano", "Paulista", 2, 0, "Campeonato Paulista", "2006-01-28", "Anacleto Campanella", "Paulista - Vágner Mancini", [""], [""], "", false];
 outros.push(jogo20060128);
 var jogo20150906 = ["Fluminense", "Flamengo", 1, 3, "Série A", "2015-09-06", "Maracanã (Rio de Janeiro)", "Fluminense - Enderson Moreira/ Flamengo - Oswaldo de Oliveira", ["Jean"], ["Emerson Sheik", "Paulinho", "Kayke"], "https://www.youtube.com/embed/QHZzGOpxz7w", false];
 outros.push(jogo20150906);
-var jogo20180429 = ["Progreso-URU", "Peñarol-URU", 0, 1, "Primera División", "2018-04-29", "José Nasazzi (Montevidéu)", "Progreso - Marcelo Méndez/ Peñarol - Leonardo Ramos", [""], ["Fidel Martínez"], "", false];
+var jogo20180429 = ["Progreso", "Peñarol", 0, 1, "Primera División", "2018-04-29", "José Nasazzi (Montevidéu)", "Progreso - Marcelo Méndez/ Peñarol - Leonardo Ramos", [""], ["Fidel Martínez"], "", false];
 outros.push(jogo20180429);
-var jogo20180430 = ["Defensor-URU", "Boston River-URU", 2, 1, "Primera División", "2018-04-30", "Luis Franzini (Montevidéu)", "Defensor - Eduardo Acevedo/ Boston River - Alejandro Apud", ["Germán Rivero", "Ernesto Goñi"], ["Gonzalo Mastriani"], "https://www.youtube.com/embed/jqFNFXDUCoc", false];
+var jogo20180430 = ["Defensor", "Boston River", 2, 1, "Primera División", "2018-04-30", "Luis Franzini (Montevidéu)", "Defensor - Eduardo Acevedo/ Boston River - Alejandro Apud", ["Germán Rivero", "Ernesto Goñi"], ["Gonzalo Mastriani"], "https://www.youtube.com/embed/jqFNFXDUCoc", false];
 outros.push(jogo20180430);
-var jogo20180802 = ["São Paulo", "Colón-ARG",  0, 1, "Copa Sul-Americana", "2018-08-02", "Morumbi", "São Paulo - Diego Aguirre/ Colón - Eduardo Domínguez", [""], ["Fritzler"], "https://www.youtube.com/embed/HD5ITKGcq00", false];
+var jogo20180802 = ["São Paulo", "Colón",  0, 1, "Copa Sul-Americana", "2018-08-02", "Morumbi", "São Paulo - Diego Aguirre/ Colón - Eduardo Domínguez", [""], ["Fritzler"], "https://www.youtube.com/embed/HD5ITKGcq00", false];
 outros.push(jogo20180802);
 var jogo20180902 = ["Flamengo", "Ceará", 0, 1, "Série A", "2018-09-02", "Maracanã (Rio de Janeiro)", "Flamengo - Maurício Barbieri/ Ceará - Lisca", [""], ["Leandro Carvalho"], "https://www.youtube.com/embed/j7UkV9lkfY4", false];
 outros.push(jogo20180902);
-var jogo20181003 = ["São Caetano", "Votuporanguense", 0, 1, "Copa Paulista", "2018-10-03", "Anacleto Campanela", "São Caetano - Pintado/ Votuporanguense - Rafael Guanaes", [""], ["Bruno Baio"], "https://www.youtube.com/embed/jWd-70GtGYQ", false];
+var jogo20181003 = ["São Caetano", "Votuporanguense", 0, 1, "Copa Paulista", "2018-10-03", "Anacleto Campanella", "São Caetano - Pintado/ Votuporanguense - Rafael Guanaes", [""], ["Bruno Baio"], "https://www.youtube.com/embed/jWd-70GtGYQ", false];
 outros.push(jogo20181003);
 var jogo20190427 = ["São Paulo", "Botafogo",  2, 0, "Série A", "2019-04-27", "Morumbi", "São Paulo - Cuca/ Botafogo - Eduardo Barroca", ["Éverton","Hudson"], [""], "https://www.youtube.com/embed/2xx8oQmkgwA", false];
 outros.push(jogo20190427);
-var jogo20190725 = ["Corinthians", "Montevideo Wanderers-URU",  2, 0, "Copa Sul-Americana", "2019-07-25", "Arena Corinthians", "Corinthians - Fábio Carille/ Montevideo Wanderers - Román Cuello", ["Clayson","Pedrinho"], [""], "https://www.youtube.com/embed/P8Ldfmtumyo", false];
+var jogo20190725 = ["Corinthians", "Montevideo Wanderers",  2, 0, "Copa Sul-Americana", "2019-07-25", "Arena Corinthians", "Corinthians - Fábio Carille/ Montevideo Wanderers - Román Cuello", ["Clayson","Pedrinho"], [""], "https://www.youtube.com/embed/P8Ldfmtumyo", false];
 outros.push(jogo20190725);
 var jogo20190817 = ["Corinthians", "Botafogo",  2, 0, "Série A", "2019-08-17", "Arena Corinthians", "Corinthians - Fábio Carille/ Botafogo - Eduardo Barroca", ["Mauro Boselli","Everaldo"], [""], "https://www.youtube.com/embed/ZHKGm2vzBtE", false];
 outros.push(jogo20190817);

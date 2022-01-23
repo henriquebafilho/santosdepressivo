@@ -97,7 +97,7 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	divVisitanteBCKP.style.fontSize = jogo[1].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
 	divVisitanteBCKP.style.color = coresTimes(visitante)[1];
 	divVisitanteBCKP.style.textShadow = coresTimes(visitante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
-	divVisitanteBCKP.appendChild(document.createTextNode(" " + jogo[1].toUpperCase()));
+	divVisitanteBCKP.appendChild(document.createTextNode(" " + jogo[1].toUpperCase() + " "));
 	divVisitanteBCKP.appendChild(escudoVisitante);
 
 	divPlacarBCKP.appendChild(divMandanteBCKP);
@@ -105,7 +105,6 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	divPlacarBCKP.appendChild(divVisitanteBCKP);
 
 	summary.appendChild(pCabecalho);
-	//summary.appendChild(divPlacar);
 	summary.appendChild(divPlacarBCKP);
 	if(jogo[11]){
 		var divTitulo = document.createElement("div");

@@ -71,28 +71,30 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	escudoVisitante.style.width = '3em';
 	escudoVisitante.style.height = '3em';
 
-	//divMandanteBCKP.style.backgroundColor = "red";
+	// Mandante
 	divMandanteBCKP.style.width = "40%";
 	divMandanteBCKP.style.float = "left";
 	divMandanteBCKP.style.textAlign = "right";
 	divMandanteBCKP.style.whiteSpace = "pre-wrap";
-	divMandanteBCKP.style.fontSize = "1.7vw";
+	divMandanteBCKP.style.fontSize = jogo[0].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	//divMandanteBCKP.style.fontSize = "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
 	divMandanteBCKP.style.color = coresTimes(mandante)[1];
 	divMandanteBCKP.style.textShadow = coresTimes(mandante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
 	divMandanteBCKP.appendChild(escudoMandante);
 	divMandanteBCKP.appendChild(document.createTextNode(" " + jogo[0].toUpperCase()));
-	//divResultadoBCKP.style.backgroundColor = "green";
+	// Placar
 	divResultadoBCKP.style.width = "15%";
 	divResultadoBCKP.style.height = "1.5em";
 	divResultadoBCKP.style.display = "inline-block";
 	divResultadoBCKP.style.fontSize = "2.4em";
 	divResultadoBCKP.appendChild(document.createTextNode(jogo[2] + " - " + jogo[3]));
-	//divVisitanteBCKP.style.backgroundColor = "blue";
+	// Visitante
 	divVisitanteBCKP.style.width = "40%";
 	divVisitanteBCKP.style.float = "right";
 	divVisitanteBCKP.style.textAlign = "left";
 	divVisitanteBCKP.style.whiteSpace = "pre-wrap";
-	divVisitanteBCKP.style.fontSize = "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	divVisitanteBCKP.style.fontSize = jogo[1].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	// divVisitanteBCKP.style.fontSize = "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
 	divVisitanteBCKP.style.color = coresTimes(visitante)[1];
 	divVisitanteBCKP.style.textShadow = coresTimes(visitante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
 	divVisitanteBCKP.appendChild(document.createTextNode(jogo[1].toUpperCase() + " "));

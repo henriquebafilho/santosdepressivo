@@ -54,12 +54,12 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	var textCabecalho = document.createTextNode(converteDia(data.getDay()) + ", " + converteData(jogo[5]) + " | " + "Estádio " + jogo[6] + " | " + jogo[4]);
 	pCabecalho.appendChild(textCabecalho);
 	
-	var divPlacarBCKP = document.createElement("div");
-	divPlacarBCKP.style.clear = "both";
-	divPlacarBCKP.style.whiteSpace = "nowrap";
-	var divMandanteBCKP = document.createElement("div");
-	var divResultadoBCKP = document.createElement("div");
-	var divVisitanteBCKP = document.createElement("div");
+	var divPlacar = document.createElement("div");
+	divPlacar.style.clear = "both";
+	divPlacar.style.whiteSpace = "nowrap";
+	var divMandante = document.createElement("div");
+	var divResultado = document.createElement("div");
+	var divVisitante = document.createElement("div");
 
 	var escudoMandante = document.createElement("img");
 	escudoMandante.src = "index_files/" + getEscudoName(mandante, jogo) + ".png";
@@ -72,40 +72,40 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	escudoVisitante.style.height = '3em';
 
 	// Mandante
-	divMandanteBCKP.style.width = "40%";
-	divMandanteBCKP.style.float = "left";
-	divMandanteBCKP.style.textAlign = "right";
-	divMandanteBCKP.style.whiteSpace = "pre-wrap";
-	divMandanteBCKP.style.lineHeight = "35px";
-	divMandanteBCKP.style.fontSize = jogo[0].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
-	divMandanteBCKP.style.color = coresTimes(mandante)[1];
-	divMandanteBCKP.style.textShadow = coresTimes(mandante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
-	divMandanteBCKP.appendChild(escudoMandante);
-	divMandanteBCKP.appendChild(document.createTextNode(" " + jogo[0].toUpperCase()));
+	divMandante.style.width = "40%";
+	divMandante.style.float = "left";
+	divMandante.style.textAlign = "right";
+	divMandante.style.whiteSpace = "pre-wrap";
+	divMandante.style.lineHeight = "35px";
+	divMandante.style.fontSize = jogo[0].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	divMandante.style.color = coresTimes(mandante)[1];
+	divMandante.style.textShadow = coresTimes(mandante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
+	divMandante.appendChild(escudoMandante);
+	divMandante.appendChild(document.createTextNode(" " + jogo[0].toUpperCase()));
 	// Placar
-	divResultadoBCKP.style.width = "15%";
-	divResultadoBCKP.style.height = "1.5em";
-	divResultadoBCKP.style.display = "inline-block";
-	divResultadoBCKP.style.fontSize = "2.4em";
-	divResultadoBCKP.appendChild(document.createTextNode(jogo[2] + " - " + jogo[3]));
+	divResultado.style.width = "15%";
+	divResultado.style.height = "1.5em";
+	divResultado.style.display = "inline-block";
+	divResultado.style.fontSize = "2.4em";
+	divResultado.appendChild(document.createTextNode(jogo[2] + " - " + jogo[3]));
 	// Visitante
-	divVisitanteBCKP.style.width = "40%";
-	divVisitanteBCKP.style.float = "right";
-	divVisitanteBCKP.style.textAlign = "left";
-	divVisitanteBCKP.style.whiteSpace = "pre-wrap";
-	divVisitanteBCKP.style.lineHeight = "35px";
-	divVisitanteBCKP.style.fontSize = jogo[1].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
-	divVisitanteBCKP.style.color = coresTimes(visitante)[1];
-	divVisitanteBCKP.style.textShadow = coresTimes(visitante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
-	divVisitanteBCKP.appendChild(document.createTextNode(" " + jogo[1].toUpperCase() + " "));
-	divVisitanteBCKP.appendChild(escudoVisitante);
+	divVisitante.style.width = "40%";
+	divVisitante.style.float = "right";
+	divVisitante.style.textAlign = "left";
+	divVisitante.style.whiteSpace = "pre-wrap";
+	divVisitante.style.lineHeight = "35px";
+	divVisitante.style.fontSize = jogo[1].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	divVisitante.style.color = coresTimes(visitante)[1];
+	divVisitante.style.textShadow = coresTimes(visitante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
+	divVisitante.appendChild(document.createTextNode(" " + jogo[1].toUpperCase() + " "));
+	divVisitante.appendChild(escudoVisitante);
 
-	divPlacarBCKP.appendChild(divMandanteBCKP);
-	divPlacarBCKP.appendChild(divResultadoBCKP);
-	divPlacarBCKP.appendChild(divVisitanteBCKP);
+	divPlacar.appendChild(divMandante);
+	divPlacar.appendChild(divResultado);
+	divPlacar.appendChild(divVisitante);
 
 	summary.appendChild(pCabecalho);
-	summary.appendChild(divPlacarBCKP);
+	summary.appendChild(divPlacar);
 	if(jogo[11]){
 		var divTitulo = document.createElement("div");
 		var pTitulo = document.createElement("p");

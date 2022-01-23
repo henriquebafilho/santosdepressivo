@@ -76,8 +76,8 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	divMandanteBCKP.style.float = "left";
 	divMandanteBCKP.style.textAlign = "right";
 	divMandanteBCKP.style.whiteSpace = "pre-wrap";
+	divMandanteBCKP.style.lineHeight = "35px";
 	divMandanteBCKP.style.fontSize = jogo[0].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
-	//divMandanteBCKP.style.fontSize = "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
 	divMandanteBCKP.style.color = coresTimes(mandante)[1];
 	divMandanteBCKP.style.textShadow = coresTimes(mandante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
 	divMandanteBCKP.appendChild(escudoMandante);
@@ -93,8 +93,8 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	divVisitanteBCKP.style.float = "right";
 	divVisitanteBCKP.style.textAlign = "left";
 	divVisitanteBCKP.style.whiteSpace = "pre-wrap";
+	divVisitanteBCKP.style.lineHeight = "35px";
 	divVisitanteBCKP.style.fontSize = jogo[1].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
-	// divVisitanteBCKP.style.fontSize = "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
 	divVisitanteBCKP.style.color = coresTimes(visitante)[1];
 	divVisitanteBCKP.style.textShadow = coresTimes(visitante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
 	divVisitanteBCKP.appendChild(document.createTextNode(" " + jogo[1].toUpperCase()));

@@ -45,7 +45,7 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	summary.style.fontWeight = "bold";
 	summary.style.fontSize = '200%';
 	summary.style.textShadow = coresTimes(mandante, jogo)[0] == "white" && coresTimes(visitante, jogo)[0] == "white" ? "" : "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000";
-
+	
 	var pCabecalho = document.createElement("p");
 	pCabecalho.style.fontWeight = "normal";
 	pCabecalho.style.fontSize = '1em';
@@ -53,28 +53,60 @@ function escreveLinha(meuTime, jogo, numero, ano){
 	var data = new Date(jogo[5]);
 	var textCabecalho = document.createTextNode(converteDia(data.getDay()) + ", " + converteData(jogo[5]) + " | " + "Estádio " + jogo[6] + " | " + jogo[4]);
 	pCabecalho.appendChild(textCabecalho);
+	
+	var divPlacarBCKP = document.createElement("div");
+	divPlacarBCKP.style.clear = "both";
+	divPlacarBCKP.style.whiteSpace = "nowrap";
+	var divMandanteBCKP = document.createElement("div");
+	var divResultadoBCKP = document.createElement("div");
+	var divVisitanteBCKP = document.createElement("div");
 
-	var divPlacar = document.createElement("div");
-	divPlacar.className = "placar";
-	divPlacar.style.display = "nowrap";
-	divPlacar.style.whiteSpace = "nowrap";
 	var escudoMandante = document.createElement("img");
 	escudoMandante.src = "index_files/" + getEscudoName(mandante, jogo) + ".png";
 	escudoMandante.style.width = '3em';
 	escudoMandante.style.height = '3em';
-	var summaryText = document.createTextNode(" " + jogo[0].toUpperCase() + " " + jogo[2] + " X " + jogo[3] + " " + jogo[1].toUpperCase() + " ");
-	divPlacar.style.fontSize = summaryText.length < 38 ? '1em' : '0.85em';
+
 	var escudoVisitante = document.createElement("img");
 	escudoVisitante.src = "index_files/" + getEscudoName(visitante, jogo) + ".png";
 	escudoVisitante.style.width = '3em';
 	escudoVisitante.style.height = '3em';
 
-	divPlacar.appendChild(escudoMandante);
-	divPlacar.appendChild(summaryText);
-	divPlacar.appendChild(escudoVisitante);
-	
+	// Mandante
+	divMandanteBCKP.style.width = "40%";
+	divMandanteBCKP.style.float = "left";
+	divMandanteBCKP.style.textAlign = "right";
+	divMandanteBCKP.style.whiteSpace = "pre-wrap";
+	divMandanteBCKP.style.fontSize = jogo[0].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	//divMandanteBCKP.style.fontSize = "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	divMandanteBCKP.style.color = coresTimes(mandante)[1];
+	divMandanteBCKP.style.textShadow = coresTimes(mandante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
+	divMandanteBCKP.appendChild(escudoMandante);
+	divMandanteBCKP.appendChild(document.createTextNode(" " + jogo[0].toUpperCase()));
+	// Placar
+	divResultadoBCKP.style.width = "15%";
+	divResultadoBCKP.style.height = "1.5em";
+	divResultadoBCKP.style.display = "inline-block";
+	divResultadoBCKP.style.fontSize = "2.4em";
+	divResultadoBCKP.appendChild(document.createTextNode(jogo[2] + " - " + jogo[3]));
+	// Visitante
+	divVisitanteBCKP.style.width = "40%";
+	divVisitanteBCKP.style.float = "right";
+	divVisitanteBCKP.style.textAlign = "left";
+	divVisitanteBCKP.style.whiteSpace = "pre-wrap";
+	divVisitanteBCKP.style.fontSize = jogo[1].length >= 13 && window.screen.width < 400 ? "0.7em" : "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	// divVisitanteBCKP.style.fontSize = "clamp(0.5em, 0.8em + 0.8vw, 1vw);";
+	divVisitanteBCKP.style.color = coresTimes(visitante)[1];
+	divVisitanteBCKP.style.textShadow = coresTimes(visitante, jogo)[1] == "white" ? "0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000, 0 0 3px #000000" : "none";
+	divVisitanteBCKP.appendChild(document.createTextNode(jogo[1].toUpperCase() + " "));
+	divVisitanteBCKP.appendChild(escudoVisitante);
+
+	divPlacarBCKP.appendChild(divMandanteBCKP);
+	divPlacarBCKP.appendChild(divResultadoBCKP);
+	divPlacarBCKP.appendChild(divVisitanteBCKP);
+
 	summary.appendChild(pCabecalho);
-	summary.appendChild(divPlacar);
+	//summary.appendChild(divPlacar);
+	summary.appendChild(divPlacarBCKP);
 	if(jogo[11]){
 		var divTitulo = document.createElement("div");
 		var pTitulo = document.createElement("p");

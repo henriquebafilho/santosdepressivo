@@ -418,6 +418,8 @@ var outros = [];
 
 var jogo20060128 = ["São Caetano", "Paulista", 2, 0, "Campeonato Paulista", "2006-01-28", "Anacleto Campanella", "Paulista - Vágner Mancini", [""], [""], "", false];
 outros.push(jogo20060128);
+var jogo20070616 = ["Corinthians", "Paraná", 0, 0, "Campeonato Paulista", "2007-06-16", "Morumbi", "Corinthians - Carpegiani/ Paraná - Pintado", [""], [""], "https://www.youtube.com/embed/EZKjrI6FnsY", false];
+outros.push(jogo20070616);
 var jogo20150906 = ["Fluminense", "Flamengo", 1, 3, "Série A", "2015-09-06", "Maracanã (Rio de Janeiro)", "Fluminense - Enderson Moreira/ Flamengo - Oswaldo de Oliveira", ["Jean"], ["Emerson Sheik", "Paulinho", "Kayke"], "https://www.youtube.com/embed/QHZzGOpxz7w", false];
 outros.push(jogo20150906);
 var jogo20180429 = ["Progreso", "Peñarol", 0, 1, "Primera División", "2018-04-29", "José Nasazzi (Montevidéu)", "Progreso - Marcelo Méndez/ Peñarol - Leonardo Ramos", [""], ["Fidel Martínez"], "", false];

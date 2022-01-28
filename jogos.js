@@ -432,6 +432,10 @@ var jogo20180902 = ["Flamengo", "Ceará", 0, 1, "Série A", "2018-09-02", "Marac
 outros.push(jogo20180902);
 var jogo20181003 = ["São Caetano", "Votuporanguense", 0, 1, "Copa Paulista", "2018-10-03", "Anacleto Campanella", "São Caetano - Pintado/ Votuporanguense - Rafael Guanaes", [""], ["Bruno Baio"], "https://www.youtube.com/embed/jWd-70GtGYQ", false];
 outros.push(jogo20181003);
+var jogo20181020 = ["São Paulo", "Atlético-PR", 0, 0, "Copa Libertadores", "2018-10-20", "Morumbi", "São Paulo - Diego Aguirre/ Atlético-PR - Tiago Nunes", [""], [""], "https://www.youtube.com/embed/kul90-zv-yY", false];
+outros.push(jogo20181020);
+var jogo20181031 = ["Palmeiras", "Boca Juniors", 2, 2, "Copa Libertadores", "2018-10-31", "Allianz Parque", "Palmeiras - Felipão/ Boca Juniors - Schelotto", ["Luan","Gustavo Gómez"], ["Ábila","Benedetto"], "https://www.youtube.com/embed/Q6eSO0N10yY", false];
+outros.push(jogo20181031);
 var jogo20190427 = ["São Paulo", "Botafogo",  2, 0, "Série A", "2019-04-27", "Morumbi", "São Paulo - Cuca/ Botafogo - Eduardo Barroca", ["Éverton","Hudson"], [""], "https://www.youtube.com/embed/2xx8oQmkgwA", false];
 outros.push(jogo20190427);
 var jogo20190725 = ["Corinthians", "Montevideo Wanderers",  2, 0, "Copa Sul-Americana", "2019-07-25", "Arena Corinthians", "Corinthians - Fábio Carille/ Montevideo Wanderers - Román Cuello", ["Clayson","Pedrinho"], [""], "https://www.youtube.com/embed/P8Ldfmtumyo", false];

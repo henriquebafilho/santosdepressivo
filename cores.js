@@ -212,7 +212,7 @@ function coresTimes(time, jogo = null) {
 		case "Santos":
 			return ["white", "black"];
 		case "Santo André":
-			return ["#2d3491", "white"];
+			return ["#003a94", "white"];
 		case "São Bernardo":
 			return ["#ffdd00", "black"];
 		case "São Bento":

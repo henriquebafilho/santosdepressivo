@@ -223,9 +223,9 @@ var jogo20180214 = ["Santos", "São Caetano", 2, 0, "Paulista", "2018-02-14", "V
 jogos.push(jogo20180214);
 var jogo20180225 = ["Santos", "Santo André", 2, 0, "Paulista", "2018-02-25", "Vila Belmiro", "Jair Ventura", ["Gabigol","Eduardo Sasha"], [""], "", false];
 jogos.push(jogo20180225);
-var jogo20180304 = ["Santos", "Corinthians", 1, 1, "Paulista", "2018-03-04", "Pacaembu", "Jair Ventura", ["Diogo Vitor"], ["Renê Junior"], "", false];
+var jogo20180304 = ["Santos", "Corinthians", 1, 1, "Paulista", "2018-03-04", "Pacaembu", "Jair Ventura", ["Diogo Vitor"], ["Renê Junior"], "https://www.youtube.com/embed/Ed9hFWP8Qe4", false];
 jogos.push(jogo20180304);
-var jogo20180311 = ["Santos", "São Bento", 1, 3, "Paulista", "2018-03-11", "Vila Belmiro", "Jair Ventura", ["Arthur Gomes"], ["Marcelo Cordeiro","Lúcio Flávio","Fábio Bahia"], "", false];
+var jogo20180311 = ["Santos", "São Bento", 1, 3, "Paulista", "2018-03-11", "Vila Belmiro", "Jair Ventura", ["Arthur Gomes"], ["Marcelo Cordeiro","Lúcio Flávio","Fábio Bahia"], "https://www.youtube.com/embed/BTI_jrUTxyE", false];
 jogos.push(jogo20180311);
 var jogo20180315 = ["Santos", "Nacional-URU", 3, 1, "Copa Libertadores", "2018-03-15", "Pacaembu", "Jair Ventura", ["Eduardo Sasha (2x)","Rodrygo"], ["Oliva"], "https://www.youtube.com/embed/ExbsrH6tzQA", false];
 jogos.push(jogo20180315);
@@ -422,10 +422,16 @@ var jogo20070616 = ["Corinthians", "Paraná", 0, 0, "Campeonato Paulista", "2007
 outros.push(jogo20070616);
 var jogo20150906 = ["Fluminense", "Flamengo", 1, 3, "Série A", "2015-09-06", "Maracanã (Rio de Janeiro)", "Fluminense - Enderson Moreira/ Flamengo - Oswaldo de Oliveira", ["Jean"], ["Emerson Sheik", "Paulinho", "Kayke"], "https://www.youtube.com/embed/QHZzGOpxz7w", false];
 outros.push(jogo20150906);
+var jogo20180228 = ["São Paulo", "CRB", 2, 0, "Copa do Brasil", "2018-02-28", "Morumbi", "São Paulo - Dorival Júnior/ CRB - Mazola Júnior", ["Valdívia","Éder Militão"], [""], "https://www.youtube.com/embed/ENYxe-k30a8", false];
+outros.push(jogo20180228);
+var jogo20180314 = ["Corinthians", "Deportivo Lara", 2, 0, "Copa do Brasil", "2018-03-14", "Arena Corinthians", "Corinthians - Fábio Carille/ Deportivo Lara - Leonardo González", ["Emerson Sheik","Pernía (GC)"], [""], "https://www.youtube.com/embed/TTHj5AO1Xzw", false];
+outros.push(jogo20180314);
 var jogo20180429 = ["Progreso", "Peñarol", 0, 1, "Primera División", "2018-04-29", "José Nasazzi (Montevidéu)", "Progreso - Marcelo Méndez/ Peñarol - Leonardo Ramos", [""], ["Fidel Martínez"], "", false];
 outros.push(jogo20180429);
 var jogo20180430 = ["Defensor", "Boston River", 2, 1, "Primera División", "2018-04-30", "Luis Franzini (Montevidéu)", "Defensor - Eduardo Acevedo/ Boston River - Alejandro Apud", ["Germán Rivero", "Ernesto Goñi"], ["Gonzalo Mastriani"], "https://www.youtube.com/embed/jqFNFXDUCoc", false];
 outros.push(jogo20180430);
+var jogo20180509 = ["São Paulo", "Rosario Central", 1, 0, "Copa Sul-Americana", "2018-05-09", "Morumbi", "São Paulo - Diego Aguirre/ Rosario Central - Leonardo Fernández", ["Diego Souza"], [""], "https://www.youtube.com/embed/wAyKcQTaxHI", false];
+outros.push(jogo20180509);
 var jogo20180802 = ["São Paulo", "Colón",  0, 1, "Copa Sul-Americana", "2018-08-02", "Morumbi", "São Paulo - Diego Aguirre/ Colón - Eduardo Domínguez", [""], ["Fritzler"], "https://www.youtube.com/embed/HD5ITKGcq00", false];
 outros.push(jogo20180802);
 var jogo20180902 = ["Flamengo", "Ceará", 0, 1, "Série A", "2018-09-02", "Maracanã (Rio de Janeiro)", "Flamengo - Maurício Barbieri/ Ceará - Lisca", [""], ["Leandro Carvalho"], "https://www.youtube.com/embed/j7UkV9lkfY4", false];
@@ -438,7 +444,7 @@ var jogo20181003 = ["São Caetano", "Votuporanguense", 0, 1, "Copa Paulista", "2
 outros.push(jogo20181003);
 var jogo20181006 = ["Santo André", "Audax-SP", 3, 0, "Copa Paulista", "2018-10-06", "Bruno José Daniel", "Santo André - José Carlos Palhavam/ Audax-SP - Max Sandro", ["Natan Dutra","Frank","David Ribeiro"], [""], "https://www.youtube.com/embed/7HzVdulpEKM", false];
 outros.push(jogo20181006);
-var jogo20181020 = ["São Paulo", "Atlético-PR", 0, 0, "Copa Libertadores", "2018-10-20", "Morumbi", "São Paulo - Diego Aguirre/ Atlético-PR - Tiago Nunes", [""], [""], "https://www.youtube.com/embed/kul90-zv-yY", false];
+var jogo20181020 = ["São Paulo", "Atlético-PR", 0, 0, "Série A", "2018-10-20", "Morumbi", "São Paulo - Diego Aguirre/ Atlético-PR - Tiago Nunes", [""], [""], "https://www.youtube.com/embed/kul90-zv-yY", false];
 outros.push(jogo20181020);
 var jogo20181031 = ["Palmeiras", "Boca Juniors", 2, 2, "Copa Libertadores", "2018-10-31", "Allianz Parque", "Palmeiras - Felipão/ Boca Juniors - Schelotto", ["Luan","Gustavo Gómez"], ["Ábila","Benedetto"], "https://www.youtube.com/embed/Q6eSO0N10yY", false];
 outros.push(jogo20181031);

@@ -160,7 +160,7 @@ function campeao() {
 function adversario() {
 	var adversario = document.getElementById("selectadversario").value;
 	var adversarioNome = juntaNome(adversario);
-
+	
 	document.getElementById("confrontoAdversario").src = "index_files/" +adversarioNome+".png";
 	document.getElementById("confrontoAdversario").style.backgroundColor = coresTimes(adversario)[0];
 	document.getElementById("confrontoAdversario").style.border = "5px solid";
@@ -175,10 +175,10 @@ function adversario() {
 
 		for (var i = 0; i < contador; i++) {
 			if (adversario == "Atlético-PR" || adversario == "Athletico-PR") {
-				if (jogos[i][0] == "Atlético-PR"
-					|| jogos[i][1] == "Atlético-PR"
-					|| jogos[i][0] == "Athletico-PR"
-					|| jogos[i][1] == "Athletico-PR") {
+				if (jogos[i][0] == "Atlético-PR" 
+				|| jogos[i][1] == "Atlético-PR"
+				|| jogos[i][0] == "Athletico-PR"
+				|| jogos[i][1] == "Athletico-PR") {
 					selecionados.push(jogos[i]);
 				}
 			} else if (adversario == "Bragantino" || adversario == "Red Bull Bragantino") {
@@ -270,7 +270,7 @@ function escolheData() {
 			selecionados.push(jogos[i]);
 		}
 	}
-
+	
 	if (achou == false) {
 		fail();
 	} else {
@@ -482,6 +482,8 @@ function getEscudoName(time, jogo) {
 		return "SãoBernardo2020";
 	} else if (time == "Botafogo-SP" && ano < 2021) {
 		return "Botafogo-SP2021";
+	} else if (time == "Brasil" && ano < 2019) {
+		return "Brasil2019";
 	}
 	return juntaNome(time);
 }

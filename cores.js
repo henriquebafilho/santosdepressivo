@@ -37,6 +37,8 @@ function coresTimes(time, jogo = null) {
 			return ["#00468e", "white"];
 		case "Bahia":
 			return ["#0188d6", "white"];
+		case "Banfield":
+			return ["#03953f", "white"];
 		case "Bangu":
 			return ["#d30a11", "white"];
 		case "Barcelona de Guayaquil":
@@ -247,5 +249,8 @@ function coresTimes(time, jogo = null) {
 			return ["#fde900", "black"];
 		case "Votuporanguense":
 			return ["black", "white"];
+		default:
+			console.log(time);
+			return ["grey", "white"];
 	}
 }

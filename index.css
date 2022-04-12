@@ -9,18 +9,19 @@ body {
 table {
   font-family: Arial;
   text-align: center;
-  background-color: white;
+  background-color: black;
 }
+td,
 th {
-  color: black;
+  color: white;
   font-family: Arial;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
   column-span: 2;
 }
 h1,
 h4 {
-  color: black;
+  color: white;
   text-align: center;
   width: 100%;
   font-size: 100%;
@@ -127,6 +128,9 @@ details[open] summary ~ * {
   details {
     font-size: 6px;
   }
+  summary{
+    font-size: 200%;
+  }
   ul {
     font-size: 11px;
     text-align: left;
@@ -138,6 +142,9 @@ details[open] summary ~ * {
 @media screen and (min-width: 1000px) and (max-width: 2000px) {
   details {
     font-size: 11px;
+  }
+  summary{
+    font-size: 150%;
   }
   ul {
     font-size: 20px;

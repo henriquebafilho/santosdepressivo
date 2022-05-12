@@ -464,6 +464,8 @@ var jogo20191006 = ["Botafogo", "Fluminense", 0, 1, "Série A", "2019-10-06", "N
 outros.push(jogo20191006);
 var jogo20200125 = ["Internacional", "Grêmio", 1, 1, "Copinha", "2020-01-25", "Pacaembu", "Internacional - Fábio Matias/ Grêmio - Guilherme Dalzotto", ["Guilherme Pato","","Pênaltis: (3)","Cesinha","Tiago Barbosa","Carlos Eduardo"], ["Tiago Barbosa (GC)","","Pênaltis: (1)","Gazão"], "https://www.youtube.com/embed/fm37OxEk2-Y", true, 0];
 outros.push(jogo20200125);
+var jogo20220511 = ["Flamengo", "Altos-PI", 2, 0, "Copa do Brasil", "2022-05-11", "Raulino de Oliveira", "Flamengo - Paulo Sousa/ Altos-PI - Francisco Diá", ["Gabriel","Victor Hugo"], [""], "https://www.youtube.com/embed/cAloQjyHrpQ", false];
+outros.push(jogo20220511);
 
 outros.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

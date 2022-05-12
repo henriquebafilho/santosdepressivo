@@ -7,6 +7,8 @@ function coresTimes(time, jogo = null) {
 	switch (time) {
 		case "Água Santa":
 			return ["#153160", "white"];
+		case "Altos-PI":
+			return ["#01904e", "white"];
 		case "América-MG":
 			return ["#048439", "white"];
 		case "América-RJ":

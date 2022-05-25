@@ -413,6 +413,8 @@ var jogo20220129 = ["Santos", "Botafogo-SP", 0, 1, "Paulista", "2022-01-29", "Vi
 jogos.push(jogo20220129);
 var jogo20220405 = ["Banfield", "Santos", 1, 0, "Copa Sul-Americana", "2022-04-05", "Florencio Sola", "Fabián Bustos", ["Agustín Urzi"], [""], "https://www.youtube.com/embed/NgSxNnXpOhw", false];
 jogos.push(jogo20220405);
+var jogo20220524 = ["Santos", "Banfield", 1, 1, "Copa Sul-Americana", "2022-05-24", "Vila Belmiro", "Fabián Bustos", ["Marcos Leonardo"], ["Nicolas Domingo"], "https://www.youtube.com/embed/zPRP_J-7G2c", false];
+jogos.push(jogo20220524);
 
 jogos.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

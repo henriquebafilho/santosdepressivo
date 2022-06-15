@@ -415,6 +415,8 @@ var jogo20220405 = ["Banfield", "Santos", 1, 0, "Copa Sul-Americana", "2022-04-0
 jogos.push(jogo20220405);
 var jogo20220524 = ["Santos", "Banfield", 1, 1, "Copa Sul-Americana", "2022-05-24", "Vila Belmiro", "Fabián Bustos", ["Marcos Leonardo"], ["Nicolas Domingo"], "https://www.youtube.com/embed/zPRP_J-7G2c", false];
 jogos.push(jogo20220524);
+var jogo20220614 = ["Juventude", "Santos", 1, 2, "Brasileiro", "2022-06-14", "Alfredo Jaconi", "Fabián Bustos", ["Ricardo Bueno"], ["Bauermann", "Marcos Leonardo"], "https://www.youtube.com/embed/4vrQarQDTec", false];
+jogos.push(jogo20220614);
 
 jogos.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

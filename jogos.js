@@ -417,7 +417,7 @@ var jogo20220524 = ["Santos", "Banfield", 1, 1, "Copa Sul-Americana", "2022-05-2
 jogos.push(jogo20220524);
 var jogo20220614 = ["Juventude", "Santos", 1, 2, "Brasileiro", "2022-06-14", "Alfredo Jaconi", "Fabián Bustos", ["Ricardo Bueno"], ["Bauermann", "Marcos Leonardo"], "https://www.youtube.com/embed/4vrQarQDTec", false];
 jogos.push(jogo20220614);
-var jogo20220626 = ["Santos", "Red Bull Bragantino", 1, 1, "Brasileiro", "2022-06-26", "Bruno José Daniel", "Orlando Ribeiro", ["Weslley Patati"], ["Gustavo"], "https://www.youtube.com/embed/JK0EjWng_Ew", false];
+var jogo20220626 = ["Santos", "Red Bull Bragantino", 1, 1, "Brasileirão Sub-20", "2022-06-26", "Bruno José Daniel", "Orlando Ribeiro", ["Weslley Patati"], ["Gustavo"], "https://www.youtube.com/embed/JK0EjWng_Ew", false];
 jogos.push(jogo20220626);
 
 jogos.sort(function(a, b){

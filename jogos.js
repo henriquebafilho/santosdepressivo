@@ -419,6 +419,8 @@ var jogo20220614 = ["Juventude", "Santos", 1, 2, "Brasileiro", "2022-06-14", "Al
 jogos.push(jogo20220614);
 var jogo20220626 = ["Santos", "Red Bull Bragantino", 1, 1, "Brasileirão Sub-20", "2022-06-26", "Bruno José Daniel", "Orlando Ribeiro", ["Weslley Patati"], ["Gustavo"], "https://www.youtube.com/embed/JK0EjWng_Ew", false];
 jogos.push(jogo20220626);
+var jogo20221017 = ["Red Bull Bragantino", "Santos", 0, 2, "Brasileiro", "2022-10-17", "Nabi Abi Chedid", "Orlando Ribeiro", [""], ["Camacho", "Ângelo"], "https://www.youtube.com/embed/MRSUbchlxIA", false];
+jogos.push(jogo20221017);
 
 jogos.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

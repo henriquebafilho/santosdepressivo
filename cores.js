@@ -22,7 +22,7 @@ function coresTimes(time, jogo = null) {
 		case "Atlético Nacional":
 			return ["#048439", "white"];
 		case "Atlético-GO":
-			return ["#d30a11", "white"];
+			return ["#d30a11", "black"];
 		case "Atlético-MG":
 			return ["black", "white"];
 		case "Atlético-PR":

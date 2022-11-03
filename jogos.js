@@ -421,6 +421,8 @@ var jogo20220626 = ["Santos", "Red Bull Bragantino", 1, 1, "Brasileirão Sub-20"
 jogos.push(jogo20220626);
 var jogo20221017 = ["Red Bull Bragantino", "Santos", 0, 2, "Brasileiro", "2022-10-17", "Nabi Abi Chedid", "Orlando Ribeiro", [""], ["Camacho", "Ângelo"], "https://www.youtube.com/embed/MRSUbchlxIA", false];
 jogos.push(jogo20221017);
+var jogo20221102 = ["Atlético-GO", "Santos", 2, 3, "Brasileiro", "2022-11-02", "Antônio Accioly", "Orlando Ribeiro", ["Churín", "Luiz Fernando"], ["Marcos Leonardo", "Lucas Braga", "Lucas Barbosa"], "https://www.youtube.com/embed/jdjnRyZ5e3I", false];
+jogos.push(jogo20221102);
 
 jogos.sort(function(a, b){
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

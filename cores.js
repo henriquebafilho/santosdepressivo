@@ -229,6 +229,8 @@ function coresTimes(time, jogo = null) {
 			return ["#212568", "white"];
 		case "São Paulo":
 			return ["#d30a11", "white"];
+		case "São Raimundo-RR":
+			return ["#013fae", "white"];
 		case "Sol de America":
 			return ["#075798", "white"];
 		case "Sport":

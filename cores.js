@@ -7,6 +7,8 @@ function coresTimes(time, jogo = null) {
 	switch (time) {
 		case "Água Santa":
 			return ["#153160", "white"];
+		case "Alecrim-RN":
+			return ["#01904e", "white"];
 		case "Altos-PI":
 			return ["#01904e", "white"];
 		case "América-MG":
@@ -163,6 +165,8 @@ function coresTimes(time, jogo = null) {
 			return ["white", "black"];
 		case "Nacional-PAR":
 			return ["#163fb3", "white"];
+		case "Nacional-SP":
+			return ["#003a94", "white"];
 		case "Nacional-URU":
 			return ["#172b8c", "white"];
 		case "Náutico":
@@ -252,6 +256,8 @@ function coresTimes(time, jogo = null) {
 		case "Volta Redonda":
 			return ["#fde900", "black"];
 		case "Votuporanguense":
+			return ["black", "white"];
+		case "XV de Piracicaba":
 			return ["black", "white"];
 		default:
 			console.log(time);

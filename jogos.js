@@ -423,8 +423,10 @@ var jogo20221017 = ["Red Bull Bragantino", "Santos", 0, 2, "Brasileiro", "2022-1
 jogos.push(jogo20221017);
 var jogo20221102 = ["Atlético-GO", "Santos", 2, 3, "Brasileiro", "2022-11-02", "Antônio Accioly", "Orlando Ribeiro", ["Churín", "Luiz Fernando"], ["Marcos Leonardo", "Lucas Braga", "Lucas Barbosa"], "https://www.youtube.com/embed/jdjnRyZ5e3I", false];
 jogos.push(jogo20221102);
-var jogo20221102 = ["Santos", "São Raimundo-RR", 3, 1, "Copinha", "2023-01-04", "Bruno José Daniel", "Orlando Ribeiro", ["Deivid", "Fernandinho", "Paulo César"], ["Diego"], "https://www.youtube.com/embed/88FNVbFAmio", false];
-jogos.push(jogo20221102);
+var jogo20230104 = ["Santos", "São Raimundo-RR", 3, 1, "Copinha", "2023-01-04", "Bruno José Daniel", "Orlando Ribeiro", ["Deivid", "Fernandinho", "Paulo César"], ["Diego"], "https://www.youtube.com/embed/88FNVbFAmio", false];
+jogos.push(jogo20230104);
+var jogo20230107 = ["Falcon", "Santos", 0, 2, "Copinha", "2023-01-07", "Bruno José Daniel", "Orlando Ribeiro", [""], ["Weslley Patati","Ivonei"], "https://www.youtube.com/embed/knzuVimuyMs", false];
+jogos.push(jogo20230107);
 
 jogos.sort(function (a, b) {
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;
@@ -478,10 +480,12 @@ var jogo20200125 = ["Internacional", "Grêmio", 1, 1, "Copinha", "2020-01-25", "
 outros.push(jogo20200125);
 var jogo20220511 = ["Flamengo", "Altos-PI", 2, 0, "Copa do Brasil", "2022-05-11", "Raulino de Oliveira", "Flamengo - Paulo Sousa/ Altos-PI - Francisco Diá", ["Gabriel", "Victor Hugo"], [""], "https://www.youtube.com/embed/cAloQjyHrpQ", false];
 outros.push(jogo20220511);
-var jogo20230106 = ["Nacional-SP", "XV de Piracicaba", 1, 2, "Copinha", "2023-01-06", "Nicolau Alayon", "", ["Miguelzinho"], ["Iago Lipi", "Gabriel Simples"], "https://www.youtube.com/embed/rr_E3hdHFFg", false];
+var jogo20230105 = ["Nacional-SP", "XV de Piracicaba", 1, 2, "Copinha", "2023-01-05", "Nicolau Alayon", "", ["Miguelzinho"], ["Iago Lipi", "Gabriel Simples"], "https://www.youtube.com/embed/rr_E3hdHFFg", false];
+outros.push(jogo20230105);
+var jogo202301052 = ["Juventude", "Alecrim-RN", 5, 1, "Copinha", "2023-01-05", "Nicolau Alayon", "", ["Caíque", "Kaue", "Natan", "Henrique", "Lucca"], ["Thallisson"], "https://www.youtube.com/embed/KAOfCnIt9Tk", false];
+outros.push(jogo202301052);
+var jogo20230106 = ["Flamengo de Guarulhos", "São José", 2, 1, "Copinha", "2023-01-06", "Antônio Soares de Oliveira", "", ["Matheus", "Ronald"], ["Hanny"], "https://www.youtube.com/embed/n0GiJBYskPk", false];
 outros.push(jogo20230106);
-var jogo202301062 = ["Juventude", "Alecrim-RN", 5, 1, "Copinha", "2023-01-06", "Nicolau Alayon", "", ["Caíque", "Kaue", "Natan", "Henrique", "Lucca"], ["Thallisson"], "https://www.youtube.com/embed/KAOfCnIt9Tk", false];
-outros.push(jogo202301062);
 
 outros.sort(function (a, b) {
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

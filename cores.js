@@ -111,12 +111,16 @@ function coresTimes(time, jogo = null) {
 			return ["#f2d902", "black"];
 		case "Estudiantes":
 			return ["#d30a11", "white"];
+		case "Falcon":
+			return ["#3b137b", "white"];
 		case "Ferroviária":
 			return ["#511a1d", "white"];
 		case "Figueirense":
 			return ["black", "white"];
 		case "Flamengo":
-			return ["#d30a11", "white"];
+			return ["#d30a11", "black"];
+		case "Flamengo de Guarulhos":
+			return ["#d30a11", "black"];
 		case "Floresta-CE":
 			return ["#87c53f", "#036c3c"];
 		case "Fluminense":
@@ -231,6 +235,8 @@ function coresTimes(time, jogo = null) {
 			return ["#0067ab", "white"];
 		case "São Caetano":
 			return ["#212568", "white"];
+		case "São José":
+			return ["#2A3794", "white"];
 		case "São Paulo":
 			return ["#d30a11", "white"];
 		case "São Raimundo-RR":

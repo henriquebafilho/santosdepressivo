@@ -427,6 +427,8 @@ var jogo20230104 = ["Santos", "São Raimundo-RR", 3, 1, "Copinha", "2023-01-04",
 jogos.push(jogo20230104);
 var jogo20230107 = ["Falcon", "Santos", 0, 2, "Copinha", "2023-01-07", "Bruno José Daniel", "Orlando Ribeiro", [""], ["Weslley Patati", "Ivonei"], "https://www.youtube.com/embed/knzuVimuyMs", false];
 jogos.push(jogo20230107);
+var jogo20230111 = ["Santo André", "Santos", 3, 0, "Copinha", "2023-01-11", "Bruno José Daniel", "Orlando Ribeiro", ["Gabriel Ferreira (2x)", "Bruninho"], [""], "https://www.youtube.com/embed/8MuTOQHwqek", false];
+jogos.push(jogo20230111);
 
 jogos.sort(function (a, b) {
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

@@ -492,6 +492,8 @@ var jogo202301052 = ["Juventude", "Alecrim-RN", 5, 1, "Copinha", "2023-01-05", "
 outros.push(jogo202301052);
 var jogo20230106 = ["Flamengo de Guarulhos", "São José", 2, 1, "Copinha", "2023-01-06", "Antônio Soares de Oliveira", "", ["Matheus", "Ronald"], ["Hanny"], "https://www.youtube.com/embed/n0GiJBYskPk", false];
 outros.push(jogo20230106);
+var jogo202301062 = ["AD Guarulhos", "Coritiba", 2, 3, "Copinha", "2023-01-06", "Antônio Soares de Oliveira", "", ["João Felipe", "Renato"], ["Ronier", "Eberth", "Diogo"], "https://www.youtube.com/embed/0U4aRlWktB8", false];
+outros.push(jogo202301062);
 var jogo20230110 = ["Água Santa", "Atlético-MG", 2, 4, "Copinha", "2023-01-10", "Arena Inamar", "", ["Fabricio (2x)"], ["Isaac (2x)", "Cadu", "Yan"], "https://www.youtube.com/embed/bVW6q15985o", false];
 outros.push(jogo20230110);
 

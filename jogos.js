@@ -435,6 +435,8 @@ var jogo20230117 = ["Santos", "Água Santa", 1, 0, "Copinha", "2023-01-17", "Are
 jogos.push(jogo20230117);
 var jogo20230118 = ["Guarani", "Santos", 2, 0, "Paulista", "2023-01-18", "Brinco de Ouro da Princesa", "Odair Hellmann", ["Giovanni Augusto", "Nicolas Careca"], [""], "https://www.youtube.com/embed/BAHpb1D1fcA", false];
 jogos.push(jogo20230118);
+var jogo20230119 = ["Santos", "Fortaleza", 1, 0, "Copinha", "2023-01-19", "Bruno José Daniel", "Orlando Ribeiro", ["Tiago Baliero", "Ivonei"], ["Amorim"], "https://www.youtube.com/embed/dM5nNM-m6io", false];
+jogos.push(jogo20230119);
 
 jogos.sort(function (a, b) {
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

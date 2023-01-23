@@ -75,7 +75,7 @@ var jogo20141016 = ["Santos", "Botafogo", 5, 0, "Copa do Brasil", "2014-10-16", 
 jogos.push(jogo20141016);
 var jogo20150201 = ["Santos", "Ituano", 3, 0, "Paulista", "2015-02-01", "Vila Belmiro", "Enderson Moreira", ["Chiquinho", "Geuvânio (2x)"], [""], "", false];
 jogos.push(jogo20150201);
-var jogo20150214 = ["São Bernardo", "Santos", 0, 1, "Paulista", "2015-02-14", "Primeiro de Maio", "Enderson Moreira", ["David Braz"], [""], "", false];
+var jogo20150214 = ["São Bernardo", "Santos", 0, 1, "Paulista", "2015-02-14", "Primeiro de Maio", "Enderson Moreira", [""], ["David Braz"], "", false];
 jogos.push(jogo20150214);
 var jogo20150222 = ["Portuguesa", "Santos", 1, 3, "Paulista", "2015-02-22", "Pacaembu", "Enderson Moreira", ["Robinho (2x)", "Cicinho"], ["Jean Mota"], "", false];
 jogos.push(jogo20150222);
@@ -437,6 +437,8 @@ var jogo20230118 = ["Guarani", "Santos", 2, 0, "Paulista", "2023-01-18", "Brinco
 jogos.push(jogo20230118);
 var jogo20230119 = ["Santos", "Fortaleza", 1, 0, "Copinha", "2023-01-19", "Bruno José Daniel", "Orlando Ribeiro", ["Tiago Baliero", "Ivonei"], ["Amorim"], "https://www.youtube.com/embed/dM5nNM-m6io", false];
 jogos.push(jogo20230119);
+var jogo20230122 = ["São Bernardo", "Santos", 1, 1, "Paulista", "2023-01-22", "Primeiro de Maio", "Odair Hellmann", ["Chrystian"], ["Matheus Salustiano"], "https://www.youtube.com/embed/Ew73GkTEZ1k", false];
+jogos.push(jogo20230122);
 
 jogos.sort(function (a, b) {
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

@@ -504,6 +504,8 @@ var jogo202301062 = ["AD Guarulhos", "Coritiba", 2, 3, "Copinha", "2023-01-06", 
 outros.push(jogo202301062);
 var jogo20230110 = ["Água Santa", "Atlético-MG", 2, 4, "Copinha", "2023-01-10", "Arena Inamar", "", ["Fabricio (2x)"], ["Isaac (2x)", "Cadu", "Yan"], "https://www.youtube.com/embed/bVW6q15985o", false];
 outros.push(jogo20230110);
+var jogo20230127 = ["São Paulo", "Portuguesa", 4, 1, "Paulista", "2023-01-27", "Morumbi", "São Paulo - Rogério Ceni/ Portuguesa - Mazola Júnior", ["Galoppo (2x)", "Luciano", "Pedrinho"], ["Lucas Nathan"], "https://www.youtube.com/embed/mV_z_jgt9zY", false];
+outros.push(jogo20230127);
 
 outros.sort(function (a, b) {
     return a[5] < b[5] ? -1 : a[5] > b[5] ? 1 : 0;

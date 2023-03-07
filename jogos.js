@@ -447,7 +447,7 @@ let jogo20230216 = ["Santo André", "Santos", 1, 1, "Paulista", "2023-02-16", "B
 jogos.push(jogo20230216);
 let jogo20230219 = ["Santos", "Portuguesa", 4, 0, "Paulista", "2023-02-19", "Vila Belmiro", "Odair Hellmann", ["Marcos Leonardo (2x)","Mendoza (2x)"], [""], "https://www.youtube.com/embed/etPNpL-sUto", false];
 jogos.push(jogo20230219);
-let jogo20230305 = ["Ituano", "Santos", 5, 1, "Paulista", "2023-03-06", "Municipal Doutor Novelli Júnior", "Odair Hellmann", ["Claudinho", "Gabriel Barros", "Quirino"], [""], "https://www.youtube.com/embed/u5hdqpDZMsg", false];
+let jogo20230305 = ["Ituano", "Santos", 3, 0, "Paulista", "2023-03-06", "Municipal Doutor Novelli Júnior", "Odair Hellmann", ["Claudinho", "Gabriel Barros", "Quirino"], [""], "https://www.youtube.com/embed/u5hdqpDZMsg", false];
 jogos.push(jogo20230305);
 
 jogos.sort(function (a, b) {
